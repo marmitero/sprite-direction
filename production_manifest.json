@@ -20,9 +20,9 @@
         "necromancer",
         "pugilista"
       ],
-      "claimed_total_frames": 26816,
+      "claimed_total_frames": 25616,
       "calculated_table_frames": 24304,
-      "unresolved_delta": 2512
+      "unresolved_delta": 1312
     },
     "enemies": {
       "count": 9,
