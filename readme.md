@@ -4,30 +4,34 @@
 
 Repositório de referência para planejar e produzir os **assets de um MMORPG 2D isométrico** de fantasia medieval sombria, com **pixel art chibi**, personagens em oito direções, equipamentos visualmente modulares, NPCs de ciclo contínuo, monstros, VFX e cenários compostos por tilesets. A inspiração de combate é *Diablo II*; a área externa usa como referência estrutural a saída direta da cidade para a caça, como em *Mu Online/Lorencia*, mantendo identidade artística própria.
 
-## P3 — Piloto de corpo-base e equipamentos (GERADO; AGUARDANDO APROVAÇÃO VISUAL)
+## P3 — Revisão artística v2 (EM ANDAMENTO, não aprovada)
 
-**Estado:** corpo-base de pixel art procedimental e kit de 6 camadas criado e testado em oito direções, com animações Idle e Walk (8 frames por direção); **896 frames de conteúdo efetivamente exportado**. Os PNGs de atlas, JSONs, folha de comparação e GIF estão versionados. A estética do piloto precisa ser avaliada e possivelmente refinada para corresponder integralmente ao guia artístico P1. **P4 NÃO iniciada.**
+**A versão P3 geométrica anterior foi REPROVADA pelo usuário.** Os 896 frames procedimentais não são arte válida e foram arquivados em `tests/fixtures/legacy_p3_geometric/`, sem acesso pelo visualizador padrão. A pipeline P2 permanece válida; nenhuma fase P4 iniciou.
 
-- [Relatório técnico da P3](docs/technical/P3_PILOT_REPORT.md)
-- [Arquivos reais do piloto (PNG/JSON/GIF)](assets/characters/classes/shared_humanoid/)
-- [Folha PNG comparativa de corpo base/equipado em 8 direções](assets/characters/classes/shared_humanoid/p3_pilot_contact_sheet.png)
-- [GIF de Walk SE com equipamento](assets/characters/classes/shared_humanoid/p3_walk_SE_equipped.gif)
-- [Manifesto do piloto](assets/characters/classes/shared_humanoid/p3_pilot_manifest.json)
-- [Visualizador de equipamento e oito direções](demo/p3.html)
-- [Gerador determinístico e código-fonte das sprites](tools/generate_p3_pilot.py)
-- [Testes unitários P3](tests/test_p3_pilot.py)
-- [Workflow P3 aprovado — 10 testes](https://github.com/marmitero/sprite-direction/actions/runs/42680063240)
+**Nova entrega ilustrada em PNG RGBA e exportação P2**:
+
+- [Relatório da revisão P3](docs/technical/P3_ART_REWORK.md)
+- [8 vistas ilustradas Idle (uma pose/direção)](assets/characters/classes/shared_humanoid_art_v2/idle_8_directions.png)
+- [8 poses ilustradas de Walk (uma pose/direção)](assets/characters/classes/shared_humanoid_art_v2/walk_8_directions_reference.png)
+- [8 frames ilustrados de Walk SE equipada](assets/characters/classes/shared_humanoid_art_v2/walk_SE_8_frame_art_reference.png)
+- [GIF real da sequência SE equipada](assets/characters/classes/shared_humanoid_art_v2/runtime/equipped_walk_se/humanoid_equipped_walk_se_reference_walk_SE.gif)
+- [Atlas PNG + metadados JSON](assets/characters/classes/shared_humanoid_art_v2/runtime/)
+- [Visualizador HTML5 de vistas artísticas](demo/p3.html)
+- [Importador de desenhos para P2](tools/import_p3_art.py)
+- [CI de arte v2 — aprovada](https://github.com/marmitero/sprite-direction/actions/runs/42685488085)
+
+A nova produção totaliza **24 imagens ilustradas exportadas** de naturezas diferentes: 8 poses Idle, 8 poses Walk e 8 quadros Walk SE *equipado*. **Isso NÃO constitui animação completa em todas as direções e NÃO possui ainda equipamento modular real separado.** Os loops completos, overlays, âncoras, oclusões e polimento precisam ser feitos antes de concluir a P3.
+
+Para validar localmente:
 
 ```bash
 python -m pip install -r requirements-p2.txt
-python -m unittest discover -s tests -v
-python -m tools.generate_p3_pilot --output-root build/p3
+python -m unittest tests.test_p3_art -v
+python -m tools.import_p3_art
 python -m http.server 8000
 ```
 
-Visite `http://localhost:8000/demo/p3.html` na raiz clonada para alternar camadas, animações e direções. O visualizador utiliza os atlas/JSON reais já commitados no repositório.
-
-**Limites:** não há habilidades nem todas as animações de classe; as âncoras de mão e oclusões por orientação ainda são provisórias e não foi realizada aprovação humana da fidelidade artística. Não confundir QA numérico de atlas com homologação de arte.
+Abra `http://localhost:8000/demo/p3.html`. A direção visual P1 continua sendo o critério de qualidade, não os antigos sprites geométricos.
 
 ---
 
