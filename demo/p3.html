@@ -1,83 +1,14 @@
 <!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Sprite Direction | P3 Modular Equipment Inspector</title>
-<style>
-:root{font:15px system-ui;background:#191923;color:#eee}body{max-width:1100px;margin:auto;padding:24px}
-h1{font-size:23px}main{display:grid;grid-template-columns:290px 1fr;gap:16px}
-section{background:#272532;border:1px solid #4e4b5a;border-radius:10px;padding:15px}
-label{display:block;margin:12px 0 5px}select,button{background:#353143;border:1px solid #756c7c;border-radius:6px;padding:8px;color:#fff;font:inherit;cursor:pointer}
-select{width:100%}canvas{width:100%;background:#20202b;image-rendering:pixelated;border:1px solid #4e4659}
-small{color:#aaa3b7}#status{white-space:pre-wrap;font-size:12px;color:#c6b99a}
-@media(max-width:750px){main{grid-template-columns:1fr}}
-</style>
-</head><body>
-<h1>P3 — Corpo-base e equipamentos modulares</h1>
-<p>Compositor visual para o primeiro piloto; camadas alinhadas ao pivô e reproduzidas pelo mesmo índice de frame.</p>
-<main><section>
-<label>Direção</label><select id="direction"></select>
-<label>Animação</label><select id="animation"><option value="idle">Idle</option><option value="walk">Walk</option></select>
-<label>Camadas visíveis</label><div id="layers"></div>
-<label>Zoom</label><select id="zoom"><option value="3">3×</option><option value="5" selected>5×</option><option value="7">7×</option></select>
-<button id="pause">Pausar</button> <button id="step">Próximo quadro</button>
-<p id="status">Carregando atlas...</p>
-</section><section><canvas id="scene" width="700" height="500"></canvas>
-<small>Ponto dourado: pivô (32,71). PNG/JSON são os mesmos arquivos que o pipeline P2 produziu.</small>
-</section></main>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sprite Direction — P3 revisão artística</title>
+<style>body{background:#1c1925;color:#eee;font:16px system-ui;margin:24px auto;max-width:900px}header,section{padding:18px;background:#302a3c;border:1px solid #6d5c7c;border-radius:12px;margin:12px 0}canvas{image-rendering:pixelated;background:#211a29;width:min(100%,790px);height:auto;border:1px solid #756c86}button{padding:9px 14px;background:#483b5a;color:#fff;border:1px solid #9787a2;border-radius:8px;cursor:pointer}p{line-height:1.55}small{color:#b8acbc}</style>
+</head><body><header><h1>P3 — Nova direção artística (em revisão)</h1><p>Vistas ilustradas do corpo-base em oito direções. Não confundir com animações completas, nem com equipamentos já modulares. A versão geométrica anterior foi rejeitada e arquivada apenas para testes.</p></header>
+<section><div id="controls"></div><canvas id="viewer" width="640" height="300"></canvas><p id="status">Carregando atlas...</p><small>Origem do desenho: folha ilustrada. Atlas/JSON: pipeline P2. Cada direção possui inicialmente um frame de referência Idle; Walk e overlays reais ainda pendentes.</small></section>
 <script>
-const names=["body","hair","chest","hands","feet","main_hand","off_hand"];
-const ordered=["N","NE","E","SE","S","SW","W","NW"];
-const base="../assets/characters/classes/shared_humanoid/";
-const documentByLayer={};
-let frame=0,playing=true,nextTime=0,ready=false;
-const $=id=>document.getElementById(id),ctx=$("scene").getContext("2d");
-ctx.imageSmoothingEnabled=false;
-$("direction").replaceChildren(...ordered.map(name=>{let o=document.createElement("option");o.value=o.textContent=name;return o;}));
-$("direction").value="SE";
-$("layers").replaceChildren(...names.map(name=>{
- const el=document.createElement("label");
- const cb=document.createElement("input");cb.type="checkbox";cb.checked=true;cb.id="slot_"+name;cb.disabled=name==="body";
- el.append(cb,document.createTextNode(" "+name));return el;
-}));
-$("pause").onclick=()=>{$("pause").textContent=(playing=!playing)?"Pausar":"Reproduzir";};
-$("step").onclick=()=>{frame=(frame+1)%8;nextTime=performance.now()+1000;};
-$("direction").onchange=()=>{frame=0;};$("animation").onchange=()=>{frame=0;};
-async function load(){
- try{
- for(const name of names){
-   const url=base+name+"/shared_humanoid_"+name+".json";
-   const response=await fetch(url);
-   if(!response.ok)throw Error(url+" HTTP "+response.status);
-   const data=await response.json();
-   const images=await Promise.all(data.atlases.map(async atlas=>{
-     const im=new Image();im.src=base+name+"/"+atlas.file;await im.decode();return im;
-   }));
-   documentByLayer[name]={data,images,lookup:new Map(data.frames.map(f=>[f.id,f]))};
- }
- ready=true;$("status").textContent="7 camadas carregadas • 8 direções • 2 animações • 8 quadros cada";
- }catch(e){$("status").textContent="Falha ao carregar assets: "+e.message;}
-}
-function tick(t){
- requestAnimationFrame(tick);
- const w=$("scene").width,h=$("scene").height;
- ctx.fillStyle="#242333";ctx.fillRect(0,0,w,h);
- if(!ready)return;
- const z=Number($("zoom").value),wx=Math.floor(w/2),wy=Math.floor(h*0.76);
- ctx.strokeStyle="#686073";ctx.beginPath();ctx.moveTo(0,wy+.5);ctx.lineTo(w,wy+.5);ctx.stroke();
- if(playing&&t>=nextTime){frame=(frame+1)%8;nextTime=t+100;}
- const id=$("animation").value+"/"+$("direction").value+"/"+String(frame).padStart(3,"0");
- for(const name of names){
-   if(!$("slot_"+name).checked)continue;
-   const layer=documentByLayer[name],f=layer.lookup.get(id);
-   if(!f)continue;
-   const a=f.frame,b=f.sprite_source_size,p=f.pivot;
-   const x=wx+(b.x-p.x)*z,y=wy+(b.y-p.y)*z;
-   ctx.drawImage(layer.images[f.atlas],a.x,a.y,a.w,a.h,x,y,a.w*z,a.h*z);
- }
- ctx.fillStyle="#efc172";ctx.fillRect(wx-2,wy-2,5,5);
- ctx.fillStyle="#fff";ctx.font="14px system-ui";
- ctx.fillText(id+" / frame "+(frame+1)+"/8",20,28);
-}
-requestAnimationFrame(tick);load();
+const dirs=["N","NE","E","SE","S","SW","W","NW"];let selected="S";let atlas,meta;
+const ctrl=document.getElementById("controls"),ctx=document.getElementById("viewer").getContext("2d");ctx.imageSmoothingEnabled=false;
+dirs.forEach(d=>{const b=document.createElement("button");b.textContent=d;b.onclick=()=>{selected=d;render()};ctrl.append(b)});
+async function init(){try{const root="../assets/characters/classes/shared_humanoid_art_v2/runtime/";const res=await fetch(root+"shared_humanoid_art_v2.json");if(!res.ok)throw Error(res.status);meta=await res.json();atlas=new Image();atlas.src=root+meta.atlases[0].file;await atlas.decode();render()}catch(e){document.getElementById("status").textContent="Erro: "+e.message}}
+function render(){if(!atlas)return;ctx.fillStyle="#211a29";ctx.fillRect(0,0,640,300);const f=meta.frames.find(x=>x.direction===selected&&x.animation==="idle");if(!f)return;const z=5;const cx=320,cy=238;const a=f.frame,b=f.sprite_source_size,p=f.pivot;ctx.drawImage(atlas,a.x,a.y,a.w,a.h,cx+(b.x-p.x)*z,cy+(b.y-p.y)*z,a.w*z,a.h*z);ctx.fillStyle="#f5c77b";ctx.fillRect(cx-2,cy-2,4,4);document.getElementById("status").textContent="Direção: "+selected+" • frame ilustrado 1/1 • revisão artística pendente"}
+init();
 </script></body></html>
