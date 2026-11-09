@@ -16,6 +16,30 @@ from tools.sprite_pipeline import build, validate, DIRECTIONS
 COL_TO_DIR=("S","SE","E","NE","N","NW","W","SW")
 CELL_W,CELL_H=40,52
 
+def import_equipped_walk_se(source:Path,output:Path):
+    """Import eight illustrated, equipped SE walk frames as an isolated reference.
+
+    Do NOT merge these baked-in armored frames with the modular unarmored base.
+    """
+    with Image.open(source) as raw:
+        if raw.format!="PNG": raise ValueError("Equipped walk source must be PNG")
+        sheet=raw.convert("RGBA")
+    if sheet.size!=(8*56,72):
+        raise ValueError(f"Expected 448x72 walk sheet, got {sheet.size}")
+    with TemporaryDirectory() as td:
+        folder=Path(td)/"walk"/"SE"
+        folder.mkdir(parents=True)
+        for i in range(8):
+            f=sheet.crop((i*56,0,(i+1)*56,72))
+            if f.getchannel("A").getbbox() is None:
+                raise ValueError(f"Empty equipped walk frame {i}")
+            f.save(folder/f"{i:03d}.png")
+        result=build(Path(td),output,"humanoid_equipped_walk_se_reference",
+                     fps=8,atlas_size=256,padding=3,make_gif=True)
+    check=validate(output,"humanoid_equipped_walk_se_reference")
+    if len(result["frames"])!=8:raise ValueError("Eight walk frames required")
+    return {"status":"reference_only","frames":8,"validation":check}
+
 def import_art(source:Path, output:Path):
     walk_source=source.with_name("walk_8_directions_reference.png")
     if not source.is_file():
@@ -79,4 +103,6 @@ if __name__=="__main__":
     ap.add_argument("--output",default="assets/characters/classes/shared_humanoid_art_v2/runtime")
     args=ap.parse_args()
     r=import_art(Path(args.source),Path(args.output))
-    print(json.dumps({"status":"IMPORTED_ART_SOURCE","illustrated_pose_frames":r["frame_count"],"directions":len(r["runtime_direction_order"])}))
+    equipped_source=Path(args.source).with_name("walk_SE_8_frame_art_reference.png")
+    equipped=import_equipped_walk_se(equipped_source,Path(args.output)/"equipped_walk_se")
+    print(json.dumps({"status":"IMPORTED_ART_SOURCE","illustrated_pose_frames":r["frame_count"],"directions":len(r["runtime_direction_order"]),"equipped_walk_se_frames":equipped["frames"]}))
