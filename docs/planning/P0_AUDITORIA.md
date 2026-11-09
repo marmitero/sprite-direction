@@ -24,9 +24,9 @@ P0 é exclusivamente documental; **nenhuma arte foi produzida nem a P1 iniciada*
 | Mago | 4.736 | 5.104 | +368 |
 | Necromante | 5.648 | 5.968 | +320 |
 | Pugilista | 4.784 | 4.912 | +128 |
-| **Total** | **24.304** | **26.816** | **+2.512** |
+| **Total** | **24.304** | **25.616** | **+1.312** |
 
-Todos os produtos aritméticos nas linhas numéricas destas cinco tabelas conferem com `frames_por_direção × direções`. **Os totais gerais não conferem com a soma das próprias tabelas.** Não presumir que os 2.512 frames faltantes sejam animações novas: a diferença pode ser erro de totalização ou de escopo. Os números ficam bloqueados para planejamento de capacidade até reconciliação autorizada.
+Todos os produtos aritméticos nas linhas numéricas destas cinco tabelas conferem com `frames_por_direção × direções`. **Os totais gerais não conferem com a soma das próprias tabelas.** Não presumir que os 1.312 frames faltantes sejam animações novas: a diferença pode ser erro de totalização ou de escopo. Os números ficam bloqueados para planejamento de capacidade até reconciliação autorizada.
 
 | Inimigo | Soma das linhas, incluindo opcionais |
 |---|---:|
