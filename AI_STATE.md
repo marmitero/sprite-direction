@@ -1,41 +1,47 @@
 # AI_STATE — Sprite Direction
 
 Atualizado: 2026-11-09
+Repositório: marmitero/sprite-direction
 Branch: main
-Fase: P0
-Estado: documentação P0 publicada; aguardando aceite do usuário
-Próxima fase: P1 — BLOQUEADA, não iniciar sem aprovação explícita
-Arte binária gerada: 0
-Documentos fonte preservados: 22
+Fase ativa: P1 (fundação artística)
+Estado: arte conceitual exploratória criada; guia, paleta, protocolo e diagrama técnico versionados; **P1 ainda não aprovada visualmente**
+Próxima fase: P2 — BLOQUEADA até aprovação explícita
+Spritesheets de runtime geradas: 0
+Documentos fonte: 22, preservados sem modificação
 
-## Arquivos de retomada
+## Documentos essenciais para retomada
 
-1. `readme.md` — índice principal.
-2. `docs/planning/P0_AUDITORIA.md` — auditoria completa, divergências e riscos.
-3. `docs/planning/PLANO_MESTRE.md` — etapas P0–P11.
-4. `docs/planning/CONTRATO_ENTREGA.md` — formatos e gates.
-5. `production_manifest.json` — inventário e status.
-6. `docs/planning/manifests/classes.audit.json` — linhas e divergências das classes.
-7. `docs/planning/manifests/enemies.canonical-tables.json` — linhas completas de inimigos.
-8. `docs/planning/manifests/enemies.audit.json` — extração de headings complementar.
-9. `docs/planning/manifests/npcs-world.audit.json` — NPCs/tilesets.
+- `readme.md` — links para documentação e inventário.
+- `production_manifest.json` — status atual e configurações propostas.
+- `docs/art-direction/STYLE_GUIDE_P1.md` — diretrizes e critérios de aprovação.
+- `docs/art-direction/palette.p1.json` — paleta provisória.
+- `docs/art-direction/P1_TECHNICAL_BOARD.svg` — orientação/cores/tile demonstrados em vetor, **não sprite**.
+- `docs/art-direction/PILOT_REFERENCES.md` — brief das amostras e respectivos gates.
+- `docs/art-direction/FRAME_RECONCILIATION.md` — política autorizada para corrigir frames.
+- `docs/planning/P0_AUDITORIA.md` — achados e contagens.
+- `docs/planning/PLANO_MESTRE.md` — P0–P11.
+- `docs/planning/manifests/` — dados tabulados da auditoria.
 
-## Resumo verificado
+## Resumo da execução P1
 
-- 5 classes, 9 inimigos, 6 NPCs, 2 ambientes.
-- Classes: tabelas 24.304 vs totais gerais 25.616, diferença 1.312, cinco documentos divergentes.
-- Inimigos: 11.216 frames tabulados incluindo opcionais.
-- NPCs: 6 ciclos estacionários de 40 frames (240 frames).
-- Cidade: 96×96 tiles lógicos propostos; caça: 160×160 propostos; tile 64×32 referência.
-- Nenhuma spritesheet/atlas/GIF executável gerada neste trabalho.
+1. Conferidos os requisitos de arte, escala, direções, ferreiro, goblin, espadachim e ambiente.
+2. Estabelecida paleta inicial e política para proporções, iluminação, perspectiva, modularidade e ancoragem.
+3. Criado SVG de referência técnica na branch `main`, separado dos moodboards exploratórios que não foram publicados como assets oficiais.
+4. Produzidos moodboards visuais conceituais na conversa. **Eles não têm 8 vistas funcionais nem recortes de jogo, e seus textos gerados automaticamente não constituem especificação**.
+5. Usuário autorizou recalcular frames e realizar correções técnicas para fluidez, desde que rastreáveis.
+6. Nenhuma arte, animação, GIF, PNG de jogo ou atlas foi entregue no GitHub nesta P1.
 
-## Pendências
+## P0-001: quadro de referência
 
-- P0-001: reconciliar totais gerais e linhas das cinco classes — **não inventar frames**.
-- Confirmar escopo de animações opcionais (esqueleto feiticeiro, mini-dragão).
-- Validar guia de arte, escala e formato de runtime nas fases P1/P2.
-- Especificar inventário individual de VFX, projéteis, equipamentos e props quando a produção avançar.
+Frames tabulados das 5 classes: 24.304; totais textuais: 25.616; delta +1.312. Não criar frames extras para preencher diferença. Baseline das tabelas até reconciliação de animações específicas.
 
-## Instrução para próxima sessão
+## Pendências e próximo passo
 
-Leia o README, este AI_STATE e os três documentos de planejamento; verifique `production_manifest.json`. Não iniciar P1 ou gerar sprites antes de aprovação explícita do usuário. A próxima ação permitida sem autorização é somente revisar ou corrigir documentação da P0.
+- Mostrar moodboard e obter aceite ou ajustes de direção artística.
+- Validar referência de escala humanoide/tile 64×32 e paleta.
+- Somente após concordância, congelar parâmetros e declarar P1 aprovada.
+- Nunca avançar para P2 por iniciativa própria sem autorização.
+
+## Retomada
+
+Leia os documentos acima, cheque produção no GitHub. P1 foi iniciada e documentada, mas não finalizada. Corrigir referências se necessário; **não declarar aprovada nem executar P2**.
