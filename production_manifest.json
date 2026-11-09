@@ -4,7 +4,7 @@
   "branch": "main",
   "audit_date": "2026-11-09",
   "phase": "P1",
-  "phase_state": "in_progress_waiting_for_visual_approval",
+  "phase_state": "completed_approved_frozen",
   "next_phase": "P2",
   "next_phase_authorized": false,
   "assets_generated": 0,
@@ -53,9 +53,7 @@
     }
   },
   "blocking_issues": [
-    "P0-001_reconciliation_policy_recorded",
-    "P1-visual-reference-approval-pending",
-    "P1-scale-and-palette-freeze-pending"
+    "P2-user-authorization-pending"
   ],
   "documents": [
     "docs/planning/P0_AUDITORIA.md",
@@ -65,17 +63,18 @@
     "docs/art-direction/palette.p1.json",
     "docs/art-direction/PILOT_REFERENCES.md",
     "docs/art-direction/FRAME_RECONCILIATION.md",
-    "docs/art-direction/P1_TECHNICAL_BOARD.svg"
+    "docs/art-direction/P1_TECHNICAL_BOARD.svg",
+    "docs/art-direction/P1_APPROVAL.md"
   ],
   "asset_status": "not_created",
-  "approval_policy": "P1 visual references and scale require user approval before P2",
+  "approval_policy": "P1 approved and closed; P2 requires separate user instruction",
   "art_direction": {
     "guide": "docs/art-direction/STYLE_GUIDE_P1.md",
     "palette": "docs/art-direction/palette.p1.json",
     "pilot": "docs/art-direction/PILOT_REFERENCES.md",
     "frame_policy": "docs/art-direction/FRAME_RECONCILIATION.md",
     "technical_board": "docs/art-direction/P1_TECHNICAL_BOARD.svg",
-    "status": "draft_not_frozen",
+    "status": "approved_frozen",
     "tile_size_proposal": [
       64,
       32
@@ -90,6 +89,14 @@
       "W",
       "NW"
     ],
-    "frame_recount_authorized": true
-  }
+    "frame_recount_authorized": true,
+    "approved_on": "2026-11-09",
+    "approval_record": "docs/art-direction/P1_APPROVAL.md",
+    "palette_status": "approved_frozen_baseline",
+    "pixel_art_runtime_generated": false
+  },
+  "phase_completed_on": "2026-11-09",
+  "open_nonblocking_issues": [
+    "P0-001-frame-totals-reconcile-during-validated-production"
+  ]
 }
