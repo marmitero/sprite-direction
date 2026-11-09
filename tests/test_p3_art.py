@@ -12,13 +12,13 @@ class P3IllustratedArtTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             output=Path(tmp)
             result=import_art(source,output)
-            self.assertEqual(result["frame_count"],8)
+            self.assertEqual(result["frame_count"],16)
             self.assertEqual(len(set(result["runtime_direction_order"])),8)
             check=validate(output,"shared_humanoid_art_v2")
-            self.assertEqual(check["frames"],8)
-            self.assertEqual(check["animations"],8)
+            self.assertEqual(check["frames"],16)
+            self.assertEqual(check["animations"],16)
             self.assertFalse(result["p4_authorized"])
-            self.assertIn("walk animation",result["uncompleted_components"])
+            self.assertIn("full walk animation",result["uncompleted_components"])
     def test_art_not_opaque_placeholder(self):
         source=Path("assets/characters/classes/shared_humanoid_art_v2/idle_8_directions.png")
         with Image.open(source) as img:
