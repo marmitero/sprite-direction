@@ -3,45 +3,46 @@
 Atualizado: 2026-11-09
 Repositório: marmitero/sprite-direction
 Branch: main
-Fase ativa: P1 (fundação artística)
-Estado: arte conceitual exploratória criada; guia, paleta, protocolo e diagrama técnico versionados; **P1 ainda não aprovada visualmente**
-Próxima fase: P2 — BLOQUEADA até aprovação explícita
-Spritesheets de runtime geradas: 0
-Documentos fonte: 22, preservados sem modificação
+Última etapa concluída: **P1 — Fundação artística**
+Status P1: **CONCLUÍDA — DIREÇÃO VISUAL APROVADA E CONGELADA**
+Próxima etapa: **P2 — Pipeline técnico (NÃO INICIADA; aguardar autorização explícita do usuário)**
+Assets PNG/WebP/GIF/spritesheets de runtime versionados: **0**
+Documentos de origem auditados: **22**.
 
-## Documentos essenciais para retomada
+## Histórico de aprovações
 
-- `readme.md` — links para documentação e inventário.
-- `production_manifest.json` — status atual e configurações propostas.
-- `docs/art-direction/STYLE_GUIDE_P1.md` — diretrizes e critérios de aprovação.
-- `docs/art-direction/palette.p1.json` — paleta provisória.
-- `docs/art-direction/P1_TECHNICAL_BOARD.svg` — orientação/cores/tile demonstrados em vetor, **não sprite**.
-- `docs/art-direction/PILOT_REFERENCES.md` — brief das amostras e respectivos gates.
-- `docs/art-direction/FRAME_RECONCILIATION.md` — política autorizada para corrigir frames.
-- `docs/planning/P0_AUDITORIA.md` — achados e contagens.
-- `docs/planning/PLANO_MESTRE.md` — P0–P11.
-- `docs/planning/manifests/` — dados tabulados da auditoria.
+- P0: auditoria documental encerrada com divergências registradas, sem alterar arquivos originais.
+- P1: usuário aprovou expressamente a direção visual e solicitou a conclusão da etapa.
+- Usuário autorizou recalcular, aumentar/reduzir frames e corrigir bugs de fluidez/funcionamento com documentação e QA; detalhes em `docs/art-direction/FRAME_RECONCILIATION.md`.
+- P2: ainda sem autorização.
 
-## Resumo da execução P1
+## Fontes de verdade
 
-1. Conferidos os requisitos de arte, escala, direções, ferreiro, goblin, espadachim e ambiente.
-2. Estabelecida paleta inicial e política para proporções, iluminação, perspectiva, modularidade e ancoragem.
-3. Criado SVG de referência técnica na branch `main`, separado dos moodboards exploratórios que não foram publicados como assets oficiais.
-4. Produzidos moodboards visuais conceituais na conversa. **Eles não têm 8 vistas funcionais nem recortes de jogo, e seus textos gerados automaticamente não constituem especificação**.
-5. Usuário autorizou recalcular frames e realizar correções técnicas para fluidez, desde que rastreáveis.
-6. Nenhuma arte, animação, GIF, PNG de jogo ou atlas foi entregue no GitHub nesta P1.
+1. `readme.md` — índice principal.
+2. `production_manifest.json` — fase e estado da produção.
+3. `docs/art-direction/P1_APPROVAL.md` — termo de encerramento, baseline congelado e limites do aceite.
+4. `docs/art-direction/STYLE_GUIDE_P1.md` — regras visuais.
+5. `docs/art-direction/palette.p1.json` — paleta-base aprovada.
+6. `docs/art-direction/P1_TECHNICAL_BOARD.svg` — referência técnica vetorial; não é sprite.
+7. `docs/art-direction/PILOT_REFERENCES.md` — briefs de amostras a produzir na P2/P3.
+8. `docs/art-direction/FRAME_RECONCILIATION.md` — política de frames e rastreabilidade.
+9. `docs/planning/PLANO_MESTRE.md` — roadmap P0 a P11.
+10. `docs/planning/P0_AUDITORIA.md` e `docs/planning/manifests/` — auditorias de fontes.
 
-## P0-001: quadro de referência
+## Contrato visual P1
 
-Frames tabulados das 5 classes: 24.304; totais textuais: 25.616; delta +1.312. Não criar frames extras para preencher diferença. Baseline das tabelas até reconciliação de animações específicas.
+- Fantasia medieval sombria; pixel art chibi; 2:1 isométrico.
+- Tile 64×32 px, referencial.
+- Personagem humanoide ~40–48 px de altura visível, criaturas médias ~32–48 px, grandes ~64–96 px (faixas de escala, não bounding boxes obrigatórios).
+- Direções: N,NE,E,SE,S,SW,W,NW.
+- Paleta, contornos seletivos, nearest-neighbor, luz principal alto-esquerda.
+- Corpo-base sem equipamentos fixos; acessórios, armas, VFX e projéteis independentes; âncoras e pivô de chão consistentes.
+- Direção visual aprovada, **não confundir com validação técnica de animações/atlases**.
 
-## Pendências e próximo passo
+## Divergência de frames e mitigação
 
-- Mostrar moodboard e obter aceite ou ajustes de direção artística.
-- Validar referência de escala humanoide/tile 64×32 e paleta.
-- Somente após concordância, congelar parâmetros e declarar P1 aprovada.
-- Nunca avançar para P2 por iniciativa própria sem autorização.
+P0-001: somas das tabelas corporais das cinco classes 24.304; totais textuais 25.616; +1.312 não explicados. Os totais por linha são baseline auditável. Não criar frames de preenchimento; corrigir por ação com justificativa e testes quando produzir.
 
-## Retomada
+## Checkpoint de retomada
 
-Leia os documentos acima, cheque produção no GitHub. P1 foi iniciada e documentada, mas não finalizada. Corrigir referências se necessário; **não declarar aprovada nem executar P2**.
+P1 encerrada. NÃO gerar sprites/atlases nem executar P2 sem nova instrução. Assim que a P2 for autorizada, iniciar pipeline de recorte/exportação/metadados/QA conforme `docs/planning/PLANO_MESTRE.md`; amostras conceituais aprovadas são guia de estética, não frames de jogo.
