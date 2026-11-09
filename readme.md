@@ -4,6 +4,33 @@
 
 Repositório de referência para planejar e produzir os **assets de um MMORPG 2D isométrico** de fantasia medieval sombria, com **pixel art chibi**, personagens em oito direções, equipamentos visualmente modulares, NPCs de ciclo contínuo, monstros, VFX e cenários compostos por tilesets. A inspiração de combate é *Diablo II*; a área externa usa como referência estrutural a saída direta da cidade para a caça, como em *Mu Online/Lorencia*, mantendo identidade artística própria.
 
+## P3 — Piloto de corpo-base e equipamentos (GERADO; AGUARDANDO APROVAÇÃO VISUAL)
+
+**Estado:** corpo-base de pixel art procedimental e kit de 6 camadas criado e testado em oito direções, com animações Idle e Walk (8 frames por direção); **896 frames de conteúdo efetivamente exportado**. Os PNGs de atlas, JSONs, folha de comparação e GIF estão versionados. A estética do piloto precisa ser avaliada e possivelmente refinada para corresponder integralmente ao guia artístico P1. **P4 NÃO iniciada.**
+
+- [Relatório técnico da P3](docs/technical/P3_PILOT_REPORT.md)
+- [Arquivos reais do piloto (PNG/JSON/GIF)](assets/characters/classes/shared_humanoid/)
+- [Folha PNG comparativa de corpo base/equipado em 8 direções](assets/characters/classes/shared_humanoid/p3_pilot_contact_sheet.png)
+- [GIF de Walk SE com equipamento](assets/characters/classes/shared_humanoid/p3_walk_SE_equipped.gif)
+- [Manifesto do piloto](assets/characters/classes/shared_humanoid/p3_pilot_manifest.json)
+- [Visualizador de equipamento e oito direções](demo/p3.html)
+- [Gerador determinístico e código-fonte das sprites](tools/generate_p3_pilot.py)
+- [Testes unitários P3](tests/test_p3_pilot.py)
+- [Workflow P3 aprovado — 10 testes](https://github.com/marmitero/sprite-direction/actions/runs/42680063240)
+
+```bash
+python -m pip install -r requirements-p2.txt
+python -m unittest discover -s tests -v
+python -m tools.generate_p3_pilot --output-root build/p3
+python -m http.server 8000
+```
+
+Visite `http://localhost:8000/demo/p3.html` na raiz clonada para alternar camadas, animações e direções. O visualizador utiliza os atlas/JSON reais já commitados no repositório.
+
+**Limites:** não há habilidades nem todas as animações de classe; as âncoras de mão e oclusões por orientação ainda são provisórias e não foi realizada aprovação humana da fidelidade artística. Não confundir QA numérico de atlas com homologação de arte.
+
+---
+
 ## P2 — Pipeline técnico de sprites (CONCLUÍDA; 09/11/2026)
 
 **Status:** código do pipeline, validação e visualizador publicados na branch `main`; **6 testes unitários aprovados na GitHub Actions**. P3 não foi iniciada e requer aprovação expressa. Não há sprites de personagens reais gerados: os testes utilizam imagens RGBA sintéticas temporárias.
