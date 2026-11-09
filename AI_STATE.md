@@ -1,44 +1,50 @@
 # AI_STATE — Sprite Direction
 
-Atualizado: 2026-11-09
-Repositório: marmitero/sprite-direction
+Data: 2026-11-09
 Branch: main
-Fase atual: **P3 — corpo-base e equipamentos modulares**
-Estado: **piloto técnico real gerado, publicado e testado; pendente de aprovação visual e polimento**
-Próxima fase: **P4 — cinco classes; NÃO INICIADA, depende de aprovação expressa**
-Direção P1: congelada; não substituir por estética geométrica do piloto sem revisão.
+Etapa: **P3 — revisão artística v2 EM ANDAMENTO**
+Estado: arte geométrica rejeitada pelo usuário; substituição por arte ilustrada iniciada, exportada e testada parcialmente.
+Próxima etapa: **P4 — BLOQUEADA**
+P1: direção artística aprovada e congelada
+P2: pipeline testado e funcional
 
-## Entrega P3
+## Por que a P3 anterior foi rejeitada
 
-- `tools/generate_p3_pilot.py` — gerador autoral, determinístico, de pixel art procedimental.
-- `assets/characters/classes/shared_humanoid/` — PNGs de atlas por camada, JSONs, contact sheet, GIF de Walk SE e manifesto.
-- `demo/p3.html` — composição das sete camadas, seleção de direção/ação e visibilidade de equipamentos.
-- `tests/test_p3_pilot.py` — quatro novos testes em oito direções, encaixe/pivô, exportação e prévias.
-- `.github/workflows/p3-generate-pilot.yml` — gera e valida; publica o pacote binário no repo e como artifact do workflow.
-- `docs/technical/P3_PILOT_REPORT.md` — relatório, evidências, riscos e gates.
+A versão procedimental de `tools/generate_p3_pilot.py` produzia boneco construído de formas geométricas. O usuário solicitou pixel art 8-direction desenhada e visual próximo ao Style Guide P1. A produção antiga (896 quadros de geometria) foi movida para `tests/fixtures/legacy_p3_geometric/` e o workflow legado desativado para autopublicação. NÃO contar esses 896 quadros como arte válida.
 
-Entregues: 1 corpo-base + 6 camadas independentes (hair, chest, hands, feet, main_hand, off_hand), 8 direções, 2 animações (Idle/Walk), 8 frames/direção/animação, 128 frames por camada, **896 frames exportados**. Canvas 64×72, pivô (32,71), atlas com padding e JSON reconstruível.
+## O que existe efetivamente na P3 v2
 
-CI verificada: https://github.com/marmitero/sprite-direction/actions/runs/42680063240 — `success`, **10 testes passaram** (6 P2 + 4 P3) e os PNG/JSON/GIF foram commitados em `main`.
+- `assets/characters/classes/shared_humanoid_art_v2/idle_8_directions.png`: 8 vistas ilustradas, 1 pose Idle por direção.
+- `assets/characters/classes/shared_humanoid_art_v2/walk_8_directions_reference.png`: 8 poses ilustradas Walk, 1 por direção.
+- `assets/characters/classes/shared_humanoid_art_v2/walk_SE_8_frame_art_reference.png`: 8 frames ilustrados de Walk SE já com armadura embutida.
+- `assets/characters/classes/shared_humanoid_art_v2/runtime/`: atlas e JSON gerados pelo P2; `equipped_walk_se/` contém GIF real de QA.
+- `tools/import_p3_art.py`: importer de sprites desenhados sem geração de geometria.
+- `tests/test_p3_art.py`: 3 testes de arte/importação aprovados.
+- `demo/p3.html`: visualização das vistas artísticas (substituiu visualizador geométrico).
+- `docs/technical/P3_ART_REWORK.md`: status e pendências.
 
-## Limitações importantes
+**CI:** https://github.com/marmitero/sprite-direction/actions/runs/42685488085 (SUCCESS, 3 testes novos).
+**Contagem ilustrada ativa:** 8 Idle + 8 Walk poses + 8 Walk SE equipado = 24 desenhos. Não são 24 frames de uma única animação.
 
-- O conteúdo é um **primeiro piloto pixel art procedimental**, não trabalho artístico final detalhado. Embora siga orientação e escala-base P1, **não foi homologado quanto à fidelidade estética ao moodboard P1**.
-- Não há Attack/Hurt/Died, habilidades, equipamento completo, anchors de pulso por frame, máscaras nem oclusão dinâmica; não alegar esses recursos como prontos.
-- O workflow de P3 testou as camadas do mesmo tamanho/índice/pivô; avaliação artística e de fluidez precisa de inspeção humana do GIF e compositor.
-- A P2 está concluída e o pipeline foi efetivamente utilizado.
-- P0-001 (totais corporais 24.304 vs 25.616, delta 1.312) segue como discrepância documental, não um motivo para adicionar frames artificiais.
+## O que NÃO está pronto
 
-## Documentos essenciais
+- Loops Idle completos em 8 direções.
+- Walk completo em 8 direções com quadros artisticamente consistentes.
+- Kit de equipamento modular separado do corpo-base na arte v2: cabelo, torso, mãos, botas, espada e escudo em todos os frames.
+- Oclusão e ancoragem por frame, testes visuais de estabilidade do pé/mãos.
+- Aceite final da P3 pelo usuário.
 
-1. `readme.md`
-2. `production_manifest.json`
-3. `docs/art-direction/P1_APPROVAL.md`
-4. `docs/technical/P2_PIPELINE.md`
-5. `docs/technical/P3_PILOT_REPORT.md`
-6. `assets/characters/classes/shared_humanoid/p3_pilot_manifest.json`
-7. `docs/art-direction/FRAME_RECONCILIATION.md`
+## Regras mandatórias
 
-## Próxima ação
+1. Preservar arte pixel art chibi fantasy dark P1 e proporções 2:1 do mundo, tile 64×32 como referência.
+2. Não usar PIL geometria/placeholder como arte do jogo.
+3. Não fabricar frames duplicando/espelhando imagem sem autoria de poses.
+4. Gerar imagens reais, separar camadas antes de chamar de modular e usar P2 para atlas/JSON/GIF.
+5. Recontagem/correção de frames permitida para fluidez, documentada.
+6. Não iniciar P4 sem aprovação separada.
 
-Solicitar inspeção e aprovação visual do piloto P3. Se o usuário reprovar a estética, refinar o personagem e suas vistas **sem alterar a direção P1**. Não iniciar P4 sem aprovação explícita. A P3 não deve ser declarada integralmente aprovada só porque a CI ficou verde.
+## Leitura de retomada
+
+`readme.md`; `docs/art-direction/P1_APPROVAL.md`; `docs/technical/P2_PIPELINE.md`; `docs/technical/P3_ART_REWORK.md`; `production_manifest.json`.
+
+**Situação real:** P3 v2 tem assets ilustrados exportados, mas não é o pack modular completo. Continuar a P3, não a P4.
