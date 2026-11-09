@@ -1,0 +1,1263 @@
+{
+  "schema_version": "1.0",
+  "phase": "P0",
+  "scope": "classes",
+  "source_branch": "main",
+  "review_date": "2026-11-09",
+  "status": "audit_extraction_not_asset_delivery",
+  "items": [
+    {
+      "id": "espadachim",
+      "source": "arte e animações/docs/Classes/Spritesheet Espadachim.md",
+      "bytes": 37255,
+      "animation_rows": [
+        {
+          "name": "IDLE: POSTURA NEUTRA",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "COMBAT IDLE: POSTURA DE COMBATE",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "WALK: CAMINHADA",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "RUN: CORRIDA",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "DASH / DODGE: ESQUIVA",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "JUMP: SALTO",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 01: CORTE HORIZONTAL",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 02: CORTE DIAGONAL ASCENDENTE",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 03: CORTE GIRATÓRIO",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 04: GOLPE FINALIZADOR",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "BLOCK START",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "consistent": true
+        },
+        {
+          "name": "BLOCK HOLD",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "consistent": true
+        },
+        {
+          "name": "BLOCK IMPACT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "consistent": true
+        },
+        {
+          "name": "PARRY: APARO PERFEITO",
+          "frames_per_direction": 14,
+          "directions": 8,
+          "calculated": 112,
+          "declared": 112,
+          "consistent": true
+        },
+        {
+          "name": "COUNTER ATTACK",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: CORTE CRESCENTE",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: INVESTIDA PERFURANTE",
+          "frames_per_direction": 22,
+          "directions": 8,
+          "calculated": 176,
+          "declared": 176,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 03: REDEMOINHO DE LÂMINAS",
+          "frames_per_direction": 32,
+          "directions": 8,
+          "calculated": 256,
+          "declared": 256,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 04: GOLPE DEMOLIDOR",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 05: LÂMINA DE ENERGIA",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 06: GRITO DE BATALHA",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "consistent": true
+        },
+        {
+          "name": "STAGGER: ATORDOAMENTO",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "KNOCKDOWN: QUEDA",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "GET UP: LEVANTAR",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "DIED",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 3952,
+      "declared_totals": [
+        128,
+        4320,
+        4320
+      ],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "arqueiro",
+      "source": "arte e animações/docs/Classes/Spritesheet Arqueiro.md",
+      "bytes": 52615,
+      "animation_rows": [
+        {
+          "name": "IDLE: POSTURA NEUTRA",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "ARCHERY COMBAT IDLE",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "RUN",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "DODGE: ROLAMENTO EVASIVO",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "DASH: PASSO DO CAÇADOR",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "JUMP",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "TURN",
+          "frames_per_direction": 8,
+          "directions": 16,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "AIM START",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "consistent": true
+        },
+        {
+          "name": "AIM HOLD",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "AIM RELEASE",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "consistent": true
+        },
+        {
+          "name": "AIM CANCEL",
+          "frames_per_direction": 8,
+          "directions": 8,
+          "calculated": 64,
+          "declared": 64,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 01: DISPARO RÁPIDO",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 02: DISPARO DUPLO",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 03: FLECHA PRECISA",
+          "frames_per_direction": 22,
+          "directions": 8,
+          "calculated": 176,
+          "declared": 176,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 04: DISPARO FINALIZADOR",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: FLECHA PERFURANTE",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: DISPARO MÚLTIPLO",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 03: CHUVA DE FLECHAS",
+          "frames_per_direction": 34,
+          "directions": 8,
+          "calculated": 272,
+          "declared": 272,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 04: FLECHA EXPLOSIVA",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 05: FLECHA CONGELANTE",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 06: ARMADILHA DO CAÇADOR",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 07: CHAMADO DO FALCÃO",
+          "frames_per_direction": 32,
+          "directions": 8,
+          "calculated": 256,
+          "declared": 256,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 08: RAJADA IMPLACÁVEL",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 09: CAMUFLAGEM",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 10: DISPARO DEVASTADOR",
+          "frames_per_direction": 34,
+          "directions": 8,
+          "calculated": 272,
+          "declared": 272,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "consistent": true
+        },
+        {
+          "name": "STAGGER",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "KNOCKDOWN",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "GET UP",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "DIED",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 5216,
+      "declared_totals": [
+        5312,
+        5312,
+        5312
+      ],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "mago",
+      "source": "arte e animações/docs/Classes/Spritesheet Mago.md",
+      "bytes": 46269,
+      "animation_rows": [
+        {
+          "name": "IDLE: POSTURA NEUTRA",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "MAGIC COMBAT IDLE",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "RUN",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "DODGE: PASSO EVASIVO",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "JUMP",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "TURN: MUDANÇA DE DIREÇÃO",
+          "frames_per_direction": 8,
+          "directions": 16,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "CAST QUICK",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "consistent": true
+        },
+        {
+          "name": "CAST STANDARD",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "CAST HEAVY",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        },
+        {
+          "name": "CHANNEL START",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "consistent": true
+        },
+        {
+          "name": "CHANNEL HOLD",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "CHANNEL END",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 01: DISPARO ARCANO",
+          "frames_per_direction": 14,
+          "directions": 8,
+          "calculated": 112,
+          "declared": 112,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 02: DUPLO PULSO ARCANO",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 03: RAJADA ARCANA",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: BOLA DE FOGO",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: LANÇA DE GELO",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 03: NOVA GLACIAL",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 04: CHUVA DE METEOROS",
+          "frames_per_direction": 36,
+          "directions": 8,
+          "calculated": 288,
+          "declared": 288,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 05: TELEPORTE ARCANO",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 06: BARREIRA ARCANA",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 07: RAIO CANALIZADO",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 08: EXPLOSÃO ARCANA",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "consistent": true
+        },
+        {
+          "name": "STAGGER",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "KNOCKDOWN",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "GET UP",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "DIED",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 4736,
+      "declared_totals": [
+        5104,
+        5104
+      ],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "necromancer",
+      "source": "arte e animações/docs/Classes/Spritesheet Necromancer.md",
+      "bytes": 51035,
+      "animation_rows": [
+        {
+          "name": "IDLE: POSTURA NEUTRA",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "NECROMANCY COMBAT IDLE",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "RUN",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "DODGE: ESQUIVA SOMBRIA",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "JUMP",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "TURN",
+          "frames_per_direction": 8,
+          "directions": 16,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "RITUAL QUICK",
+          "frames_per_direction": 14,
+          "directions": 8,
+          "calculated": 112,
+          "declared": 112,
+          "consistent": true
+        },
+        {
+          "name": "RITUAL STANDARD",
+          "frames_per_direction": 22,
+          "directions": 8,
+          "calculated": 176,
+          "declared": 176,
+          "consistent": true
+        },
+        {
+          "name": "RITUAL HEAVY",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "consistent": true
+        },
+        {
+          "name": "CHANNEL START",
+          "frames_per_direction": 14,
+          "directions": 8,
+          "calculated": 112,
+          "declared": 112,
+          "consistent": true
+        },
+        {
+          "name": "CHANNEL HOLD",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "CHANNEL END",
+          "frames_per_direction": 14,
+          "directions": 8,
+          "calculated": 112,
+          "declared": 112,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 01: TOQUE SOMBRIO",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 02: DUPLO FRAGMENTO DE ALMA",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 03: ORBE NECROMÂNTICO",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: LANÇA DE OSSOS",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: EXPLOSÃO DE CADÁVER",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 03: INVOCAR ESQUELETO GUERREIRO",
+          "frames_per_direction": 32,
+          "directions": 8,
+          "calculated": 256,
+          "declared": 256,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 04: INVOCAR ESQUELETO FEITICEIRO",
+          "frames_per_direction": 34,
+          "directions": 8,
+          "calculated": 272,
+          "declared": 272,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 05: MALDIÇÃO DA FRAQUEZA",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 06: DRENAGEM DE VIDA",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 07: PRISÃO DE OSSOS",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 08: EXÉRCITO DOS MORTOS",
+          "frames_per_direction": 40,
+          "directions": 8,
+          "calculated": 320,
+          "declared": 320,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 09: FORMA ESPECTRAL",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 10: NOVA DA MORTE",
+          "frames_per_direction": 32,
+          "directions": 8,
+          "calculated": 256,
+          "declared": 256,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "consistent": true
+        },
+        {
+          "name": "STAGGER",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "KNOCKDOWN",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "GET UP",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "DIED",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 5520,
+      "declared_totals": [
+        5968,
+        5968,
+        5968
+      ],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "pugilista",
+      "source": "arte e animações/docs/Classes/Spritesheet Pugilista.md",
+      "bytes": 44845,
+      "animation_rows": [
+        {
+          "name": "IDLE: POSTURA NEUTRA",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "COMBAT IDLE: GUARDA DE COMBATE",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "RUN",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "DODGE: ESQUIVA CORPORAL",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "DASH: AVANÇO EXPLOSIVO",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "JUMP",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "TURN: MUDANÇA DE DIREÇÃO",
+          "frames_per_direction": 8,
+          "directions": 16,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "GUARD START",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "consistent": true
+        },
+        {
+          "name": "GUARD HOLD",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "consistent": true
+        },
+        {
+          "name": "GUARD IMPACT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "consistent": true
+        },
+        {
+          "name": "PARRY: DESVIO PRECISO",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "consistent": true
+        },
+        {
+          "name": "COUNTER ATTACK",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 01: JAB RÁPIDO",
+          "frames_per_direction": 14,
+          "directions": 8,
+          "calculated": 112,
+          "declared": 112,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 02: DIRETO DE DIREITA",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 03: GANCHO LATERAL",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 04: CHUTE CIRCULAR",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "COMBO 05: SOCO DEMOLIDOR",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: PUNHO CONCENTRADO",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: RAJADA DE PUNHOS",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 03: GANCHO ASCENDENTE",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 04: IMPACTO TERRESTRE",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 05: ONDA DE CHOQUE",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 06: CORPO DE FERRO",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 07: CHUTE CICLÔNICO",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 08: SALTO ESMAGADOR",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "consistent": true
+        },
+        {
+          "name": "STAGGER",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "consistent": true
+        },
+        {
+          "name": "KNOCKDOWN",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "GET UP",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "consistent": true
+        },
+        {
+          "name": "DIED",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 4816,
+      "declared_totals": [
+        4912,
+        4912,
+        4912
+      ],
+      "arithmetic_errors": []
+    }
+  ]
+}
