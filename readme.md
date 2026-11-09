@@ -4,6 +4,34 @@
 
 Repositório de referência para planejar e produzir os **assets de um MMORPG 2D isométrico** de fantasia medieval sombria, com **pixel art chibi**, personagens em oito direções, equipamentos visualmente modulares, NPCs de ciclo contínuo, monstros, VFX e cenários compostos por tilesets. A inspiração de combate é *Diablo II*; a área externa usa como referência estrutural a saída direta da cidade para a caça, como em *Mu Online/Lorencia*, mantendo identidade artística própria.
 
+## P2 — Pipeline técnico de sprites (CONCLUÍDA; 09/11/2026)
+
+**Status:** código do pipeline, validação e visualizador publicados na branch `main`; **6 testes unitários aprovados na GitHub Actions**. P3 não foi iniciada e requer aprovação expressa. Não há sprites de personagens reais gerados: os testes utilizam imagens RGBA sintéticas temporárias.
+
+- [Implementação do exportador/validador Python](tools/sprite_pipeline.py)
+- [Visualizador HTML5 de atlas e animações](demo/index.html)
+- [Testes unitários](tests/test_sprite_pipeline.py)
+- [Workflow de integração contínua](.github/workflows/p2-pipeline-tests.yml)
+- [Manual técnico de instalação, formato e comandos](docs/technical/P2_PIPELINE.md)
+- [Relatório P2 e evidência de testes](docs/technical/P2_RELEASE_REPORT.md)
+- [Execução de CI aprovada (6 testes)](https://github.com/marmitero/sprite-direction/actions/runs/42678721540)
+
+### Execução local rápida
+
+```bash
+python -m pip install -r requirements-p2.txt
+python -m unittest discover -s tests -v
+python tools/sprite_pipeline.py build --input samples/input --output output --asset goblin --atlas-size 1024 --padding 2 --fps 12 --gif
+python tools/sprite_pipeline.py validate --output output --asset goblin
+python -m http.server 8000
+```
+
+Os arquivos PNG de entrada precisam existir e seguir `<input>/<animação>/<direção>/000.png,001.png,...`; exemplo `idle/N/000.png`. O CLI não cria arte; `samples/input` no exemplo é caminho fornecido pelo desenvolvedor, não pasta versionada. A demonstração abre em `http://localhost:8000/demo/` e carrega `/output/goblin.json`.
+
+O exportador preserva o canvas, registra a posição de recorte e o pivô em JSON, empacota atlas com padding e pode gerar GIFs dos próprios PNG originais. A validação automatizada não substitui a inspeção visual de sprites reais. Metadados de evento/hitbox e sincronização de equipamentos exigem dados autorais nas etapas seguintes.
+
+---
+
 ## P1 — Fundação artística (CONCLUÍDA; 09/11/2026)
 
 O usuário aprovou a direção visual e solicitou o encerramento da P1; o padrão artístico foi **congelado**. Correções e recontagens justificadas de frames estão autorizadas para melhorar fluidez/funcionamento. **A P2 permanece não iniciada e depende de autorização separada.** Os conceitos gráficos apresentados não são spritesheets de runtime.
