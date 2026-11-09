@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "phase": "P1",
-  "status": "proposed_not_frozen",
+  "status": "approved_frozen_baseline",
   "color_space": "sRGB",
   "groups": {
     "ink": [
@@ -68,5 +68,7 @@
     "Color swatches are visual guidance, not hard asset colors or indexed palette restriction.",
     "Preserve perceptual value hierarchy: readable silhouettes and material separation.",
     "Colorize runtime particle effects separately from base body."
-  ]
+  ],
+  "approved_on": "2026-11-09",
+  "approval_scope": "artistic palette baseline; additional shades allowed with documentation"
 }
