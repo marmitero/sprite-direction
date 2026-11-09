@@ -1,0 +1,39 @@
+name: P3 Illustrated Art - Import and Validate
+on:
+  push:
+    paths:
+      - "assets/characters/classes/shared_humanoid_art_v2/idle_8_directions.png"
+      - "tools/import_p3_art.py"
+      - "tests/test_p3_art.py"
+      - ".github/workflows/p3-art-validation.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: p3-art-import
+  cancel-in-progress: false
+jobs:
+  validate-art:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python -m pip install -r requirements-p2.txt
+      - run: python -m unittest tests.test_p3_art -v
+      - run: python -m tools.import_p3_art
+      - uses: actions/upload-artifact@v4
+        with:
+          name: p3-art-v2-idle-reference-atlas
+          path: assets/characters/classes/shared_humanoid_art_v2/
+      - name: Commit validated runtime atlas
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git config user.name "sprite-direction-ci[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/characters/classes/shared_humanoid_art_v2/runtime
+          if ! git diff --cached --quiet; then
+            git commit -m "assets(P3-art): export illustrated 8-view RGBA atlas and JSON"
+            git push origin HEAD:main
+          fi
