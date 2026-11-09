@@ -1,0 +1,1148 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-11-09",
+  "phase": "P3",
+  "workflow": "front_freeze_one_generation_per_animation",
+  "character_ref_id": "SD-HUM-V3",
+  "direction_order": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "approved_reference": [
+    "SD-HUM-V3-FRONT",
+    "SD-HUM-V3-IDLE-front-eight-poses"
+  ],
+  "next_animation": "Walk",
+  "next_animation_approved": false,
+  "frame_policy": "target counts from original docs; modify only with justified movement/QA; no artificial repeats",
+  "priority_shared": [
+    "Idle (approved as frontal reference only)",
+    "Walk",
+    "Run",
+    "Dodge",
+    "Jump",
+    "Turn",
+    "Combat Idle",
+    "Hurt",
+    "Stagger",
+    "Knockdown",
+    "Get Up",
+    "Died"
+  ],
+  "classes": [
+    {
+      "class_id": "espadachim",
+      "source": "arte e animações/docs/Classes/Spritesheet Espadachim.md",
+      "animations": [
+        {
+          "name": "Idle",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "front_8_visual_poses_approved_only"
+        },
+        {
+          "name": "Combat Idle",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Walk",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Run",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Dodge",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Jump",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Turn",
+          "planned_frames_per_direction": 8,
+          "planned_directions_or_transitions": 16,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 01",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 02",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 03",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 04",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Block Start",
+          "planned_frames_per_direction": 10,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 80,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Block Hold",
+          "planned_frames_per_direction": 12,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 96,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Block Impact",
+          "planned_frames_per_direction": 10,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 80,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Parry",
+          "planned_frames_per_direction": 14,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 112,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Counter Attack",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 01 — Corte Crescente",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 02 — Investida",
+          "planned_frames_per_direction": 22,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 176,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 03 — Redemoinho",
+          "planned_frames_per_direction": 32,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 256,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 04 — Golpe Demolidor",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 05 — Lâmina de Energia",
+          "planned_frames_per_direction": 26,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 208,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 06 — Grito de Batalha",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Hurt",
+          "planned_frames_per_direction": 10,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 80,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Stagger",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Knockdown",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Get Up",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Died",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        }
+      ]
+    },
+    {
+      "class_id": "arqueiro",
+      "source": "arte e animações/docs/Classes/Spritesheet Arqueiro.md",
+      "animations": [
+        {
+          "name": "Idle",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "front_8_visual_poses_approved_only"
+        },
+        {
+          "name": "Archery Combat Idle",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Walk",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Run",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Dodge",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Dash",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Jump",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Turn",
+          "planned_frames_per_direction": 8,
+          "planned_directions_or_transitions": 16,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Aim Start",
+          "planned_frames_per_direction": 12,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 96,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Aim Hold",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Aim Release",
+          "planned_frames_per_direction": 10,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 80,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Aim Cancel",
+          "planned_frames_per_direction": 8,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 64,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 01 — Disparo Rápido",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 02 — Disparo Duplo",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 03 — Flecha Precisa",
+          "planned_frames_per_direction": 22,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 176,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 04 — Finalizador",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 01 — Flecha Perfurante",
+          "planned_frames_per_direction": 26,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 208,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 02 — Disparo Múltiplo",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 03 — Chuva de Flechas",
+          "planned_frames_per_direction": 34,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 272,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 04 — Flecha Explosiva",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 05 — Flecha Congelante",
+          "planned_frames_per_direction": 26,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 208,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 06 — Armadilha",
+          "planned_frames_per_direction": 30,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 240,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 07 — Chamado do Falcão",
+          "planned_frames_per_direction": 32,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 256,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 08 — Rajada Implacável",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Rapid Fire Hold",
+          "planned_frames_per_direction": 12,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 96,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 09 — Camuflagem",
+          "planned_frames_per_direction": 26,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 208,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 10 — Disparo Devastador",
+          "planned_frames_per_direction": 34,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 272,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Hurt",
+          "planned_frames_per_direction": 10,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 80,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Stagger",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Knockdown",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Get Up",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Died",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        }
+      ]
+    },
+    {
+      "class_id": "mago",
+      "source": "arte e animações/docs/Classes/Spritesheet Mago.md",
+      "animations": [
+        {
+          "name": "Idle",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "front_8_visual_poses_approved_only"
+        },
+        {
+          "name": "Magic Combat Idle",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Walk",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Run",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Dodge",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Jump",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Turn",
+          "planned_frames_per_direction": 8,
+          "planned_directions_or_transitions": 16,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Cast Quick",
+          "planned_frames_per_direction": 12,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 96,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Cast Standard",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Cast Heavy",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Channel Start",
+          "planned_frames_per_direction": 12,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 96,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Channel Hold",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Channel End",
+          "planned_frames_per_direction": 12,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 96,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 01 — Disparo Arcano",
+          "planned_frames_per_direction": 14,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 112,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 02 — Duplo Pulso",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 03 — Rajada Arcana",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 01 — Bola de Fogo",
+          "planned_frames_per_direction": 26,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 208,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 02 — Lança de Gelo",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 03 — Nova Glacial",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 04 — Chuva de Meteoros",
+          "planned_frames_per_direction": 36,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 288,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 05 — Teleporte Arcano",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 06 — Barreira Arcana",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 07 — Raio Canalizado",
+          "planned_frames_per_direction": 30,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 240,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 08 — Explosão Arcana",
+          "planned_frames_per_direction": 30,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 240,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Beam Hold",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Hurt",
+          "planned_frames_per_direction": 10,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 80,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Stagger",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Knockdown",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Get Up",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Died",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        }
+      ]
+    },
+    {
+      "class_id": "necromancer",
+      "source": "arte e animações/docs/Classes/Spritesheet Necromancer.md",
+      "animations": [
+        {
+          "name": "Idle",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "front_8_visual_poses_approved_only"
+        },
+        {
+          "name": "Necromancy Combat Idle",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Walk",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Run",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Dodge",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Jump",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Turn",
+          "planned_frames_per_direction": 8,
+          "planned_directions_or_transitions": 16,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Ritual Quick",
+          "planned_frames_per_direction": 14,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 112,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Ritual Standard",
+          "planned_frames_per_direction": 22,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 176,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Ritual Heavy",
+          "planned_frames_per_direction": 30,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 240,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Channel Start",
+          "planned_frames_per_direction": 14,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 112,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Channel Hold",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Channel End",
+          "planned_frames_per_direction": 14,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 112,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 01 — Toque Sombrio",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 02 — Fragmentos de Alma",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 03 — Orbe Necromântico",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 01 — Lança de Ossos",
+          "planned_frames_per_direction": 26,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 208,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 02 — Explosão de Cadáver",
+          "planned_frames_per_direction": 30,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 240,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 03 — Invocar Guerreiro",
+          "planned_frames_per_direction": 32,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 256,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 04 — Invocar Feiticeiro",
+          "planned_frames_per_direction": 34,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 272,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 05 — Maldição",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 06 — Drenagem de Vida",
+          "planned_frames_per_direction": 30,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 240,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Life Drain Hold",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 07 — Prisão de Ossos",
+          "planned_frames_per_direction": 30,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 240,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 08 — Exército dos Mortos",
+          "planned_frames_per_direction": 40,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 320,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 09 — Forma Espectral",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Spectral Form Hold",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 10 — Nova da Morte",
+          "planned_frames_per_direction": 32,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 256,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Hurt",
+          "planned_frames_per_direction": 10,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 80,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Stagger",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Knockdown",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Get Up",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Died",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        }
+      ]
+    },
+    {
+      "class_id": "pugilista",
+      "source": "arte e animações/docs/Classes/Spritesheet Pugilista.md",
+      "animations": [
+        {
+          "name": "Idle",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "front_8_visual_poses_approved_only"
+        },
+        {
+          "name": "Combat Idle",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Walk",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Run",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Dodge",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Dash",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Jump",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Turn",
+          "planned_frames_per_direction": 8,
+          "planned_directions_or_transitions": 16,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Guard Start",
+          "planned_frames_per_direction": 10,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 80,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Guard Hold",
+          "planned_frames_per_direction": 12,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 96,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Guard Impact",
+          "planned_frames_per_direction": 10,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 80,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Parry",
+          "planned_frames_per_direction": 12,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 96,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Counter Attack",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 01 — Jab",
+          "planned_frames_per_direction": 14,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 112,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 02 — Direto",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 03 — Gancho",
+          "planned_frames_per_direction": 18,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 144,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 04 — Chute",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Combo 05 — Soco Demolidor",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 01 — Punho Concentrado",
+          "planned_frames_per_direction": 26,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 208,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 02 — Rajada de Punhos",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 03 — Gancho Ascendente",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 04 — Impacto Terrestre",
+          "planned_frames_per_direction": 30,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 240,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 05 — Onda de Choque",
+          "planned_frames_per_direction": 26,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 208,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 06 — Corpo de Ferro",
+          "planned_frames_per_direction": 24,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 192,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Iron Body Hold",
+          "planned_frames_per_direction": 12,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 96,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 07 — Chute Ciclônico",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Skill 08 — Salto Esmagador",
+          "planned_frames_per_direction": 30,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 240,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Hurt",
+          "planned_frames_per_direction": 10,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 80,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Stagger",
+          "planned_frames_per_direction": 16,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 128,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Knockdown",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Get Up",
+          "planned_frames_per_direction": 20,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 160,
+          "status": "not_started_as_canonical_animation"
+        },
+        {
+          "name": "Died",
+          "planned_frames_per_direction": 28,
+          "planned_directions_or_transitions": 8,
+          "planned_frames_total": 224,
+          "status": "not_started_as_canonical_animation"
+        }
+      ]
+    }
+  ]
+}
