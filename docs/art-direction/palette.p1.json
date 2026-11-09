@@ -1,0 +1,72 @@
+{
+  "schema_version": "1.0",
+  "phase": "P1",
+  "status": "proposed_not_frozen",
+  "color_space": "sRGB",
+  "groups": {
+    "ink": [
+      "#161622",
+      "#252332",
+      "#3A3545"
+    ],
+    "stone": [
+      "#302D39",
+      "#514D59",
+      "#777382",
+      "#A29EAA"
+    ],
+    "wood": [
+      "#372B2B",
+      "#604338",
+      "#986447",
+      "#C7915E"
+    ],
+    "skin": [
+      "#704C46",
+      "#A16E5B",
+      "#D59B76",
+      "#F0C4A0"
+    ],
+    "cloth": [
+      "#303549",
+      "#465576",
+      "#6D3548",
+      "#9A4F50"
+    ],
+    "metal": [
+      "#343B47",
+      "#69727F",
+      "#AAB1B4",
+      "#E0D9C6"
+    ],
+    "nature": [
+      "#243A32",
+      "#416044",
+      "#71905A",
+      "#B3AE68"
+    ],
+    "fire": [
+      "#8B372B",
+      "#C75535",
+      "#F59A44",
+      "#FBD78B"
+    ],
+    "magic": [
+      "#314A8A",
+      "#3C8AD0",
+      "#7850BB",
+      "#BA79DF"
+    ],
+    "necromancy": [
+      "#34345C",
+      "#62418B",
+      "#9B58BD",
+      "#5BBE9B"
+    ]
+  },
+  "notes": [
+    "Color swatches are visual guidance, not hard asset colors or indexed palette restriction.",
+    "Preserve perceptual value hierarchy: readable silhouettes and material separation.",
+    "Colorize runtime particle effects separately from base body."
+  ]
+}
