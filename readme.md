@@ -4,6 +4,26 @@
 
 Repositório de referência para planejar e produzir os **assets de um MMORPG 2D isométrico** de fantasia medieval sombria, com **pixel art chibi**, personagens em oito direções, equipamentos visualmente modulares, NPCs de ciclo contínuo, monstros, VFX e cenários compostos por tilesets. A inspiração de combate é *Diablo II*; a área externa usa como referência estrutural a saída direta da cidade para a caça, como em *Mu Online/Lorencia*, mantendo identidade artística própria.
 
+## P3 — Novo protocolo SD-HUM-V3: frente e Idle aprovados (09/11/2026)
+
+**Esta seção substitui o fluxo anterior da P3.** O usuário aprovou a arte frontal do aventureiro de cabelo preto, lenço vermelho e roupa marrom e aprovou uma folha Idle **frontal** de oito poses. Arte-base e prompt canônico foram congelados por descritor/hash SHA256. A próxima animação é **Walk**, ainda sem versão consistente aprovada. **P3 não concluída; P4 não iniciada.**
+
+- [Registro de aprovação e próximo passo](docs/production/P3_LOCK_AND_NEXT_STAGE.md)
+- [Protocolo oficial: aprovar frente → congelar → uma geração por movimento → chroma → QA → publicar](docs/production/CHARACTER_GENERATION_PROTOCOL.md)
+- [Arte-base e prompt congelado (reconstruído, não transcrição do prompt interno original)](docs/production/APPROVED_HUMANOID_LOCK.md)
+- [Idle visual aprovado: fonte, hashes e prompt](docs/production/IDLE_APPROVAL_AND_PROMPT.md)
+- [Prompt preparado para Walk isolada — pendente de geração aprovada](docs/production/WALK_PROMPT_V1.md)
+- [Inventário de 154 linhas de animação exigidas pelas cinco classes](docs/production/ANIMATION_REQUIREMENTS_ALL_CLASSES.json)
+- [Script de chroma key da fonte aprovada](tools/import_approved_p3_reference.py)
+- [Testes de chroma](tests/test_p3_approved_reference.py)
+- [GitHub Actions aprovou a nova integração](https://github.com/marmitero/sprite-direction/actions/runs/42689865352)
+
+**Atenção:** os PNGs originais aprovados existem como artefatos gerados na conversa, mas **ainda não estão commitados como binários nesta branch**. A documentação preserva seus hashes; o pacote ZIP da conversa contém os originais e oito recortes frontais do Idle para importar sem perder a referência. Não confundir esses quadros frontais com oito direções.
+
+As tentativas subsequentes de Walk saíram como painéis decorativos e/ou alteraram a roupa, por isso foram reprovadas antes da publicação. O guia P1 continua sendo a referência artística. A antiga P3 geométrica continua reprovada e arquivada somente como fixtures.
+
+---
+
 ## P3 — Revisão artística v2 (EM ANDAMENTO, não aprovada)
 
 **A versão P3 geométrica anterior foi REPROVADA pelo usuário.** Os 896 frames procedimentais não são arte válida e foram arquivados em `tests/fixtures/legacy_p3_geometric/`, sem acesso pelo visualizador padrão. A pipeline P2 permanece válida; nenhuma fase P4 iniciou.
