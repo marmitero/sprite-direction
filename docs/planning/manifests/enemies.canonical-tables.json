@@ -1,0 +1,636 @@
+{
+  "schema_version": "1.0",
+  "review_date": "2026-11-09",
+  "audit_method": "Individual numeric rows in document frame summary tables; optional animations included",
+  "items": [
+    {
+      "id": "aranha gigante",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Aranha gigante.md",
+      "delivery_status": "not_created",
+      "audit_status": "rows_consistent",
+      "animation_rows": [
+        {
+          "animation": "Idle",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Walk",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Attack — Mordida",
+          "frames_per_direction": 14,
+          "direction_count": 8,
+          "total_declared": 112,
+          "total_calculated": 112
+        },
+        {
+          "animation": "Hurt",
+          "frames_per_direction": 10,
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
+        },
+        {
+          "animation": "Died",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Skill 01 — Veneno",
+          "frames_per_direction": 18,
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
+        },
+        {
+          "animation": "Skill 02 — Teia",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        }
+      ],
+      "calculated_frames_including_optional": 912,
+      "invalid_rows": []
+    },
+    {
+      "id": "esqueleto feiticeiro",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Esqueleto feiticeiro.md",
+      "delivery_status": "not_created",
+      "audit_status": "rows_consistent",
+      "animation_rows": [
+        {
+          "animation": "Idle",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Walk",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Attack — Projétil Espectral",
+          "frames_per_direction": 18,
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
+        },
+        {
+          "animation": "Hurt",
+          "frames_per_direction": 10,
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
+        },
+        {
+          "animation": "Died",
+          "frames_per_direction": 24,
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
+        },
+        {
+          "animation": "Skill 01 — Explosão Necromântica",
+          "frames_per_direction": 24,
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
+        },
+        {
+          "animation": "Skill 02 — Maldição Sombria",
+          "frames_per_direction": 22,
+          "direction_count": 8,
+          "total_declared": 176,
+          "total_calculated": 176
+        },
+        {
+          "animation": "Skill 03 — Teleporte (opcional)",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        }
+      ],
+      "calculated_frames_including_optional": 1200,
+      "invalid_rows": []
+    },
+    {
+      "id": "esqueleto guerreiro",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Esqueleto guerreiro.md",
+      "delivery_status": "not_created",
+      "audit_status": "rows_consistent",
+      "animation_rows": [
+        {
+          "animation": "Idle",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Walk",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Attack — Espada",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Hurt",
+          "frames_per_direction": 10,
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
+        },
+        {
+          "animation": "Died",
+          "frames_per_direction": 24,
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
+        },
+        {
+          "animation": "Skill 01 — Golpe Espectral",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Skill 02 — Defesa Óssea",
+          "frames_per_direction": 18,
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
+        },
+        {
+          "animation": "Defense Hold",
+          "frames_per_direction": 8,
+          "direction_count": 8,
+          "total_declared": 64,
+          "total_calculated": 64
+        }
+      ],
+      "calculated_frames_including_optional": 1024,
+      "invalid_rows": []
+    },
+    {
+      "id": "lich",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Lich.md",
+      "delivery_status": "not_created",
+      "audit_status": "rows_consistent",
+      "animation_rows": [
+        {
+          "animation": "Idle",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Walk — Flutuação",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Attack — Orbe Necromântico",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Hurt",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Died",
+          "frames_per_direction": 32,
+          "direction_count": 8,
+          "total_declared": 256,
+          "total_calculated": 256
+        },
+        {
+          "animation": "Skill 01 — Nova da Morte",
+          "frames_per_direction": 28,
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
+        },
+        {
+          "animation": "Skill 02 — Invocação dos Mortos",
+          "frames_per_direction": 32,
+          "direction_count": 8,
+          "total_declared": 256,
+          "total_calculated": 256
+        },
+        {
+          "animation": "Skill 03 — Prisão de Ossos",
+          "frames_per_direction": 28,
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
+        },
+        {
+          "animation": "Skill 04 — Teleporte Sombrio",
+          "frames_per_direction": 24,
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
+        },
+        {
+          "animation": "Skill 05 — Drenagem de Vida",
+          "frames_per_direction": 30,
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
+        },
+        {
+          "animation": "Life Drain Hold",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        }
+      ],
+      "calculated_frames_including_optional": 2064,
+      "invalid_rows": []
+    },
+    {
+      "id": "mini-dragão vermelho",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Mini-dragão vermelho.md",
+      "delivery_status": "not_created",
+      "audit_status": "rows_consistent",
+      "animation_rows": [
+        {
+          "animation": "Idle",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Walk",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Attack",
+          "frames_per_direction": 14,
+          "direction_count": 8,
+          "total_declared": 112,
+          "total_calculated": 112
+        },
+        {
+          "animation": "Hurt",
+          "frames_per_direction": 8,
+          "direction_count": 8,
+          "total_declared": 64,
+          "total_calculated": 64
+        },
+        {
+          "animation": "Died",
+          "frames_per_direction": 18,
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
+        },
+        {
+          "animation": "Skill 01 — Sopro de Fogo",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Skill 02 — Salto Dracônico",
+          "frames_per_direction": 14,
+          "direction_count": 8,
+          "total_declared": 112,
+          "total_calculated": 112
+        }
+      ],
+      "calculated_frames_including_optional": 752,
+      "invalid_rows": []
+    },
+    {
+      "id": "minotauro",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Minotauro.md",
+      "delivery_status": "not_created",
+      "audit_status": "rows_consistent",
+      "animation_rows": [
+        {
+          "animation": "Idle",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Walk",
+          "frames_per_direction": 18,
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
+        },
+        {
+          "animation": "Attack — Corte Brutal",
+          "frames_per_direction": 18,
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
+        },
+        {
+          "animation": "Hurt",
+          "frames_per_direction": 10,
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
+        },
+        {
+          "animation": "Died — Queda do Colosso",
+          "frames_per_direction": 28,
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
+        },
+        {
+          "animation": "Skill 01 — Investida",
+          "frames_per_direction": 24,
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
+        },
+        {
+          "animation": "Skill 02 — Impacto Sísmico",
+          "frames_per_direction": 26,
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
+        },
+        {
+          "animation": "Skill 03 — Fúria Bestial",
+          "frames_per_direction": 24,
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
+        },
+        {
+          "animation": "Fury Hold",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        }
+      ],
+      "calculated_frames_including_optional": 1408,
+      "invalid_rows": []
+    },
+    {
+      "id": "orc",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Orc.md",
+      "delivery_status": "not_created",
+      "audit_status": "rows_consistent",
+      "animation_rows": [
+        {
+          "animation": "Idle",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Walk",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Attack — Corte Selvagem",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Hurt",
+          "frames_per_direction": 10,
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
+        },
+        {
+          "animation": "Died",
+          "frames_per_direction": 24,
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
+        },
+        {
+          "animation": "Skill 01 — Golpe Esmagador",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Skill 02 — Investida Brutal",
+          "frames_per_direction": 22,
+          "direction_count": 8,
+          "total_declared": 176,
+          "total_calculated": 176
+        },
+        {
+          "animation": "Skill 03 — Grito de Guerra",
+          "frames_per_direction": 24,
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
+        },
+        {
+          "animation": "Buff Hold",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Block",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Block Hold",
+          "frames_per_direction": 8,
+          "direction_count": 8,
+          "total_declared": 64,
+          "total_calculated": 64
+        }
+      ],
+      "calculated_frames_including_optional": 1440,
+      "invalid_rows": []
+    },
+    {
+      "id": "goblim",
+      "source": "arte e animações/docs/Inimigos/Spritesheet goblim.md",
+      "delivery_status": "not_created",
+      "audit_status": "rows_consistent",
+      "animation_rows": [
+        {
+          "animation": "Idle",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Walk",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Attack",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Hurt",
+          "frames_per_direction": 8,
+          "direction_count": 8,
+          "total_declared": 64,
+          "total_calculated": 64
+        },
+        {
+          "animation": "Died",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Skill",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        }
+      ],
+      "calculated_frames_including_optional": 608,
+      "invalid_rows": []
+    },
+    {
+      "id": "stone golem",
+      "source": "arte e animações/docs/Inimigos/Spritesheet stone golem.md",
+      "delivery_status": "not_created",
+      "audit_status": "rows_consistent",
+      "animation_rows": [
+        {
+          "animation": "Idle",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Walk",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Attack — Punho Rochoso",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Hurt",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Died — Colapso Rochoso",
+          "frames_per_direction": 32,
+          "direction_count": 8,
+          "total_declared": 256,
+          "total_calculated": 256
+        },
+        {
+          "animation": "Skill 01 — Impacto Terrestre",
+          "frames_per_direction": 28,
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
+        },
+        {
+          "animation": "Skill 02 — Arremesso de Rocha",
+          "frames_per_direction": 26,
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
+        },
+        {
+          "animation": "Skill 03 — Armadura de Pedra",
+          "frames_per_direction": 26,
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
+        },
+        {
+          "animation": "Stone Armor Hold",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Skill 04 — Erupção Rochosa",
+          "frames_per_direction": 30,
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
+        }
+      ],
+      "calculated_frames_including_optional": 1808,
+      "invalid_rows": []
+    }
+  ]
+}
