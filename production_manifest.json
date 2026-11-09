@@ -3,9 +3,9 @@
   "repository": "marmitero/sprite-direction",
   "branch": "main",
   "audit_date": "2026-11-09",
-  "phase": "P1",
-  "phase_state": "completed_approved_frozen",
-  "next_phase": "P2",
+  "phase": "P2",
+  "phase_state": "completed_tests_passed",
+  "next_phase": "P3",
   "next_phase_authorized": false,
   "assets_generated": 0,
   "specification_count": 22,
@@ -53,7 +53,7 @@
     }
   },
   "blocking_issues": [
-    "P2-user-authorization-pending"
+    "P3-user-approval-pending"
   ],
   "documents": [
     "docs/planning/P0_AUDITORIA.md",
@@ -64,10 +64,12 @@
     "docs/art-direction/PILOT_REFERENCES.md",
     "docs/art-direction/FRAME_RECONCILIATION.md",
     "docs/art-direction/P1_TECHNICAL_BOARD.svg",
-    "docs/art-direction/P1_APPROVAL.md"
+    "docs/art-direction/P1_APPROVAL.md",
+    "docs/technical/P2_PIPELINE.md",
+    "docs/technical/P2_RELEASE_REPORT.md"
   ],
-  "asset_status": "not_created",
-  "approval_policy": "P1 approved and closed; P2 requires separate user instruction",
+  "asset_status": "no_production_art_generated",
+  "approval_policy": "P2 complete; P3 requires explicit user approval",
   "art_direction": {
     "guide": "docs/art-direction/STYLE_GUIDE_P1.md",
     "palette": "docs/art-direction/palette.p1.json",
@@ -97,6 +99,28 @@
   },
   "phase_completed_on": "2026-11-09",
   "open_nonblocking_issues": [
-    "P0-001-frame-totals-reconcile-during-validated-production"
-  ]
+    "P0-001-frame-totals-reconcile-during-validated-production",
+    "P2-authoring-events-and-hitboxes-needed-on-real-assets",
+    "P0-001-class-frame-table-reconciliation"
+  ],
+  "pipeline": {
+    "status": "implemented_and_ci_tested",
+    "entrypoint": "tools/sprite_pipeline.py",
+    "viewer": "demo/index.html",
+    "documentation": "docs/technical/P2_PIPELINE.md",
+    "delivery_report": "docs/technical/P2_RELEASE_REPORT.md",
+    "tests": "tests/test_sprite_pipeline.py",
+    "workflow": ".github/workflows/p2-pipeline-tests.yml",
+    "workflow_run_url": "https://github.com/marmitero/sprite-direction/actions/runs/42678721540",
+    "automated_tests_passed": 6,
+    "tested_with": "synthetic temporary PNG fixtures",
+    "asset_artistic_qa": "not_tested_no_production_sprites",
+    "supported_export": [
+      "PNG_RGBA",
+      "atlas",
+      "JSON",
+      "GIF_preview"
+    ],
+    "p3_authorized": false
+  }
 }
