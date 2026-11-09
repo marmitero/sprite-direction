@@ -1,50 +1,51 @@
 # AI_STATE — Sprite Direction
 
-Data: 2026-11-09
-Branch: main
-Etapa: **P3 — revisão artística v2 EM ANDAMENTO**
-Estado: arte geométrica rejeitada pelo usuário; substituição por arte ilustrada iniciada, exportada e testada parcialmente.
-Próxima etapa: **P4 — BLOQUEADA**
-P1: direção artística aprovada e congelada
-P2: pipeline testado e funcional
+Atualizado: 2026-11-09 | Repositório `marmitero/sprite-direction`, branch `main`.
 
-## Por que a P3 anterior foi rejeitada
+## Fase ativa e progresso
 
-A versão procedimental de `tools/generate_p3_pilot.py` produzia boneco construído de formas geométricas. O usuário solicitou pixel art 8-direction desenhada e visual próximo ao Style Guide P1. A produção antiga (896 quadros de geometria) foi movida para `tests/fixtures/legacy_p3_geometric/` e o workflow legado desativado para autopublicação. NÃO contar esses 896 quadros como arte válida.
+**P3 — personagem SD-HUM-V3, novo fluxo de geração por movimento.**
+Aprovações humanas recebidas: **FRONT-01 e IDLE-01** (versão ilustrada de roupas marrons e lenço vermelho).
+**P3 não concluída. Walk não aprovada. P4 bloqueada.**
 
-## O que existe efetivamente na P3 v2
+## Fonte de verdade, ordem de leitura
 
-- `assets/characters/classes/shared_humanoid_art_v2/idle_8_directions.png`: 8 vistas ilustradas, 1 pose Idle por direção.
-- `assets/characters/classes/shared_humanoid_art_v2/walk_8_directions_reference.png`: 8 poses ilustradas Walk, 1 por direção.
-- `assets/characters/classes/shared_humanoid_art_v2/walk_SE_8_frame_art_reference.png`: 8 frames ilustrados de Walk SE já com armadura embutida.
-- `assets/characters/classes/shared_humanoid_art_v2/runtime/`: atlas e JSON gerados pelo P2; `equipped_walk_se/` contém GIF real de QA.
-- `tools/import_p3_art.py`: importer de sprites desenhados sem geração de geometria.
-- `tests/test_p3_art.py`: 3 testes de arte/importação aprovados.
-- `demo/p3.html`: visualização das vistas artísticas (substituiu visualizador geométrico).
-- `docs/technical/P3_ART_REWORK.md`: status e pendências.
+1. `readme.md`
+2. `docs/production/P3_LOCK_AND_NEXT_STAGE.md` — status e aprovação.
+3. `docs/production/APPROVED_HUMANOID_LOCK.md` — aparência frontal e prompt mestre congelado.
+4. `docs/production/IDLE_APPROVAL_AND_PROMPT.md` — Idle frontal aprovado e prompt.
+5. `docs/production/CHARACTER_GENERATION_PROTOCOL.md` — sequência mandatória (front → freeze → um movimento por geração → QA → chroma → atlas/GIF → aprovação).
+6. `docs/production/WALK_PROMPT_V1.md` — prompt da próxima geração, Walk isolada.
+7. `docs/production/ANIMATION_REQUIREMENTS_ALL_CLASSES.json` — 154 movimentos nos cinco docs de classes.
+8. `docs/art-direction/P1_APPROVAL.md`; `docs/art-direction/STYLE_GUIDE_P1.md` — padrões artísticos congelados.
+9. `docs/technical/P2_PIPELINE.md` — exportação atlas/JSON.
+10. `production_manifest.json` — estado em formato de máquina.
 
-**CI:** https://github.com/marmitero/sprite-direction/actions/runs/42685488085 (SUCCESS, 3 testes novos).
-**Contagem ilustrada ativa:** 8 Idle + 8 Walk poses + 8 Walk SE equipado = 24 desenhos. Não são 24 frames de uma única animação.
+## Aprovação e identidade
 
-## O que NÃO está pronto
+Frente mestre: `herói_chibi_aventureiro_em_pixel_art.png`, 1254×1254, SHA256 `f528766d28a2ba7a0b22120db413dcc5ec022cb5529b09f452a2ffb2ef709113`.
+Idle mestre: `sprite_de_aventure_em_pixel_art.png`, 1448×1086, 4×2 poses frontais, SHA256 `0f29e33d2500dbfe51b14e7662ae0a7064d74dbf1e5cd967e5468b90287613ef`.
+Originais binários preservados em pacote de referência da conversa, mas **ainda não commitados como binário no GitHub**; os docs e hash não equivalem a upload. Para processamento local, fornecer as duas fontes originais a `tools/import_approved_p3_reference.py`. O usuário aprovou arte e Idle como visual, não 8 direções ou runtime completo.
 
-- Loops Idle completos em 8 direções.
-- Walk completo em 8 direções com quadros artisticamente consistentes.
-- Kit de equipamento modular separado do corpo-base na arte v2: cabelo, torso, mãos, botas, espada e escudo em todos os frames.
-- Oclusão e ancoragem por frame, testes visuais de estabilidade do pé/mãos.
-- Aceite final da P3 pelo usuário.
+Mesma identidade para todas as gerações: cabelo preto bagunçado e franja assimétrica, olhos castanho-rubros, lenço vermelho escuro, camisa bege/roupa de couro marrom, diagonal com fivela, UMA ombreira prateada em um lado, bolsa/cinto, luvas escuras, calças marrom-escuras largas, botas marrons e punhal embainhado na cintura. Não adicionar armadura de placas completa ou capa nova.
 
-## Regras mandatórias
+## Próximos movimentos e política
 
-1. Preservar arte pixel art chibi fantasy dark P1 e proporções 2:1 do mundo, tile 64×32 como referência.
-2. Não usar PIL geometria/placeholder como arte do jogo.
-3. Não fabricar frames duplicando/espelhando imagem sem autoria de poses.
-4. Gerar imagens reais, separar camadas antes de chamar de modular e usar P2 para atlas/JSON/GIF.
-5. Recontagem/correção de frames permitida para fluidez, documentada.
-6. Não iniciar P4 sem aprovação separada.
+Documentos de classes indicam **Walk de 16 frames/direção** como próximo universal, depois Run (20), Dodge (16), Jump (18), Turn (8×16 transições), e estados defensivos/combate/dano/morte; ações específicas por classe no manifesto de 154 linhas. Ajustes permitidos para fluidez, mas não preencher quadros fictícios. Idle aprovado contempla **8 poses frontais**, ainda falta fechar 8 direções × frames conforme o documento.
 
-## Leitura de retomada
+As tentativas de Walk nesta sessão vieram como infográficos/painéis com roupa/armadura divergente, então **foram rejeitadas** e não serão usadas no runtime; `WALK_PROMPT_V1.md` documenta a tentativa seguinte e critérios de QA.
 
-`readme.md`; `docs/art-direction/P1_APPROVAL.md`; `docs/technical/P2_PIPELINE.md`; `docs/technical/P3_ART_REWORK.md`; `production_manifest.json`.
+## Pipeline
 
-**Situação real:** P3 v2 tem assets ilustrados exportados, mas não é o pack modular completo. Continuar a P3, não a P4.
+Script de chroma `tools/import_approved_p3_reference.py` e teste `tests/test_p3_approved_reference.py` versionados. O script preserva o canvas, recorta 4×2 poses frontais, remove magenta e emite PNGs RGBA/GIF/QA sem inventar direções. Arquivos de processamento local e as duas fontes podem ser obtidos no pacote entregue na conversa; não afirmar que foram salvos no repo antes do upload.
+
+## Proibições
+
+- Nunca misturar ações numa geração nem reutilizar os painéis decorativos como atlas.
+- Nunca reintroduzir geometria da P3 original (`tests/fixtures/legacy_p3_geometric/`).
+- Não transformar corpos equipados em base modular por alegação sem separar camadas.
+- Não marcar Walk como aprovada, P3 concluída ou P4 iniciada sem evidência.
+
+## Próxima ação
+
+**Produzir nova folha somente Walk, com a frente aprovada e Idle como referências**, verificar mesma roupa/rosto/escala e quadros reais. Se a geração alterar roupa ou virar painel, reprovar e ajustar prompt antes da entrega. Publicar somente o que passou no gate.
