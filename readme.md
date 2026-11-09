@@ -13,9 +13,8 @@ Repositório de referência para planejar e produzir os **assets de um MMORPG 2D
 | NPCs de serviço | **6** | `arte e animações/docs/Npcs/` |
 | Mapas / tilesets | **2** | `arte e animações/docs/Tilesets/` |
 | **Total de especificações .md** | **22** | |
-| Cópia auxiliar em .txt | 1 | `arte e animações/docs/Inimigos/Spritesheet Esqueleto feiticeiro.txt` |
 
-Além das 22 especificações Markdown, existe o arquivo auxiliar **.txt** do Esqueleto Feiticeiro e este `readme.md` na raiz. O inventário acima representa os caminhos atualmente presentes na branch `main`, não a quantidade de assets gráficos produzidos.
+Além das 22 especificações Markdown, existe este `readme.md` na raiz. A cópia auxiliar `.txt` do Esqueleto Feiticeiro foi removida; sua especificação permanece em `.md`. O inventário acima representa os caminhos atualmente presentes na branch `main`, não a quantidade de assets gráficos produzidos.
 
 ## Estrutura atual do repositório
 
@@ -25,7 +24,7 @@ sprite-direction/
 └── arte e animações/
     └── docs/
         ├── Classes/                 # 5 arquivos .md
-        ├── Inimigos/                # 9 arquivos .md + 1 arquivo .txt
+        ├── Inimigos/                # 9 arquivos .md
         ├── Npcs/                    # 6 arquivos .md
         └── Tilesets/                # 2 arquivos .md
 ```
@@ -42,7 +41,7 @@ sprite-direction/
 | [Espadachim](<arte%20e%20anima%C3%A7%C3%B5es/docs/Classes/Spritesheet%20Espadachim.md>) | Combos de espada, defesa e equipamentos modulares |
 | [Mago](<arte%20e%20anima%C3%A7%C3%B5es/docs/Classes/Spritesheet%20Mago.md>) | Conjuração elemental, projéteis, barreiras e teleporte |
 | [Necromante (Necromancer)](<arte%20e%20anima%C3%A7%C3%B5es/docs/Classes/Spritesheet%20Necromancer.md>) | Invocações, maldições, magia sombria e estruturas ósseas |
-| [Pugilista](<arte%20e%20anima%C3%A7%C3%B5es/docs/Classes/Spritesheet%20Pugilista.md>) | ⚠️ Documento incompleto: o conteúdo atual é um trecho do Espadachim |
+| [Pugilista](<arte%20e%20anima%C3%A7%C3%B5es/docs/Classes/Spritesheet%20Pugilista.md>) | Combate desarmado, combo de cinco golpes, artes marciais, manoplas e habilidades próprias |
 
 ### Inimigos (9)
 
@@ -75,8 +74,6 @@ sprite-direction/
 |---|---|
 | [Primeira cidade](<arte%20e%20anima%C3%A7%C3%B5es/docs/Tilesets/Spritesheet%20e%20Tilesets%20primeira%20cidade.md>) | Cidade segura, edifícios, interiores e integração dos seis NPCs |
 | [Primeira área de caça](<arte%20e%20anima%C3%A7%C3%B5es/docs/Tilesets/Spritesheet%20e%20Tilesets%20Primeira%20area%20de%20ca%C3%A7a.md>) | Mundo aberto ligado à cidade, sub-regiões, spawns e progressão |
-
-**Arquivo auxiliar:** [Esqueleto Feiticeiro — versão .txt](<arte%20e%20anima%C3%A7%C3%B5es/docs/Inimigos/Spritesheet%20Esqueleto%20feiticeiro.txt>) — não contabilizado como uma criatura adicional; utilizar preferencialmente o documento `.md` como referência principal.
 
 ## Padrões compartilhados de produção
 
@@ -148,8 +145,8 @@ A estrutura acima é **recomendação de saída** para produção dos gráficos.
 
 ## Pendências e observações da auditoria documental
 
-- **Pugilista:** o arquivo [`Spritesheet Pugilista.md`](<arte%20e%20anima%C3%A7%C3%B5es/docs/Classes/Spritesheet%20Pugilista.md>) está incompleto e contém conteúdo inicial do **Espadachim**, incompatível com o nome da classe. Deve ser substituído por sua especificação própria antes de gerar os sprites do Pugilista.
-- **Duplicação de formato:** existem `Spritesheet Esqueleto feiticeiro.md` e `Spritesheet Esqueleto feiticeiro.txt`. Não contar o `.txt` como um décimo inimigo. Avaliar remoção da cópia somente após comparar o conteúdo integral.
+- **Pugilista corrigido:** [`Spritesheet Pugilista.md`](<arte%20e%20anima%C3%A7%C3%B5es/docs/Classes/Spritesheet%20Pugilista.md>) agora contém a especificação própria da classe (combate desarmado, cinco golpes de combo, habilidades e modularidade), conforme verificação do conteúdo atualizado.
+- **Duplicidade resolvida:** a cópia `Spritesheet Esqueleto feiticeiro.txt` foi removida. O documento canônico é [`Spritesheet Esqueleto feiticeiro.md`](<arte%20e%20anima%C3%A7%C3%B5es/docs/Inimigos/Spritesheet%20Esqueleto%20feiticeiro.md>).
 - **Nomes históricos:** `Spritesheet goblim.md` mantém a grafia atual do repositório; evitar renomear sem atualizar os links e demais referências.
 - **Formatação variável:** alguns prompts estão em Markdown estruturado e outros em texto simples dentro de arquivos `.md`. A padronização editorial pode ser feita posteriormente, preservando o conteúdo.
 - **Contagens de frames:** os totais anunciados nos prompts são metas documentais e **devem ser recalculados e auditados** antes da produção em massa. Não assumir que todos os somatórios já foram validados.
