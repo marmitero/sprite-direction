@@ -1,0 +1,279 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "shared_humanoid_art_v2",
+  "art_style": "sprite-direction-p1-approved",
+  "texture_filter": "nearest",
+  "pixel_format": "RGBA",
+  "direction_order": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "fps": 10,
+  "loop": true,
+  "atlas_size": 256,
+  "padding": 3,
+  "atlases": [
+    {
+      "file": "shared_humanoid_art_v2_atlas_000.png",
+      "width": 256,
+      "height": 256,
+      "sha256": "9a0c8ebc897126486c80dfd5532059b7f88f40da0925cb58286664f997fbdb10"
+    }
+  ],
+  "frames": [
+    {
+      "id": "idle/N/000",
+      "animation": "idle",
+      "direction": "N",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 3,
+        "y": 3,
+        "w": 30,
+        "h": 40
+      },
+      "source_size": {
+        "w": 40,
+        "h": 52
+      },
+      "sprite_source_size": {
+        "x": 1,
+        "y": 8,
+        "w": 30,
+        "h": 40
+      },
+      "pivot": {
+        "x": 20,
+        "y": 51
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "905ef8b865fe44f62e2ab20d863dbf398309c560f75c91ba2fe0be4f442d9095",
+      "events": []
+    },
+    {
+      "id": "idle/NE/000",
+      "animation": "idle",
+      "direction": "NE",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 39,
+        "y": 3,
+        "w": 30,
+        "h": 39
+      },
+      "source_size": {
+        "w": 40,
+        "h": 52
+      },
+      "sprite_source_size": {
+        "x": 1,
+        "y": 9,
+        "w": 30,
+        "h": 39
+      },
+      "pivot": {
+        "x": 20,
+        "y": 51
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "ce5e748f394d4b820fa6b9968922de406725e546899172f6b71a59ecda06e5b9",
+      "events": []
+    },
+    {
+      "id": "idle/E/000",
+      "animation": "idle",
+      "direction": "E",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 75,
+        "y": 3,
+        "w": 32,
+        "h": 40
+      },
+      "source_size": {
+        "w": 40,
+        "h": 52
+      },
+      "sprite_source_size": {
+        "x": 1,
+        "y": 8,
+        "w": 32,
+        "h": 40
+      },
+      "pivot": {
+        "x": 20,
+        "y": 51
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "9ce3deeb9f6a7ca4376d8ac0152b85f236ad66586d95285eda4a25ad584213fa",
+      "events": []
+    },
+    {
+      "id": "idle/SE/000",
+      "animation": "idle",
+      "direction": "SE",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 113,
+        "y": 3,
+        "w": 32,
+        "h": 40
+      },
+      "source_size": {
+        "w": 40,
+        "h": 52
+      },
+      "sprite_source_size": {
+        "x": 1,
+        "y": 8,
+        "w": 32,
+        "h": 40
+      },
+      "pivot": {
+        "x": 20,
+        "y": 51
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "398d4f41e58dddc841edf25483bc32a8382639cb8d6a604c79708c6bf3cd3983",
+      "events": []
+    },
+    {
+      "id": "idle/S/000",
+      "animation": "idle",
+      "direction": "S",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 151,
+        "y": 3,
+        "w": 30,
+        "h": 39
+      },
+      "source_size": {
+        "w": 40,
+        "h": 52
+      },
+      "sprite_source_size": {
+        "x": 4,
+        "y": 9,
+        "w": 30,
+        "h": 39
+      },
+      "pivot": {
+        "x": 20,
+        "y": 51
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "0e944e2f25ca6ea947b3979dab48a15307dae5b14a4a51363575395263df5a06",
+      "events": []
+    },
+    {
+      "id": "idle/SW/000",
+      "animation": "idle",
+      "direction": "SW",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 187,
+        "y": 3,
+        "w": 28,
+        "h": 39
+      },
+      "source_size": {
+        "w": 40,
+        "h": 52
+      },
+      "sprite_source_size": {
+        "x": 1,
+        "y": 9,
+        "w": 28,
+        "h": 39
+      },
+      "pivot": {
+        "x": 20,
+        "y": 51
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "ffecaa280119fa50c4e2b62afa487796e1c10d3ac9abffa6ceed7ecf1ec1a626",
+      "events": []
+    },
+    {
+      "id": "idle/W/000",
+      "animation": "idle",
+      "direction": "W",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 221,
+        "y": 3,
+        "w": 28,
+        "h": 39
+      },
+      "source_size": {
+        "w": 40,
+        "h": 52
+      },
+      "sprite_source_size": {
+        "x": 1,
+        "y": 9,
+        "w": 28,
+        "h": 39
+      },
+      "pivot": {
+        "x": 20,
+        "y": 51
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "b649e33374d440383f94608126730f141868564cf39277d5ddb6ac15e83ac017",
+      "events": []
+    },
+    {
+      "id": "idle/NW/000",
+      "animation": "idle",
+      "direction": "NW",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 3,
+        "y": 49,
+        "w": 28,
+        "h": 39
+      },
+      "source_size": {
+        "w": 40,
+        "h": 52
+      },
+      "sprite_source_size": {
+        "x": 1,
+        "y": 9,
+        "w": 28,
+        "h": 39
+      },
+      "pivot": {
+        "x": 20,
+        "y": 51
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "81e94780a429fe3769efa93e44d8602966f2eb6278bb34dd708d7b7b8a4563c9",
+      "events": []
+    }
+  ]
+}
