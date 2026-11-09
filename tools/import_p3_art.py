@@ -24,13 +24,13 @@ def import_equipped_walk_se(source:Path,output:Path):
     with Image.open(source) as raw:
         if raw.format!="PNG": raise ValueError("Equipped walk source must be PNG")
         sheet=raw.convert("RGBA")
-    if sheet.size!=(8*56,72):
-        raise ValueError(f"Expected 448x72 walk sheet, got {sheet.size}")
+    if sheet.size!=(8*40,52):
+        raise ValueError(f"Expected 320x52 walk sheet, got {sheet.size}")
     with TemporaryDirectory() as td:
         folder=Path(td)/"walk"/"SE"
         folder.mkdir(parents=True)
         for i in range(8):
-            f=sheet.crop((i*56,0,(i+1)*56,72))
+            f=sheet.crop((i*40,0,(i+1)*40,52))
             if f.getchannel("A").getbbox() is None:
                 raise ValueError(f"Empty equipped walk frame {i}")
             f.save(folder/f"{i:03d}.png")
