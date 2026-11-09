@@ -1,1263 +1,1112 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "phase": "P0",
-  "scope": "classes",
-  "source_branch": "main",
   "review_date": "2026-11-09",
-  "status": "audit_extraction_not_asset_delivery",
+  "audit_method": "Summed canonical frame summary table rows; rows without explicit 3-column numeric layout may need separate classification",
+  "status": "audit_complete_with_document_discrepancies",
   "items": [
     {
       "id": "espadachim",
       "source": "arte e animações/docs/Classes/Spritesheet Espadachim.md",
-      "bytes": 37255,
+      "delivery_status": "not_created",
+      "audit_status": "aggregate_mismatch_requires_resolution",
       "animation_rows": [
         {
-          "name": "IDLE: POSTURA NEUTRA",
+          "animation": "Idle",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "COMBAT IDLE: POSTURA DE COMBATE",
+          "animation": "Combat Idle",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "WALK: CAMINHADA",
+          "animation": "Walk",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "RUN: CORRIDA",
+          "animation": "Run",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "DASH / DODGE: ESQUIVA",
+          "animation": "Dodge",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "JUMP: SALTO",
+          "animation": "Jump",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "COMBO 01: CORTE HORIZONTAL",
+          "animation": "Combo 01",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "COMBO 02: CORTE DIAGONAL ASCENDENTE",
+          "animation": "Combo 02",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "COMBO 03: CORTE GIRATÓRIO",
+          "animation": "Combo 03",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "COMBO 04: GOLPE FINALIZADOR",
+          "animation": "Combo 04",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "BLOCK START",
+          "animation": "Block Start",
           "frames_per_direction": 10,
-          "directions": 8,
-          "calculated": 80,
-          "declared": 80,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
         },
         {
-          "name": "BLOCK HOLD",
+          "animation": "Block Hold",
           "frames_per_direction": 12,
-          "directions": 8,
-          "calculated": 96,
-          "declared": 96,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
         },
         {
-          "name": "BLOCK IMPACT",
+          "animation": "Block Impact",
           "frames_per_direction": 10,
-          "directions": 8,
-          "calculated": 80,
-          "declared": 80,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
         },
         {
-          "name": "PARRY: APARO PERFEITO",
+          "animation": "Parry",
           "frames_per_direction": 14,
-          "directions": 8,
-          "calculated": 112,
-          "declared": 112,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 112,
+          "total_calculated": 112
         },
         {
-          "name": "COUNTER ATTACK",
+          "animation": "Counter Attack",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "SKILL 01: CORTE CRESCENTE",
+          "animation": "Skill 01 — Corte Crescente",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "SKILL 02: INVESTIDA PERFURANTE",
+          "animation": "Skill 02 — Investida",
           "frames_per_direction": 22,
-          "directions": 8,
-          "calculated": 176,
-          "declared": 176,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 176,
+          "total_calculated": 176
         },
         {
-          "name": "SKILL 03: REDEMOINHO DE LÂMINAS",
+          "animation": "Skill 03 — Redemoinho",
           "frames_per_direction": 32,
-          "directions": 8,
-          "calculated": 256,
-          "declared": 256,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 256,
+          "total_calculated": 256
         },
         {
-          "name": "SKILL 04: GOLPE DEMOLIDOR",
+          "animation": "Skill 04 — Golpe Demolidor",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         },
         {
-          "name": "SKILL 05: LÂMINA DE ENERGIA",
+          "animation": "Skill 05 — Lâmina de Energia",
           "frames_per_direction": 26,
-          "directions": 8,
-          "calculated": 208,
-          "declared": 208,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
         },
         {
-          "name": "SKILL 06: GRITO DE BATALHA",
+          "animation": "Skill 06 — Grito de Batalha",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "HURT",
+          "animation": "Hurt",
           "frames_per_direction": 10,
-          "directions": 8,
-          "calculated": 80,
-          "declared": 80,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
         },
         {
-          "name": "STAGGER: ATORDOAMENTO",
+          "animation": "Stagger",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "KNOCKDOWN: QUEDA",
+          "animation": "Knockdown",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "GET UP: LEVANTAR",
+          "animation": "Get Up",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "DIED",
+          "animation": "Died",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         }
       ],
-      "calculated_rows_total": 3952,
-      "declared_totals": [
-        128,
-        4320,
-        4320
-      ],
-      "arithmetic_errors": []
+      "calculated_corporeal_frames": 3952,
+      "document_claimed_corporeal_frames": 4320,
+      "unreconciled_delta": 368,
+      "arithmetic_invalid_rows": []
     },
     {
       "id": "arqueiro",
       "source": "arte e animações/docs/Classes/Spritesheet Arqueiro.md",
-      "bytes": 52615,
+      "delivery_status": "not_created",
+      "audit_status": "aggregate_mismatch_requires_resolution",
       "animation_rows": [
         {
-          "name": "IDLE: POSTURA NEUTRA",
+          "animation": "Idle",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "ARCHERY COMBAT IDLE",
+          "animation": "Archery Combat Idle",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "WALK",
+          "animation": "Walk",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "RUN",
+          "animation": "Run",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "DODGE: ROLAMENTO EVASIVO",
+          "animation": "Dodge",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "DASH: PASSO DO CAÇADOR",
+          "animation": "Dash",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "JUMP",
+          "animation": "Jump",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "TURN",
-          "frames_per_direction": 8,
-          "directions": 16,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
-        },
-        {
-          "name": "AIM START",
+          "animation": "Aim Start",
           "frames_per_direction": 12,
-          "directions": 8,
-          "calculated": 96,
-          "declared": 96,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
         },
         {
-          "name": "AIM HOLD",
+          "animation": "Aim Hold",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "AIM RELEASE",
+          "animation": "Aim Release",
           "frames_per_direction": 10,
-          "directions": 8,
-          "calculated": 80,
-          "declared": 80,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
         },
         {
-          "name": "AIM CANCEL",
+          "animation": "Aim Cancel",
           "frames_per_direction": 8,
-          "directions": 8,
-          "calculated": 64,
-          "declared": 64,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 64,
+          "total_calculated": 64
         },
         {
-          "name": "COMBO 01: DISPARO RÁPIDO",
+          "animation": "Combo 01 — Disparo Rápido",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "COMBO 02: DISPARO DUPLO",
+          "animation": "Combo 02 — Disparo Duplo",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "COMBO 03: FLECHA PRECISA",
+          "animation": "Combo 03 — Flecha Precisa",
           "frames_per_direction": 22,
-          "directions": 8,
-          "calculated": 176,
-          "declared": 176,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 176,
+          "total_calculated": 176
         },
         {
-          "name": "COMBO 04: DISPARO FINALIZADOR",
+          "animation": "Combo 04 — Finalizador",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "SKILL 01: FLECHA PERFURANTE",
+          "animation": "Skill 01 — Flecha Perfurante",
           "frames_per_direction": 26,
-          "directions": 8,
-          "calculated": 208,
-          "declared": 208,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
         },
         {
-          "name": "SKILL 02: DISPARO MÚLTIPLO",
+          "animation": "Skill 02 — Disparo Múltiplo",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         },
         {
-          "name": "SKILL 03: CHUVA DE FLECHAS",
+          "animation": "Skill 03 — Chuva de Flechas",
           "frames_per_direction": 34,
-          "directions": 8,
-          "calculated": 272,
-          "declared": 272,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 272,
+          "total_calculated": 272
         },
         {
-          "name": "SKILL 04: FLECHA EXPLOSIVA",
+          "animation": "Skill 04 — Flecha Explosiva",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         },
         {
-          "name": "SKILL 05: FLECHA CONGELANTE",
+          "animation": "Skill 05 — Flecha Congelante",
           "frames_per_direction": 26,
-          "directions": 8,
-          "calculated": 208,
-          "declared": 208,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
         },
         {
-          "name": "SKILL 06: ARMADILHA DO CAÇADOR",
+          "animation": "Skill 06 — Armadilha",
           "frames_per_direction": 30,
-          "directions": 8,
-          "calculated": 240,
-          "declared": 240,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
         },
         {
-          "name": "SKILL 07: CHAMADO DO FALCÃO",
+          "animation": "Skill 07 — Chamado do Falcão",
           "frames_per_direction": 32,
-          "directions": 8,
-          "calculated": 256,
-          "declared": 256,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 256,
+          "total_calculated": 256
         },
         {
-          "name": "SKILL 08: RAJADA IMPLACÁVEL",
+          "animation": "Skill 08 — Rajada Implacável",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         },
         {
-          "name": "SKILL 09: CAMUFLAGEM",
+          "animation": "Rapid Fire Hold",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Skill 09 — Camuflagem",
           "frames_per_direction": 26,
-          "directions": 8,
-          "calculated": 208,
-          "declared": 208,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
         },
         {
-          "name": "SKILL 10: DISPARO DEVASTADOR",
+          "animation": "Skill 10 — Disparo Devastador",
           "frames_per_direction": 34,
-          "directions": 8,
-          "calculated": 272,
-          "declared": 272,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 272,
+          "total_calculated": 272
         },
         {
-          "name": "HURT",
+          "animation": "Hurt",
           "frames_per_direction": 10,
-          "directions": 8,
-          "calculated": 80,
-          "declared": 80,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
         },
         {
-          "name": "STAGGER",
+          "animation": "Stagger",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "KNOCKDOWN",
+          "animation": "Knockdown",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "GET UP",
+          "animation": "Get Up",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "DIED",
+          "animation": "Died",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         }
       ],
-      "calculated_rows_total": 5216,
-      "declared_totals": [
-        5312,
-        5312,
-        5312
-      ],
-      "arithmetic_errors": []
+      "calculated_corporeal_frames": 5184,
+      "document_claimed_corporeal_frames": 5312,
+      "unreconciled_delta": 128,
+      "arithmetic_invalid_rows": []
     },
     {
       "id": "mago",
       "source": "arte e animações/docs/Classes/Spritesheet Mago.md",
-      "bytes": 46269,
+      "delivery_status": "not_created",
+      "audit_status": "aggregate_mismatch_requires_resolution",
       "animation_rows": [
         {
-          "name": "IDLE: POSTURA NEUTRA",
+          "animation": "Idle",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "MAGIC COMBAT IDLE",
+          "animation": "Magic Combat Idle",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "WALK",
+          "animation": "Walk",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "RUN",
+          "animation": "Run",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "DODGE: PASSO EVASIVO",
+          "animation": "Dodge",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "JUMP",
+          "animation": "Jump",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "TURN: MUDANÇA DE DIREÇÃO",
-          "frames_per_direction": 8,
-          "directions": 16,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
-        },
-        {
-          "name": "CAST QUICK",
+          "animation": "Cast Quick",
           "frames_per_direction": 12,
-          "directions": 8,
-          "calculated": 96,
-          "declared": 96,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
         },
         {
-          "name": "CAST STANDARD",
+          "animation": "Cast Standard",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "CAST HEAVY",
+          "animation": "Cast Heavy",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         },
         {
-          "name": "CHANNEL START",
+          "animation": "Channel Start",
           "frames_per_direction": 12,
-          "directions": 8,
-          "calculated": 96,
-          "declared": 96,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
         },
         {
-          "name": "CHANNEL HOLD",
+          "animation": "Channel Hold",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "CHANNEL END",
+          "animation": "Channel End",
           "frames_per_direction": 12,
-          "directions": 8,
-          "calculated": 96,
-          "declared": 96,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
         },
         {
-          "name": "COMBO 01: DISPARO ARCANO",
+          "animation": "Combo 01 — Disparo Arcano",
           "frames_per_direction": 14,
-          "directions": 8,
-          "calculated": 112,
-          "declared": 112,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 112,
+          "total_calculated": 112
         },
         {
-          "name": "COMBO 02: DUPLO PULSO ARCANO",
+          "animation": "Combo 02 — Duplo Pulso",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "COMBO 03: RAJADA ARCANA",
+          "animation": "Combo 03 — Rajada Arcana",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "SKILL 01: BOLA DE FOGO",
+          "animation": "Skill 01 — Bola de Fogo",
           "frames_per_direction": 26,
-          "directions": 8,
-          "calculated": 208,
-          "declared": 208,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
         },
         {
-          "name": "SKILL 02: LANÇA DE GELO",
+          "animation": "Skill 02 — Lança de Gelo",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "SKILL 03: NOVA GLACIAL",
+          "animation": "Skill 03 — Nova Glacial",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         },
         {
-          "name": "SKILL 04: CHUVA DE METEOROS",
+          "animation": "Skill 04 — Chuva de Meteoros",
           "frames_per_direction": 36,
-          "directions": 8,
-          "calculated": 288,
-          "declared": 288,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 288,
+          "total_calculated": 288
         },
         {
-          "name": "SKILL 05: TELEPORTE ARCANO",
+          "animation": "Skill 05 — Teleporte Arcano",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "SKILL 06: BARREIRA ARCANA",
+          "animation": "Skill 06 — Barreira Arcana",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         },
         {
-          "name": "SKILL 07: RAIO CANALIZADO",
+          "animation": "Skill 07 — Raio Canalizado",
           "frames_per_direction": 30,
-          "directions": 8,
-          "calculated": 240,
-          "declared": 240,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
         },
         {
-          "name": "SKILL 08: EXPLOSÃO ARCANA",
+          "animation": "Skill 08 — Explosão Arcana",
           "frames_per_direction": 30,
-          "directions": 8,
-          "calculated": 240,
-          "declared": 240,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
         },
         {
-          "name": "HURT",
-          "frames_per_direction": 10,
-          "directions": 8,
-          "calculated": 80,
-          "declared": 80,
-          "consistent": true
-        },
-        {
-          "name": "STAGGER",
+          "animation": "Beam Hold",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "KNOCKDOWN",
+          "animation": "Hurt",
+          "frames_per_direction": 10,
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
+        },
+        {
+          "animation": "Stagger",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Knockdown",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "GET UP",
+          "animation": "Get Up",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "DIED",
+          "animation": "Died",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         }
       ],
-      "calculated_rows_total": 4736,
-      "declared_totals": [
-        5104,
-        5104
-      ],
-      "arithmetic_errors": []
+      "calculated_corporeal_frames": 4736,
+      "document_claimed_corporeal_frames": 5104,
+      "unreconciled_delta": 368,
+      "arithmetic_invalid_rows": []
     },
     {
       "id": "necromancer",
       "source": "arte e animações/docs/Classes/Spritesheet Necromancer.md",
-      "bytes": 51035,
+      "delivery_status": "not_created",
+      "audit_status": "aggregate_mismatch_requires_resolution",
       "animation_rows": [
         {
-          "name": "IDLE: POSTURA NEUTRA",
+          "animation": "Idle",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "NECROMANCY COMBAT IDLE",
+          "animation": "Necromancy Combat Idle",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "WALK",
+          "animation": "Walk",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "RUN",
+          "animation": "Run",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "DODGE: ESQUIVA SOMBRIA",
+          "animation": "Dodge",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "JUMP",
+          "animation": "Jump",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "TURN",
-          "frames_per_direction": 8,
-          "directions": 16,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
-        },
-        {
-          "name": "RITUAL QUICK",
+          "animation": "Ritual Quick",
           "frames_per_direction": 14,
-          "directions": 8,
-          "calculated": 112,
-          "declared": 112,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 112,
+          "total_calculated": 112
         },
         {
-          "name": "RITUAL STANDARD",
+          "animation": "Ritual Standard",
           "frames_per_direction": 22,
-          "directions": 8,
-          "calculated": 176,
-          "declared": 176,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 176,
+          "total_calculated": 176
         },
         {
-          "name": "RITUAL HEAVY",
+          "animation": "Ritual Heavy",
           "frames_per_direction": 30,
-          "directions": 8,
-          "calculated": 240,
-          "declared": 240,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
         },
         {
-          "name": "CHANNEL START",
+          "animation": "Channel Start",
           "frames_per_direction": 14,
-          "directions": 8,
-          "calculated": 112,
-          "declared": 112,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 112,
+          "total_calculated": 112
         },
         {
-          "name": "CHANNEL HOLD",
+          "animation": "Channel Hold",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "CHANNEL END",
+          "animation": "Channel End",
           "frames_per_direction": 14,
-          "directions": 8,
-          "calculated": 112,
-          "declared": 112,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 112,
+          "total_calculated": 112
         },
         {
-          "name": "COMBO 01: TOQUE SOMBRIO",
+          "animation": "Combo 01 — Toque Sombrio",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "COMBO 02: DUPLO FRAGMENTO DE ALMA",
+          "animation": "Combo 02 — Fragmentos de Alma",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "COMBO 03: ORBE NECROMÂNTICO",
+          "animation": "Combo 03 — Orbe Necromântico",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "SKILL 01: LANÇA DE OSSOS",
+          "animation": "Skill 01 — Lança de Ossos",
           "frames_per_direction": 26,
-          "directions": 8,
-          "calculated": 208,
-          "declared": 208,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
         },
         {
-          "name": "SKILL 02: EXPLOSÃO DE CADÁVER",
+          "animation": "Skill 02 — Explosão de Cadáver",
           "frames_per_direction": 30,
-          "directions": 8,
-          "calculated": 240,
-          "declared": 240,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
         },
         {
-          "name": "SKILL 03: INVOCAR ESQUELETO GUERREIRO",
+          "animation": "Skill 03 — Invocar Guerreiro",
           "frames_per_direction": 32,
-          "directions": 8,
-          "calculated": 256,
-          "declared": 256,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 256,
+          "total_calculated": 256
         },
         {
-          "name": "SKILL 04: INVOCAR ESQUELETO FEITICEIRO",
+          "animation": "Skill 04 — Invocar Feiticeiro",
           "frames_per_direction": 34,
-          "directions": 8,
-          "calculated": 272,
-          "declared": 272,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 272,
+          "total_calculated": 272
         },
         {
-          "name": "SKILL 05: MALDIÇÃO DA FRAQUEZA",
+          "animation": "Skill 05 — Maldição",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "SKILL 06: DRENAGEM DE VIDA",
+          "animation": "Skill 06 — Drenagem de Vida",
           "frames_per_direction": 30,
-          "directions": 8,
-          "calculated": 240,
-          "declared": 240,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
         },
         {
-          "name": "SKILL 07: PRISÃO DE OSSOS",
-          "frames_per_direction": 30,
-          "directions": 8,
-          "calculated": 240,
-          "declared": 240,
-          "consistent": true
-        },
-        {
-          "name": "SKILL 08: EXÉRCITO DOS MORTOS",
-          "frames_per_direction": 40,
-          "directions": 8,
-          "calculated": 320,
-          "declared": 320,
-          "consistent": true
-        },
-        {
-          "name": "SKILL 09: FORMA ESPECTRAL",
-          "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
-        },
-        {
-          "name": "SKILL 10: NOVA DA MORTE",
-          "frames_per_direction": 32,
-          "directions": 8,
-          "calculated": 256,
-          "declared": 256,
-          "consistent": true
-        },
-        {
-          "name": "HURT",
-          "frames_per_direction": 10,
-          "directions": 8,
-          "calculated": 80,
-          "declared": 80,
-          "consistent": true
-        },
-        {
-          "name": "STAGGER",
+          "animation": "Life Drain Hold",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "KNOCKDOWN",
-          "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "animation": "Skill 07 — Prisão de Ossos",
+          "frames_per_direction": 30,
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
         },
         {
-          "name": "GET UP",
-          "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "animation": "Skill 08 — Exército dos Mortos",
+          "frames_per_direction": 40,
+          "direction_count": 8,
+          "total_declared": 320,
+          "total_calculated": 320
         },
         {
-          "name": "DIED",
+          "animation": "Skill 09 — Forma Espectral",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
+        },
+        {
+          "animation": "Spectral Form Hold",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Skill 10 — Nova da Morte",
+          "frames_per_direction": 32,
+          "direction_count": 8,
+          "total_declared": 256,
+          "total_calculated": 256
+        },
+        {
+          "animation": "Hurt",
+          "frames_per_direction": 10,
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
+        },
+        {
+          "animation": "Stagger",
+          "frames_per_direction": 16,
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
+        },
+        {
+          "animation": "Knockdown",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Get Up",
+          "frames_per_direction": 20,
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
+        },
+        {
+          "animation": "Died",
+          "frames_per_direction": 28,
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         }
       ],
-      "calculated_rows_total": 5520,
-      "declared_totals": [
-        5968,
-        5968,
-        5968
-      ],
-      "arithmetic_errors": []
+      "calculated_corporeal_frames": 5648,
+      "document_claimed_corporeal_frames": 5968,
+      "unreconciled_delta": 320,
+      "arithmetic_invalid_rows": []
     },
     {
       "id": "pugilista",
       "source": "arte e animações/docs/Classes/Spritesheet Pugilista.md",
-      "bytes": 44845,
+      "delivery_status": "not_created",
+      "audit_status": "aggregate_mismatch_requires_resolution",
       "animation_rows": [
         {
-          "name": "IDLE: POSTURA NEUTRA",
+          "animation": "Idle",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "COMBAT IDLE: GUARDA DE COMBATE",
+          "animation": "Combat Idle",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "WALK",
+          "animation": "Walk",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "RUN",
+          "animation": "Run",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "DODGE: ESQUIVA CORPORAL",
+          "animation": "Dodge",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "DASH: AVANÇO EXPLOSIVO",
+          "animation": "Dash",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "JUMP",
+          "animation": "Jump",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "TURN: MUDANÇA DE DIREÇÃO",
-          "frames_per_direction": 8,
-          "directions": 16,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
-        },
-        {
-          "name": "GUARD START",
+          "animation": "Guard Start",
           "frames_per_direction": 10,
-          "directions": 8,
-          "calculated": 80,
-          "declared": 80,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
         },
         {
-          "name": "GUARD HOLD",
+          "animation": "Guard Hold",
           "frames_per_direction": 12,
-          "directions": 8,
-          "calculated": 96,
-          "declared": 96,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
         },
         {
-          "name": "GUARD IMPACT",
+          "animation": "Guard Impact",
           "frames_per_direction": 10,
-          "directions": 8,
-          "calculated": 80,
-          "declared": 80,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
         },
         {
-          "name": "PARRY: DESVIO PRECISO",
+          "animation": "Parry",
           "frames_per_direction": 12,
-          "directions": 8,
-          "calculated": 96,
-          "declared": 96,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
         },
         {
-          "name": "COUNTER ATTACK",
+          "animation": "Counter Attack",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "COMBO 01: JAB RÁPIDO",
+          "animation": "Combo 01 — Jab",
           "frames_per_direction": 14,
-          "directions": 8,
-          "calculated": 112,
-          "declared": 112,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 112,
+          "total_calculated": 112
         },
         {
-          "name": "COMBO 02: DIRETO DE DIREITA",
+          "animation": "Combo 02 — Direto",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "COMBO 03: GANCHO LATERAL",
+          "animation": "Combo 03 — Gancho",
           "frames_per_direction": 18,
-          "directions": 8,
-          "calculated": 144,
-          "declared": 144,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 144,
+          "total_calculated": 144
         },
         {
-          "name": "COMBO 04: CHUTE CIRCULAR",
+          "animation": "Combo 04 — Chute",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "COMBO 05: SOCO DEMOLIDOR",
+          "animation": "Combo 05 — Soco Demolidor",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "SKILL 01: PUNHO CONCENTRADO",
+          "animation": "Skill 01 — Punho Concentrado",
           "frames_per_direction": 26,
-          "directions": 8,
-          "calculated": 208,
-          "declared": 208,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
         },
         {
-          "name": "SKILL 02: RAJADA DE PUNHOS",
+          "animation": "Skill 02 — Rajada de Punhos",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         },
         {
-          "name": "SKILL 03: GANCHO ASCENDENTE",
+          "animation": "Skill 03 — Gancho Ascendente",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "SKILL 04: IMPACTO TERRESTRE",
+          "animation": "Skill 04 — Impacto Terrestre",
           "frames_per_direction": 30,
-          "directions": 8,
-          "calculated": 240,
-          "declared": 240,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
         },
         {
-          "name": "SKILL 05: ONDA DE CHOQUE",
+          "animation": "Skill 05 — Onda de Choque",
           "frames_per_direction": 26,
-          "directions": 8,
-          "calculated": 208,
-          "declared": 208,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 208,
+          "total_calculated": 208
         },
         {
-          "name": "SKILL 06: CORPO DE FERRO",
+          "animation": "Skill 06 — Corpo de Ferro",
           "frames_per_direction": 24,
-          "directions": 8,
-          "calculated": 192,
-          "declared": 192,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 192,
+          "total_calculated": 192
         },
         {
-          "name": "SKILL 07: CHUTE CICLÔNICO",
+          "animation": "Iron Body Hold",
+          "frames_per_direction": 12,
+          "direction_count": 8,
+          "total_declared": 96,
+          "total_calculated": 96
+        },
+        {
+          "animation": "Skill 07 — Chute Ciclônico",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         },
         {
-          "name": "SKILL 08: SALTO ESMAGADOR",
+          "animation": "Skill 08 — Salto Esmagador",
           "frames_per_direction": 30,
-          "directions": 8,
-          "calculated": 240,
-          "declared": 240,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 240,
+          "total_calculated": 240
         },
         {
-          "name": "HURT",
+          "animation": "Hurt",
           "frames_per_direction": 10,
-          "directions": 8,
-          "calculated": 80,
-          "declared": 80,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 80,
+          "total_calculated": 80
         },
         {
-          "name": "STAGGER",
+          "animation": "Stagger",
           "frames_per_direction": 16,
-          "directions": 8,
-          "calculated": 128,
-          "declared": 128,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 128,
+          "total_calculated": 128
         },
         {
-          "name": "KNOCKDOWN",
+          "animation": "Knockdown",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "GET UP",
+          "animation": "Get Up",
           "frames_per_direction": 20,
-          "directions": 8,
-          "calculated": 160,
-          "declared": 160,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 160,
+          "total_calculated": 160
         },
         {
-          "name": "DIED",
+          "animation": "Died",
           "frames_per_direction": 28,
-          "directions": 8,
-          "calculated": 224,
-          "declared": 224,
-          "consistent": true
+          "direction_count": 8,
+          "total_declared": 224,
+          "total_calculated": 224
         }
       ],
-      "calculated_rows_total": 4816,
-      "declared_totals": [
-        4912,
-        4912,
-        4912
-      ],
-      "arithmetic_errors": []
+      "calculated_corporeal_frames": 4784,
+      "document_claimed_corporeal_frames": 4912,
+      "unreconciled_delta": 128,
+      "arithmetic_invalid_rows": []
     }
   ]
 }
