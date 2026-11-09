@@ -1,6 +1,6 @@
 # P1 — Lote de referência (brief para amostras)
 
-**Status: amostras conceituais, aguardando validação visual humana.** Não são spritesheets de runtime e nenhum arquivo PNG de referência oficial foi versionado no GitHub nesta etapa.
+**Status: direção visual dos conceitos aprovada; amostras funcionais ainda não produzidas.** Não são spritesheets de runtime, e nenhum PNG técnico de referência foi versionado no GitHub nesta etapa. O brief passa a ser contrato para P2/P3, sem reabrir o estilo salvo necessidade expressa.
 
 ## Pacote piloto
 
@@ -21,7 +21,7 @@
 - As 8 direções usam IDs canônicos N,NE,E,SE,S,SW,W,NW.
 - Evitar textos técnicos gerados sobre a imagem como fonte de verdade: os números são registrados em JSON/Markdown.
 
-## Processo de validação
+## Processo de validação técnica futura (P2/P3)
 
 1. Mostrar conceito com comparativo de escala humanoide / goblin / ferreiro / objeto / tile.
 2. Comparar versões 1× e 3× por nearest-neighbor.
