@@ -1,5 +1,11 @@
 PROJETO - PACK DE SPRITESHEET MMO RPG ISOMETRICO
 .
+Inventário dos documentos:
+- 5 Documentos de Classe : arte e animações/docs/Classes
+- 9 Documentos de Inimigos : arte e animações/docs/Inimigos
+- 6 Documentos de NPCs : arte e animações/docs/Npcs
+- 2 Documentos de Tiles : arte e animações/docs/Tilesets
+
 O projeto atual consta com documentos para direcionamento da criação de um pacote de sprites/recursos para MMO RPG 2D isométrico com referencia de inspiração visual em Diablo 2 com arte Chibi.
 .
 Arquitetura do projeto:
