@@ -1,0 +1,767 @@
+{
+  "schema_version": "1.0",
+  "phase": "P0",
+  "source_branch": "main",
+  "review_date": "2026-11-09",
+  "scope": "enemies",
+  "items": [
+    {
+      "id": "aranha gigante",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Aranha gigante.md",
+      "bytes": 17490,
+      "animation_rows": [
+        {
+          "name": "IDLE",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "ATTACK: MORDIDA VENENOSA",
+          "frames_per_direction": 14,
+          "directions": 8,
+          "calculated": 112,
+          "declared": 112,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "DIED",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: CUSPE VENENOSO",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: LANÇAMENTO DE TEIA",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": false,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 912,
+      "declared_totals": [
+        912,
+        912,
+        912
+      ],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "esqueleto feiticeiro",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Esqueleto feiticeiro.md",
+      "bytes": 22719,
+      "animation_rows": [
+        {
+          "name": "IDLE",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "ATTACK: PROJÉTIL ESPECTRAL",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "DIED: DISSOLUÇÃO NECROMÂNTICA",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: EXPLOSÃO NECROMÂNTICA",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: MALDIÇÃO SOMBRIA",
+          "frames_per_direction": 22,
+          "directions": 8,
+          "calculated": 176,
+          "declared": 176,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 03: TELEPORTE ESPECTRAL",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": true,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 1200,
+      "declared_totals": [
+        1040,
+        1200,
+        1040,
+        1040
+      ],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "esqueleto guerreiro",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Esqueleto guerreiro.md",
+      "bytes": 20877,
+      "animation_rows": [
+        {
+          "name": "IDLE",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "ATTACK: CORTE DE ESPADA",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "DIED: COLAPSO ÓSSEO",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: GOLPE ESPECTRAL",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: DEFESA ÓSSEA",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "optional": false,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 960,
+      "declared_totals": [
+        1024,
+        1024,
+        1024
+      ],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "lich",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Lich.md",
+      "bytes": 32388,
+      "animation_rows": [
+        {
+          "name": "IDLE: VIGÍLIA NECROMÂNTICA",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "WALK: DESLOCAMENTO ESPECTRAL",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "ATTACK: ORBE NECROMÂNTICO",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "HURT: INSTABILIDADE ESPECTRAL",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "DIED: DISSOLUÇÃO DO ARQUILICH",
+          "frames_per_direction": 32,
+          "directions": 8,
+          "calculated": 256,
+          "declared": 256,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: NOVA DA MORTE",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: INVOCAÇÃO DOS MORTOS",
+          "frames_per_direction": 32,
+          "directions": 8,
+          "calculated": 256,
+          "declared": 256,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 03: PRISÃO DE OSSOS",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 04: TELEPORTE SOMBRIO",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 05: DRENAGEM DE VIDA",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "optional": false,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 1968,
+      "declared_totals": [
+        2064,
+        2064,
+        2064
+      ],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "mini-dragão vermelho",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Mini-dragão vermelho.md",
+      "bytes": 12274,
+      "animation_rows": [
+        {
+          "name": "IDLE",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "ATTACK",
+          "frames_per_direction": 14,
+          "directions": 8,
+          "calculated": 112,
+          "declared": 112,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 8,
+          "directions": 8,
+          "calculated": 64,
+          "declared": 64,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "DIED",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: SOPRO DE FOGO",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: SALTO DRACÔNICO",
+          "frames_per_direction": 14,
+          "directions": 8,
+          "calculated": 112,
+          "declared": 112,
+          "optional": true,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 752,
+      "declared_totals": [],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "minotauro",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Minotauro.md",
+      "bytes": 23300,
+      "animation_rows": [
+        {
+          "name": "IDLE",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "ATTACK: CORTE BRUTAL",
+          "frames_per_direction": 18,
+          "directions": 8,
+          "calculated": 144,
+          "declared": 144,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "DIED: QUEDA DO COLOSSO",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: INVESTIDA DOS CHIFRES",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: IMPACTO SÍSMICO",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 03: FÚRIA BESTIAL",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "optional": false,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 1312,
+      "declared_totals": [
+        1408,
+        1408,
+        1408
+      ],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "orc",
+      "source": "arte e animações/docs/Inimigos/Spritesheet Orc.md",
+      "bytes": 25486,
+      "animation_rows": [
+        {
+          "name": "IDLE",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "ATTACK: CORTE SELVAGEM",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 10,
+          "directions": 8,
+          "calculated": 80,
+          "declared": 80,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "DIED: QUEDA DO GUERREIRO",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: GOLPE ESMAGADOR",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: INVESTIDA BRUTAL",
+          "frames_per_direction": 22,
+          "directions": 8,
+          "calculated": 176,
+          "declared": 176,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 03: GRITO DE GUERRA",
+          "frames_per_direction": 24,
+          "directions": 8,
+          "calculated": 192,
+          "declared": 192,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "BLOCK: DEFESA COM ESCUDO",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "optional": false,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 1280,
+      "declared_totals": [
+        1440,
+        1440,
+        1440
+      ],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "goblim",
+      "source": "arte e animações/docs/Inimigos/Spritesheet goblim.md",
+      "bytes": 7995,
+      "animation_rows": [
+        {
+          "name": "IDLE",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "WALK",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "ATTACK",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "HURT",
+          "frames_per_direction": 8,
+          "directions": 8,
+          "calculated": 64,
+          "declared": 64,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "DIED",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL: INVESTIDA SELVAGEM",
+          "frames_per_direction": 16,
+          "directions": 8,
+          "calculated": 128,
+          "declared": 128,
+          "optional": false,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 608,
+      "declared_totals": [],
+      "arithmetic_errors": []
+    },
+    {
+      "id": "stone golem",
+      "source": "arte e animações/docs/Inimigos/Spritesheet stone golem.md",
+      "bytes": 31012,
+      "animation_rows": [
+        {
+          "name": "IDLE: VIGÍLIA DO GUARDIÃO",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "WALK: MARCHA MONUMENTAL",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "ATTACK: PUNHO ROCHOSO",
+          "frames_per_direction": 20,
+          "directions": 8,
+          "calculated": 160,
+          "declared": 160,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "HURT: ABALO ESTRUTURAL",
+          "frames_per_direction": 12,
+          "directions": 8,
+          "calculated": 96,
+          "declared": 96,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "DIED: COLAPSO DO COLOSSO DE PEDRA",
+          "frames_per_direction": 32,
+          "directions": 8,
+          "calculated": 256,
+          "declared": 256,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 01: IMPACTO TERRESTRE",
+          "frames_per_direction": 28,
+          "directions": 8,
+          "calculated": 224,
+          "declared": 224,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 02: ARREMESSO DE ROCHA",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 03: ARMADURA DE PEDRA",
+          "frames_per_direction": 26,
+          "directions": 8,
+          "calculated": 208,
+          "declared": 208,
+          "optional": false,
+          "consistent": true
+        },
+        {
+          "name": "SKILL 04: ERUPÇÃO ROCHOSA",
+          "frames_per_direction": 30,
+          "directions": 8,
+          "calculated": 240,
+          "declared": 240,
+          "optional": false,
+          "consistent": true
+        }
+      ],
+      "calculated_rows_total": 1712,
+      "declared_totals": [
+        1808,
+        1808,
+        1808
+      ],
+      "arithmetic_errors": []
+    }
+  ]
+}
