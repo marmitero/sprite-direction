@@ -4,7 +4,7 @@
   "branch": "main",
   "audit_date": "2026-11-09",
   "phase": "P3",
-  "phase_state": "artistic_rework_in_progress_not_approved",
+  "phase_state": "approved_front_and_idle_frozen_next_walk_pending",
   "next_phase": "P4",
   "next_phase_authorized": false,
   "assets_generated": 24,
@@ -53,9 +53,10 @@
     }
   },
   "blocking_issues": [
-    "P3-complete-art-frame-cycles",
-    "P3-modular-overlays-art-approval",
-    "P4-user-approval-pending"
+    "P3-original-approved-images-not-yet-committed-as-binaries",
+    "P3-Walk-generation-inconsistent-rejected",
+    "P3-eight-directions-and-modular-overlays-not-complete",
+    "P4-not-authorized"
   ],
   "documents": [
     "docs/planning/P0_AUDITORIA.md",
@@ -70,10 +71,16 @@
     "docs/technical/P2_PIPELINE.md",
     "docs/technical/P2_RELEASE_REPORT.md",
     "docs/technical/P3_PILOT_REPORT.md",
-    "docs/technical/P3_ART_REWORK.md"
+    "docs/technical/P3_ART_REWORK.md",
+    "docs/production/CHARACTER_GENERATION_PROTOCOL.md",
+    "docs/production/APPROVED_HUMANOID_LOCK.md",
+    "docs/production/IDLE_APPROVAL_AND_PROMPT.md",
+    "docs/production/WALK_PROMPT_V1.md",
+    "docs/production/ANIMATION_REQUIREMENTS_ALL_CLASSES.json",
+    "docs/production/P3_LOCK_AND_NEXT_STAGE.md"
   ],
-  "asset_status": "24_illustrated_reference_drawings_exported_not_final_modular_assets",
-  "approval_policy": "P3 pilot requires visual approval, P4 requires explicit user approval",
+  "asset_status": "previous_art_v2_references_are_historical; SD-HUM-V3 original approved sources in conversation archive not yet committed as binaries",
+  "approval_policy": "P3 movement-by-movement visual approval required; P4 after all P3 requirements confirmed",
   "art_direction": {
     "guide": "docs/art-direction/STYLE_GUIDE_P1.md",
     "palette": "docs/art-direction/palette.p1.json",
@@ -160,5 +167,42 @@
     "old_frame_count": 896,
     "archived_at": "tests/fixtures/legacy_p3_geometric/",
     "production_allowed": false
+  },
+  "p3_original_approved_reference": {
+    "character_id": "SD-HUM-V3",
+    "approval_date": "2026-11-09",
+    "status": "frozen_visual_identity_front_and_front_idle",
+    "front": {
+      "file": "herói_chibi_aventureiro_em_pixel_art.png",
+      "sha256": "f528766d28a2ba7a0b22120db413dcc5ec022cb5529b09f452a2ffb2ef709113",
+      "size": [
+        1254,
+        1254
+      ],
+      "approved": true,
+      "github_binary_present": false
+    },
+    "idle": {
+      "file": "sprite_de_aventure_em_pixel_art.png",
+      "sha256": "0f29e33d2500dbfe51b14e7662ae0a7064d74dbf1e5cd967e5468b90287613ef",
+      "size": [
+        1448,
+        1086
+      ],
+      "approved": true,
+      "directions": "front_only",
+      "frames_illustrated": 8,
+      "github_binary_present": false
+    },
+    "chroma_background": "#FF00FF (target; images may contain variants)",
+    "master_prompt": "docs/production/APPROVED_HUMANOID_LOCK.md",
+    "idle_prompt": "docs/production/IDLE_APPROVAL_AND_PROMPT.md",
+    "protocol": "docs/production/CHARACTER_GENERATION_PROTOCOL.md",
+    "animation_specs": "docs/production/ANIMATION_REQUIREMENTS_ALL_CLASSES.json",
+    "next_animation": "Walk",
+    "walk_prompt": "docs/production/WALK_PROMPT_V1.md",
+    "walk_status": "generation_attempts_rejected_inconsistent_attire_and_ui_panels",
+    "p3_approved_complete": false,
+    "p4_authorized": false
   }
 }
