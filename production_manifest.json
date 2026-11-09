@@ -4,10 +4,10 @@
   "branch": "main",
   "audit_date": "2026-11-09",
   "phase": "P3",
-  "phase_state": "technical_pilot_generated_ci_passed_pending_visual_approval",
+  "phase_state": "artistic_rework_in_progress_not_approved",
   "next_phase": "P4",
   "next_phase_authorized": false,
-  "assets_generated": 896,
+  "assets_generated": 24,
   "specification_count": 22,
   "categories": {
     "classes": {
@@ -53,7 +53,8 @@
     }
   },
   "blocking_issues": [
-    "P3-visual-acceptance-pending",
+    "P3-complete-art-frame-cycles",
+    "P3-modular-overlays-art-approval",
     "P4-user-approval-pending"
   ],
   "documents": [
@@ -68,9 +69,10 @@
     "docs/art-direction/P1_APPROVAL.md",
     "docs/technical/P2_PIPELINE.md",
     "docs/technical/P2_RELEASE_REPORT.md",
-    "docs/technical/P3_PILOT_REPORT.md"
+    "docs/technical/P3_PILOT_REPORT.md",
+    "docs/technical/P3_ART_REWORK.md"
   ],
-  "asset_status": "one_pilot_body_plus_six_equipment_layers_generated",
+  "asset_status": "24_illustrated_reference_drawings_exported_not_final_modular_assets",
   "approval_policy": "P3 pilot requires visual approval, P4 requires explicit user approval",
   "art_direction": {
     "guide": "docs/art-direction/STYLE_GUIDE_P1.md",
@@ -126,39 +128,37 @@
     "p3_authorized": false
   },
   "p3": {
-    "status": "pilot_generated_and_tested_pending_visual_approval",
-    "asset_id": "shared_humanoid",
-    "asset_root": "assets/characters/classes/shared_humanoid/",
-    "manifest": "assets/characters/classes/shared_humanoid/p3_pilot_manifest.json",
-    "preview": "assets/characters/classes/shared_humanoid/p3_pilot_contact_sheet.png",
-    "gif": "assets/characters/classes/shared_humanoid/p3_walk_SE_equipped.gif",
-    "viewer": "demo/p3.html",
-    "generator": "tools/generate_p3_pilot.py",
-    "tests": "tests/test_p3_pilot.py",
-    "report": "docs/technical/P3_PILOT_REPORT.md",
-    "directions": 8,
-    "animations": [
-      "idle",
-      "walk"
+    "status": "in_progress_artistic_rework",
+    "report": "docs/technical/P3_ART_REWORK.md",
+    "asset_root": "assets/characters/classes/shared_humanoid_art_v2/",
+    "sources": [
+      "idle_8_directions.png",
+      "walk_8_directions_reference.png",
+      "walk_SE_8_frame_art_reference.png"
     ],
-    "frames_per_animation_direction": 8,
-    "layers": [
-      "body",
-      "hair",
-      "chest",
-      "hands",
-      "feet",
-      "main_hand",
-      "off_hand"
-    ],
-    "total_frames": 896,
-    "ci_url": "https://github.com/marmitero/sprite-direction/actions/runs/42680063240",
-    "ci_tests_passed": 10,
+    "atlas_root": "assets/characters/classes/shared_humanoid_art_v2/runtime/",
+    "qa_gif": "assets/characters/classes/shared_humanoid_art_v2/runtime/equipped_walk_se/humanoid_equipped_walk_se_reference_walk_SE.gif",
+    "eight_direction_idle_reference_frames": 8,
+    "eight_direction_walk_pose_frames": 8,
+    "equipped_walk_SE_frames": 8,
+    "total_drawings_exported": 24,
+    "complete_walk_all_directions": false,
+    "modular_overlays_completed": false,
     "approved_by_user": false,
+    "tests_ci": "https://github.com/marmitero/sprite-direction/actions/runs/42685488085",
+    "tests_passed": 3,
     "limitations": [
-      "procedural pilot needs comparison to approved P1 style",
-      "dynamic occlusion and per-frame anchor metadata not yet implemented",
-      "no attack/hurt/died/skills yet"
+      "One idle pose and one walk pose per direction are not complete animations",
+      "Walk SE eight frames are fully equipped/baked art reference, not modular body",
+      "Modular equipment layers do not yet exist in new artistic design",
+      "No complete fluidity certification"
     ]
+  },
+  "p3_legacy": {
+    "status": "art_rejected",
+    "legacy_generator": "tools/generate_p3_pilot.py",
+    "old_frame_count": 896,
+    "archived_at": "tests/fixtures/legacy_p3_geometric/",
+    "production_allowed": false
   }
 }
