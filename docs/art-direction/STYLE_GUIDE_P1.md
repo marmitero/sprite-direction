@@ -1,6 +1,6 @@
-# P1 — Guia de direção artística (proposta para aprovação)
+# P1 — Guia de direção artística (padrão aprovado)
 
-**Estado:** P1 iniciada em 09/11/2026; **não congelada nem aprovada visualmente**. As referências apresentadas são *moodboards conceituais*, não sprites utilizáveis. P2 bloqueada até aceite da P1.
+**Estado:** P1 concluída em 09/11/2026, direção artística aprovada e congelada. As referências são moodboards conceituais, não sprites utilizáveis. P2 ainda não iniciada, aguardando autorização. Ver [termo P1](P1_APPROVAL.md).
 
 ## 1. Identidade visual
 
@@ -65,14 +65,14 @@ O usuário autorizou recálculos e correções de frames quando melhorarem a flu
 - Registros obrigatórios: `docs/art-direction/FRAME_RECONCILIATION.md`, manifestos e notas de QA.
 - Não transformar hold de VFX em novos frames corporais sem mudança documentada de escopo.
 
-## 9. Critérios de aceite P1
+## 9. Critérios de aceite P1 (aceite visual; testes de runtime em etapas posteriores)
 
-- [ ] Amostra visual de humanoide aprovada em escala 1×.
-- [ ] Amostra de inimigo com as oito direções consistentes aprovada.
-- [ ] Amostra de NPC e objetos em cena aprovada.
-- [ ] Terreno/prop isométrico compatível com a escala aprovado.
-- [ ] Paleta, sombreamento, perspectiva e medidas congelados após revisão.
-- [ ] Sem texto ou aparência de "concluído" nos moodboards como evidência de aceitação automática.
-- [ ] Aprovação explícita do usuário para iniciar P2.
+- [x] Direção artística de humanoide aprovada conceitualmente; sprite funcional 1× ainda não gerado.
+- [x] Referência estética de inimigo aceita; oito vistas funcionais ainda precisam ser geradas e testadas.
+- [x] Referência estética de NPC/objetos aceita; sprites de runtime ainda pendentes.
+- [x] Referência estética de cenário/prop aprovada; tiles funcionais ainda pendentes.
+- [x] Paleta, sombreamento, perspectiva e faixas de escala documentadas e congeladas como baseline.
+- [x] Aceite veio de declaração expressa do usuário, não de selos nos moodboards.
+- [ ] Autorização para iniciar P2 — ainda não concedida.
 
-**Resultado atual:** especificação e moodboard preliminares preparados; gate visual e homologação da P1 pendentes.
+**Resultado:** direção visual homologada e P1 encerrada; assets funcionais e execução de P2 continuam pendentes.
