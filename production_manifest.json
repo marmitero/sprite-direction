@@ -3,11 +3,11 @@
   "repository": "marmitero/sprite-direction",
   "branch": "main",
   "audit_date": "2026-11-09",
-  "phase": "P2",
-  "phase_state": "completed_tests_passed",
-  "next_phase": "P3",
+  "phase": "P3",
+  "phase_state": "technical_pilot_generated_ci_passed_pending_visual_approval",
+  "next_phase": "P4",
   "next_phase_authorized": false,
-  "assets_generated": 0,
+  "assets_generated": 896,
   "specification_count": 22,
   "categories": {
     "classes": {
@@ -53,7 +53,8 @@
     }
   },
   "blocking_issues": [
-    "P3-user-approval-pending"
+    "P3-visual-acceptance-pending",
+    "P4-user-approval-pending"
   ],
   "documents": [
     "docs/planning/P0_AUDITORIA.md",
@@ -66,10 +67,11 @@
     "docs/art-direction/P1_TECHNICAL_BOARD.svg",
     "docs/art-direction/P1_APPROVAL.md",
     "docs/technical/P2_PIPELINE.md",
-    "docs/technical/P2_RELEASE_REPORT.md"
+    "docs/technical/P2_RELEASE_REPORT.md",
+    "docs/technical/P3_PILOT_REPORT.md"
   ],
-  "asset_status": "no_production_art_generated",
-  "approval_policy": "P2 complete; P3 requires explicit user approval",
+  "asset_status": "one_pilot_body_plus_six_equipment_layers_generated",
+  "approval_policy": "P3 pilot requires visual approval, P4 requires explicit user approval",
   "art_direction": {
     "guide": "docs/art-direction/STYLE_GUIDE_P1.md",
     "palette": "docs/art-direction/palette.p1.json",
@@ -122,5 +124,41 @@
       "GIF_preview"
     ],
     "p3_authorized": false
+  },
+  "p3": {
+    "status": "pilot_generated_and_tested_pending_visual_approval",
+    "asset_id": "shared_humanoid",
+    "asset_root": "assets/characters/classes/shared_humanoid/",
+    "manifest": "assets/characters/classes/shared_humanoid/p3_pilot_manifest.json",
+    "preview": "assets/characters/classes/shared_humanoid/p3_pilot_contact_sheet.png",
+    "gif": "assets/characters/classes/shared_humanoid/p3_walk_SE_equipped.gif",
+    "viewer": "demo/p3.html",
+    "generator": "tools/generate_p3_pilot.py",
+    "tests": "tests/test_p3_pilot.py",
+    "report": "docs/technical/P3_PILOT_REPORT.md",
+    "directions": 8,
+    "animations": [
+      "idle",
+      "walk"
+    ],
+    "frames_per_animation_direction": 8,
+    "layers": [
+      "body",
+      "hair",
+      "chest",
+      "hands",
+      "feet",
+      "main_hand",
+      "off_hand"
+    ],
+    "total_frames": 896,
+    "ci_url": "https://github.com/marmitero/sprite-direction/actions/runs/42680063240",
+    "ci_tests_passed": 10,
+    "approved_by_user": false,
+    "limitations": [
+      "procedural pilot needs comparison to approved P1 style",
+      "dynamic occlusion and per-frame anchor metadata not yet implemented",
+      "no attack/hurt/died/skills yet"
+    ]
   }
 }
