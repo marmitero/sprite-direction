@@ -9,6 +9,7 @@ Repositório de referência para planejar e produzir os **assets de um MMORPG 2D
 **Esta seção substitui o fluxo anterior da P3.** O usuário aprovou a arte frontal do aventureiro de cabelo preto, lenço vermelho e roupa marrom e aprovou uma folha Idle **frontal** de oito poses. Arte-base e prompt canônico foram congelados por descritor/hash SHA256. A próxima animação é **Walk**, ainda sem versão consistente aprovada. **P3 não concluída; P4 não iniciada.**
 
 - [Registro de aprovação e próximo passo](docs/production/P3_LOCK_AND_NEXT_STAGE.md)
+- [Histórico de gerações, IDs e reprovações](docs/production/GENERATION_LOG.md)
 - [Protocolo oficial: aprovar frente → congelar → uma geração por movimento → chroma → QA → publicar](docs/production/CHARACTER_GENERATION_PROTOCOL.md)
 - [Arte-base e prompt congelado (reconstruído, não transcrição do prompt interno original)](docs/production/APPROVED_HUMANOID_LOCK.md)
 - [Idle visual aprovado: fonte, hashes e prompt](docs/production/IDLE_APPROVAL_AND_PROMPT.md)
