@@ -1,6 +1,6 @@
 {
   "phase": "P3-ART-REVISION",
-  "status": "artistic_idle_direction_pilot_not_finished",
+  "status": "artistic_idle_and_walk_pose_references_not_animations",
   "character": "shared_humanoid_art_v2",
   "art_source": "assets/characters/classes/shared_humanoid_art_v2/idle_8_directions.png",
   "original_reference": "P1 approved moodboards",
@@ -30,16 +30,20 @@
     "W",
     "NW"
   ],
-  "frame_count": 8,
-  "animation": "idle",
-  "frames_per_direction": 1,
+  "frame_count": 16,
+  "animations": [
+    "idle",
+    "walk_pose"
+  ],
+  "frames_per_direction_per_pose": 1,
   "completed_components": [
-    "artistic eight-view reference images",
+    "artistic eight-view idle pose",
+    "artistic eight-view walk pose reference",
     "RGBA atlas and JSON"
   ],
   "uncompleted_components": [
     "frame-by-frame idle animation",
-    "walk animation",
+    "full walk animation",
     "equipment overlays in eight directions",
     "dynamic occlusion",
     "per-frame anchor verification",
@@ -48,9 +52,9 @@
   "p4_authorized": false,
   "test_status": {
     "asset_id": "shared_humanoid_art_v2",
-    "frames": 8,
+    "frames": 16,
     "atlases": 1,
-    "animations": 8,
+    "animations": 16,
     "status": "PASS"
   }
 }
