@@ -31,7 +31,7 @@ class PipelineTests(unittest.TestCase):
         for direction in DIRECTIONS:
             for i in range(3):
                 self.frame("idle", direction, i)
-        result = build(self.src, self.dst, "goblin_test", atlas_size=128, padding=2)
+        result = build(self.src, self.dst, "goblin_test", atlas_size=64, padding=2)
         self.assertEqual(len(result["frames"]), 24)
         self.assertGreaterEqual(len(result["atlases"]), 2)
         self.assertEqual(validate(self.dst, "goblin_test")["status"], "PASS")
