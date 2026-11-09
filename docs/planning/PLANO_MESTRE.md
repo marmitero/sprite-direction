@@ -1,6 +1,6 @@
 # Planejamento mestre — Sprite Direction (P0 a P11)
 
-Data: 2026-11-09. Etapa ativa: P0; P1 **não autorizada**.
+Data: 2026-11-09. Etapas P0 e P1 concluídas; P1 aprovada visualmente e congelada. Próxima etapa P2 **não iniciada nem autorizada**.
 
 ## Missão
 
@@ -34,7 +34,7 @@ Construir pacote gráfico funcional para MMORPG 2D isométrico de fantasia medie
 - Nenhuma habilidade opcional é aprovada tacitamente como obrigatória.
 - Cada lote exige avaliação visual, aritmética e runtime; reprovados são corrigidos antes de avançar.
 - Atualizar manifestos, README e AI_STATE após cada lote e ao fim de cada fase.
-- P0-001 bloqueia congelamento das contagens definitivas de frames de classe até reconciliação.
+- P0-001 exige revisão por animação antes de fechar contagens finais; usuário autorizou correções de frames com justificativa e QA. Ver `docs/art-direction/FRAME_RECONCILIATION.md`.
 
 ## Sequência de produção detalhada
 
@@ -69,4 +69,4 @@ Os manifests devem distinguir `planned`, `in_progress`, `generated`, `validated`
 
 ## Próxima ação
 
-Aguardar aprovação expressa da conclusão P0 e autorização separada para a P1. Não gerar nenhuma imagem, teste de asset ou implementação da P1 antecipadamente.
+P1 aprovada e encerrada em 09/11/2026; consultar `docs/art-direction/P1_APPROVAL.md`. Aguardar autorização separada para iniciar P2, sem gerar assets técnicos antecipadamente.
