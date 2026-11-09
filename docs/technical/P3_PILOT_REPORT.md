@@ -1,4 +1,8 @@
-# P3 — Primeiro piloto modular: entrega técnica e checklist
+# P3 — Primeiro piloto modular: entrega técnica e checklist (HISTÓRICO REPROVADO)
+
+## ALERTA DE OBSOLESCÊNCIA
+
+**Reprovado artisticamente pelo usuário em 09/11/2026.** A arte geométrica não deve ser utilizada no jogo nem contar como P3 aprovada. Seus 896 quadros foram arquivados em `tests/fixtures/legacy_p3_geometric/` somente para inspeção/regressão do pipeline. As referências abaixo aos caminhos `assets/characters/classes/shared_humanoid/` são históricas e não existem mais na pasta de produção. **Status atual: [P3 ART REWORK](P3_ART_REWORK.md).**
 
 Data: 2026-11-09. Branch `main`. Estado: **piloto funcional gerado e testado, aguardando validação visual do usuário**. P4 não autorizada.
 
