@@ -1,0 +1,3999 @@
+{
+  "schema_version": "1.0",
+  "asset_id": "shared_humanoid_main_hand",
+  "art_style": "sprite-direction-p1-approved",
+  "texture_filter": "nearest",
+  "pixel_format": "RGBA",
+  "direction_order": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "fps": 10,
+  "loop": true,
+  "atlas_size": 512,
+  "padding": 3,
+  "atlases": [
+    {
+      "file": "shared_humanoid_main_hand_atlas_000.png",
+      "width": 512,
+      "height": 512,
+      "sha256": "a5cd462720879ab3f8462f43557ecf795991db841eb4b825b8fe6881f05031f1"
+    }
+  ],
+  "frames": [
+    {
+      "id": "idle/N/000",
+      "animation": "idle",
+      "direction": "N",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 3,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "2d2de13ec7a49f3d0915d580814116c7cbabf91e786643c936d6b0bfe5a4e8b8",
+      "events": []
+    },
+    {
+      "id": "idle/N/001",
+      "animation": "idle",
+      "direction": "N",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 28,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "2d2de13ec7a49f3d0915d580814116c7cbabf91e786643c936d6b0bfe5a4e8b8",
+      "events": []
+    },
+    {
+      "id": "idle/N/002",
+      "animation": "idle",
+      "direction": "N",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 53,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "2d2de13ec7a49f3d0915d580814116c7cbabf91e786643c936d6b0bfe5a4e8b8",
+      "events": []
+    },
+    {
+      "id": "idle/N/003",
+      "animation": "idle",
+      "direction": "N",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 78,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f36b77e667d276d29f7398104c64c3548a9845b65e620fc5e098e55842a1e6d3",
+      "events": []
+    },
+    {
+      "id": "idle/N/004",
+      "animation": "idle",
+      "direction": "N",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 103,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f36b77e667d276d29f7398104c64c3548a9845b65e620fc5e098e55842a1e6d3",
+      "events": []
+    },
+    {
+      "id": "idle/N/005",
+      "animation": "idle",
+      "direction": "N",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 128,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "2d2de13ec7a49f3d0915d580814116c7cbabf91e786643c936d6b0bfe5a4e8b8",
+      "events": []
+    },
+    {
+      "id": "idle/N/006",
+      "animation": "idle",
+      "direction": "N",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 153,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "2d2de13ec7a49f3d0915d580814116c7cbabf91e786643c936d6b0bfe5a4e8b8",
+      "events": []
+    },
+    {
+      "id": "idle/N/007",
+      "animation": "idle",
+      "direction": "N",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 178,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "2d2de13ec7a49f3d0915d580814116c7cbabf91e786643c936d6b0bfe5a4e8b8",
+      "events": []
+    },
+    {
+      "id": "idle/NE/000",
+      "animation": "idle",
+      "direction": "NE",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 203,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7d97996542f9d09c0fb980719ca233283dd811bb98d39ba42563e8f88e232c77",
+      "events": []
+    },
+    {
+      "id": "idle/NE/001",
+      "animation": "idle",
+      "direction": "NE",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 228,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7d97996542f9d09c0fb980719ca233283dd811bb98d39ba42563e8f88e232c77",
+      "events": []
+    },
+    {
+      "id": "idle/NE/002",
+      "animation": "idle",
+      "direction": "NE",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 253,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7d97996542f9d09c0fb980719ca233283dd811bb98d39ba42563e8f88e232c77",
+      "events": []
+    },
+    {
+      "id": "idle/NE/003",
+      "animation": "idle",
+      "direction": "NE",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 278,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f0f8171f10598f7f79d9f3bba2e7949a33141c26e0b0dce7abd5eb85e35be115",
+      "events": []
+    },
+    {
+      "id": "idle/NE/004",
+      "animation": "idle",
+      "direction": "NE",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 303,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f0f8171f10598f7f79d9f3bba2e7949a33141c26e0b0dce7abd5eb85e35be115",
+      "events": []
+    },
+    {
+      "id": "idle/NE/005",
+      "animation": "idle",
+      "direction": "NE",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 328,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7d97996542f9d09c0fb980719ca233283dd811bb98d39ba42563e8f88e232c77",
+      "events": []
+    },
+    {
+      "id": "idle/NE/006",
+      "animation": "idle",
+      "direction": "NE",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 353,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7d97996542f9d09c0fb980719ca233283dd811bb98d39ba42563e8f88e232c77",
+      "events": []
+    },
+    {
+      "id": "idle/NE/007",
+      "animation": "idle",
+      "direction": "NE",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 378,
+        "y": 3,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7d97996542f9d09c0fb980719ca233283dd811bb98d39ba42563e8f88e232c77",
+      "events": []
+    },
+    {
+      "id": "idle/E/000",
+      "animation": "idle",
+      "direction": "E",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 403,
+        "y": 3,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/E/001",
+      "animation": "idle",
+      "direction": "E",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 427,
+        "y": 3,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/E/002",
+      "animation": "idle",
+      "direction": "E",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 451,
+        "y": 3,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/E/003",
+      "animation": "idle",
+      "direction": "E",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 475,
+        "y": 3,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "idle/E/004",
+      "animation": "idle",
+      "direction": "E",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 3,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "idle/E/005",
+      "animation": "idle",
+      "direction": "E",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 27,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/E/006",
+      "animation": "idle",
+      "direction": "E",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 51,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/E/007",
+      "animation": "idle",
+      "direction": "E",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 75,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/SE/000",
+      "animation": "idle",
+      "direction": "SE",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 99,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/SE/001",
+      "animation": "idle",
+      "direction": "SE",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 123,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/SE/002",
+      "animation": "idle",
+      "direction": "SE",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 147,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/SE/003",
+      "animation": "idle",
+      "direction": "SE",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 171,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "idle/SE/004",
+      "animation": "idle",
+      "direction": "SE",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 195,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "idle/SE/005",
+      "animation": "idle",
+      "direction": "SE",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 219,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/SE/006",
+      "animation": "idle",
+      "direction": "SE",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 243,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/SE/007",
+      "animation": "idle",
+      "direction": "SE",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 267,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "idle/S/000",
+      "animation": "idle",
+      "direction": "S",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 291,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a4e8faa91ff6a81cc9294f5053b8bd0a3be08865bedde02dd7204c606c38a0e5",
+      "events": []
+    },
+    {
+      "id": "idle/S/001",
+      "animation": "idle",
+      "direction": "S",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 315,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a4e8faa91ff6a81cc9294f5053b8bd0a3be08865bedde02dd7204c606c38a0e5",
+      "events": []
+    },
+    {
+      "id": "idle/S/002",
+      "animation": "idle",
+      "direction": "S",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 339,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a4e8faa91ff6a81cc9294f5053b8bd0a3be08865bedde02dd7204c606c38a0e5",
+      "events": []
+    },
+    {
+      "id": "idle/S/003",
+      "animation": "idle",
+      "direction": "S",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 363,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "34e81e6a4a88ee83282f898bc169453404dea1c2efc2e1d60182cb4a38967ee4",
+      "events": []
+    },
+    {
+      "id": "idle/S/004",
+      "animation": "idle",
+      "direction": "S",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 387,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "34e81e6a4a88ee83282f898bc169453404dea1c2efc2e1d60182cb4a38967ee4",
+      "events": []
+    },
+    {
+      "id": "idle/S/005",
+      "animation": "idle",
+      "direction": "S",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 411,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a4e8faa91ff6a81cc9294f5053b8bd0a3be08865bedde02dd7204c606c38a0e5",
+      "events": []
+    },
+    {
+      "id": "idle/S/006",
+      "animation": "idle",
+      "direction": "S",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 435,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a4e8faa91ff6a81cc9294f5053b8bd0a3be08865bedde02dd7204c606c38a0e5",
+      "events": []
+    },
+    {
+      "id": "idle/S/007",
+      "animation": "idle",
+      "direction": "S",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 459,
+        "y": 28,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a4e8faa91ff6a81cc9294f5053b8bd0a3be08865bedde02dd7204c606c38a0e5",
+      "events": []
+    },
+    {
+      "id": "idle/SW/000",
+      "animation": "idle",
+      "direction": "SW",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 483,
+        "y": 28,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/SW/001",
+      "animation": "idle",
+      "direction": "SW",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 3,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/SW/002",
+      "animation": "idle",
+      "direction": "SW",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 28,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/SW/003",
+      "animation": "idle",
+      "direction": "SW",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 53,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "idle/SW/004",
+      "animation": "idle",
+      "direction": "SW",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 78,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "idle/SW/005",
+      "animation": "idle",
+      "direction": "SW",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 103,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/SW/006",
+      "animation": "idle",
+      "direction": "SW",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 128,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/SW/007",
+      "animation": "idle",
+      "direction": "SW",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 153,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/W/000",
+      "animation": "idle",
+      "direction": "W",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 178,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/W/001",
+      "animation": "idle",
+      "direction": "W",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 203,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/W/002",
+      "animation": "idle",
+      "direction": "W",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 228,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/W/003",
+      "animation": "idle",
+      "direction": "W",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 253,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "idle/W/004",
+      "animation": "idle",
+      "direction": "W",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 278,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "idle/W/005",
+      "animation": "idle",
+      "direction": "W",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 303,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/W/006",
+      "animation": "idle",
+      "direction": "W",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 328,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/W/007",
+      "animation": "idle",
+      "direction": "W",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 353,
+        "y": 48,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "idle/NW/000",
+      "animation": "idle",
+      "direction": "NW",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 378,
+        "y": 48,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 33,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "51fd0994ed5c4052f3cddf70a86ea0397e5ee0fbdacda33490532532c9a81a37",
+      "events": []
+    },
+    {
+      "id": "idle/NW/001",
+      "animation": "idle",
+      "direction": "NW",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 404,
+        "y": 48,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 33,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "51fd0994ed5c4052f3cddf70a86ea0397e5ee0fbdacda33490532532c9a81a37",
+      "events": []
+    },
+    {
+      "id": "idle/NW/002",
+      "animation": "idle",
+      "direction": "NW",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 430,
+        "y": 48,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 33,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "51fd0994ed5c4052f3cddf70a86ea0397e5ee0fbdacda33490532532c9a81a37",
+      "events": []
+    },
+    {
+      "id": "idle/NW/003",
+      "animation": "idle",
+      "direction": "NW",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 456,
+        "y": 48,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 34,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "359270ea6bf26347d2daf476c07300a15119cbec68ecfd5724db73dbd775c4d1",
+      "events": []
+    },
+    {
+      "id": "idle/NW/004",
+      "animation": "idle",
+      "direction": "NW",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 482,
+        "y": 48,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 34,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "359270ea6bf26347d2daf476c07300a15119cbec68ecfd5724db73dbd775c4d1",
+      "events": []
+    },
+    {
+      "id": "idle/NW/005",
+      "animation": "idle",
+      "direction": "NW",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 3,
+        "y": 73,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 33,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "51fd0994ed5c4052f3cddf70a86ea0397e5ee0fbdacda33490532532c9a81a37",
+      "events": []
+    },
+    {
+      "id": "idle/NW/006",
+      "animation": "idle",
+      "direction": "NW",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 29,
+        "y": 73,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 33,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "51fd0994ed5c4052f3cddf70a86ea0397e5ee0fbdacda33490532532c9a81a37",
+      "events": []
+    },
+    {
+      "id": "idle/NW/007",
+      "animation": "idle",
+      "direction": "NW",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 55,
+        "y": 73,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 33,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "51fd0994ed5c4052f3cddf70a86ea0397e5ee0fbdacda33490532532c9a81a37",
+      "events": []
+    },
+    {
+      "id": "walk/N/000",
+      "animation": "walk",
+      "direction": "N",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 81,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "2d2de13ec7a49f3d0915d580814116c7cbabf91e786643c936d6b0bfe5a4e8b8",
+      "events": []
+    },
+    {
+      "id": "walk/N/001",
+      "animation": "walk",
+      "direction": "N",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 106,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f36b77e667d276d29f7398104c64c3548a9845b65e620fc5e098e55842a1e6d3",
+      "events": []
+    },
+    {
+      "id": "walk/N/002",
+      "animation": "walk",
+      "direction": "N",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 131,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f0f8171f10598f7f79d9f3bba2e7949a33141c26e0b0dce7abd5eb85e35be115",
+      "events": []
+    },
+    {
+      "id": "walk/N/003",
+      "animation": "walk",
+      "direction": "N",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 156,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f36b77e667d276d29f7398104c64c3548a9845b65e620fc5e098e55842a1e6d3",
+      "events": []
+    },
+    {
+      "id": "walk/N/004",
+      "animation": "walk",
+      "direction": "N",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 181,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "2d2de13ec7a49f3d0915d580814116c7cbabf91e786643c936d6b0bfe5a4e8b8",
+      "events": []
+    },
+    {
+      "id": "walk/N/005",
+      "animation": "walk",
+      "direction": "N",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 206,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f36b77e667d276d29f7398104c64c3548a9845b65e620fc5e098e55842a1e6d3",
+      "events": []
+    },
+    {
+      "id": "walk/N/006",
+      "animation": "walk",
+      "direction": "N",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 231,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 38,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "472813d777f9a07e5e1e82a5f487b6b1c5df810deb66729588cd409cb524aa75",
+      "events": []
+    },
+    {
+      "id": "walk/N/007",
+      "animation": "walk",
+      "direction": "N",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 256,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f36b77e667d276d29f7398104c64c3548a9845b65e620fc5e098e55842a1e6d3",
+      "events": []
+    },
+    {
+      "id": "walk/NE/000",
+      "animation": "walk",
+      "direction": "NE",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 281,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7d97996542f9d09c0fb980719ca233283dd811bb98d39ba42563e8f88e232c77",
+      "events": []
+    },
+    {
+      "id": "walk/NE/001",
+      "animation": "walk",
+      "direction": "NE",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 306,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f0f8171f10598f7f79d9f3bba2e7949a33141c26e0b0dce7abd5eb85e35be115",
+      "events": []
+    },
+    {
+      "id": "walk/NE/002",
+      "animation": "walk",
+      "direction": "NE",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 331,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 41,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "15b8c92599edae30900360b3856b18d5b88e18e5e4f9d10cd2067d637c56c256",
+      "events": []
+    },
+    {
+      "id": "walk/NE/003",
+      "animation": "walk",
+      "direction": "NE",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 356,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f0f8171f10598f7f79d9f3bba2e7949a33141c26e0b0dce7abd5eb85e35be115",
+      "events": []
+    },
+    {
+      "id": "walk/NE/004",
+      "animation": "walk",
+      "direction": "NE",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 381,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 33,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7d97996542f9d09c0fb980719ca233283dd811bb98d39ba42563e8f88e232c77",
+      "events": []
+    },
+    {
+      "id": "walk/NE/005",
+      "animation": "walk",
+      "direction": "NE",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 406,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f0f8171f10598f7f79d9f3bba2e7949a33141c26e0b0dce7abd5eb85e35be115",
+      "events": []
+    },
+    {
+      "id": "walk/NE/006",
+      "animation": "walk",
+      "direction": "NE",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 431,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f36b77e667d276d29f7398104c64c3548a9845b65e620fc5e098e55842a1e6d3",
+      "events": []
+    },
+    {
+      "id": "walk/NE/007",
+      "animation": "walk",
+      "direction": "NE",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 456,
+        "y": 73,
+        "w": 19,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 34,
+        "w": 19,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "f0f8171f10598f7f79d9f3bba2e7949a33141c26e0b0dce7abd5eb85e35be115",
+      "events": []
+    },
+    {
+      "id": "walk/E/000",
+      "animation": "walk",
+      "direction": "E",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 481,
+        "y": 73,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "walk/E/001",
+      "animation": "walk",
+      "direction": "E",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 3,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "walk/E/002",
+      "animation": "walk",
+      "direction": "E",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 27,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 41,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "ba86ac1dbc6659b5b0911ed08f6e6b8ec072af1686abe8c823a3e010c999f6d3",
+      "events": []
+    },
+    {
+      "id": "walk/E/003",
+      "animation": "walk",
+      "direction": "E",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 51,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "walk/E/004",
+      "animation": "walk",
+      "direction": "E",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 75,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "walk/E/005",
+      "animation": "walk",
+      "direction": "E",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 99,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "walk/E/006",
+      "animation": "walk",
+      "direction": "E",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 123,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "34e81e6a4a88ee83282f898bc169453404dea1c2efc2e1d60182cb4a38967ee4",
+      "events": []
+    },
+    {
+      "id": "walk/E/007",
+      "animation": "walk",
+      "direction": "E",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 147,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "walk/SE/000",
+      "animation": "walk",
+      "direction": "SE",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 171,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "walk/SE/001",
+      "animation": "walk",
+      "direction": "SE",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 195,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "walk/SE/002",
+      "animation": "walk",
+      "direction": "SE",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 219,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 41,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "ba86ac1dbc6659b5b0911ed08f6e6b8ec072af1686abe8c823a3e010c999f6d3",
+      "events": []
+    },
+    {
+      "id": "walk/SE/003",
+      "animation": "walk",
+      "direction": "SE",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 243,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "walk/SE/004",
+      "animation": "walk",
+      "direction": "SE",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 267,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a6e57ff182f6f7fe9eebc538b59181432039d5c484990d45ff415d0893d294e2",
+      "events": []
+    },
+    {
+      "id": "walk/SE/005",
+      "animation": "walk",
+      "direction": "SE",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 291,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "walk/SE/006",
+      "animation": "walk",
+      "direction": "SE",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 315,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "34e81e6a4a88ee83282f898bc169453404dea1c2efc2e1d60182cb4a38967ee4",
+      "events": []
+    },
+    {
+      "id": "walk/SE/007",
+      "animation": "walk",
+      "direction": "SE",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 339,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "walk/S/000",
+      "animation": "walk",
+      "direction": "S",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 363,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a4e8faa91ff6a81cc9294f5053b8bd0a3be08865bedde02dd7204c606c38a0e5",
+      "events": []
+    },
+    {
+      "id": "walk/S/001",
+      "animation": "walk",
+      "direction": "S",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 387,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "34e81e6a4a88ee83282f898bc169453404dea1c2efc2e1d60182cb4a38967ee4",
+      "events": []
+    },
+    {
+      "id": "walk/S/002",
+      "animation": "walk",
+      "direction": "S",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 411,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 40,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "fe150f5d472ac14e41219eb2e4dd79aaeb8c30f353920c10ce12b02187975f89",
+      "events": []
+    },
+    {
+      "id": "walk/S/003",
+      "animation": "walk",
+      "direction": "S",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 435,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "34e81e6a4a88ee83282f898bc169453404dea1c2efc2e1d60182cb4a38967ee4",
+      "events": []
+    },
+    {
+      "id": "walk/S/004",
+      "animation": "walk",
+      "direction": "S",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 459,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 38,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "a4e8faa91ff6a81cc9294f5053b8bd0a3be08865bedde02dd7204c606c38a0e5",
+      "events": []
+    },
+    {
+      "id": "walk/S/005",
+      "animation": "walk",
+      "direction": "S",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 483,
+        "y": 98,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "34e81e6a4a88ee83282f898bc169453404dea1c2efc2e1d60182cb4a38967ee4",
+      "events": []
+    },
+    {
+      "id": "walk/S/006",
+      "animation": "walk",
+      "direction": "S",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 3,
+        "y": 118,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 38,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "df1d272b1377a5933199eff65d7784eabaa34aedd1a295d9ff1a75387cb6107b",
+      "events": []
+    },
+    {
+      "id": "walk/S/007",
+      "animation": "walk",
+      "direction": "S",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 27,
+        "y": 118,
+        "w": 18,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 39,
+        "y": 39,
+        "w": 18,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "34e81e6a4a88ee83282f898bc169453404dea1c2efc2e1d60182cb4a38967ee4",
+      "events": []
+    },
+    {
+      "id": "walk/SW/000",
+      "animation": "walk",
+      "direction": "SW",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 51,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "walk/SW/001",
+      "animation": "walk",
+      "direction": "SW",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 76,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "walk/SW/002",
+      "animation": "walk",
+      "direction": "SW",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 101,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 30,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "08a9537a22cbb83321ff0ee58b183e1133ec8869ea30bc17eba66770b7f4ff83",
+      "events": []
+    },
+    {
+      "id": "walk/SW/003",
+      "animation": "walk",
+      "direction": "SW",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 126,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "walk/SW/004",
+      "animation": "walk",
+      "direction": "SW",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 151,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "walk/SW/005",
+      "animation": "walk",
+      "direction": "SW",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 176,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "walk/SW/006",
+      "animation": "walk",
+      "direction": "SW",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 201,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "4e9ad4abee41d16d595d96b1ac70c2e1a58eb44f666c3df7d70f535b1346670b",
+      "events": []
+    },
+    {
+      "id": "walk/SW/007",
+      "animation": "walk",
+      "direction": "SW",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 226,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "walk/W/000",
+      "animation": "walk",
+      "direction": "W",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 251,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "walk/W/001",
+      "animation": "walk",
+      "direction": "W",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 276,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "walk/W/002",
+      "animation": "walk",
+      "direction": "W",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 301,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 30,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "08a9537a22cbb83321ff0ee58b183e1133ec8869ea30bc17eba66770b7f4ff83",
+      "events": []
+    },
+    {
+      "id": "walk/W/003",
+      "animation": "walk",
+      "direction": "W",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 326,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "walk/W/004",
+      "animation": "walk",
+      "direction": "W",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 351,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 38,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "8ea5dec492a6298d7aeb60689364d3140671ed0a0a74446caa87dcb35cda1bc5",
+      "events": []
+    },
+    {
+      "id": "walk/W/005",
+      "animation": "walk",
+      "direction": "W",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 376,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "walk/W/006",
+      "animation": "walk",
+      "direction": "W",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 401,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "4e9ad4abee41d16d595d96b1ac70c2e1a58eb44f666c3df7d70f535b1346670b",
+      "events": []
+    },
+    {
+      "id": "walk/W/007",
+      "animation": "walk",
+      "direction": "W",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 426,
+        "y": 118,
+        "w": 19,
+        "h": 14
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 39,
+        "w": 19,
+        "h": 14
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "7f7f63a6c959653f31171144fc71f7ab248e5b8d979a10b8fce8454a58e78bab",
+      "events": []
+    },
+    {
+      "id": "walk/NW/000",
+      "animation": "walk",
+      "direction": "NW",
+      "index": 0,
+      "atlas": 0,
+      "frame": {
+        "x": 451,
+        "y": 118,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 33,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "51fd0994ed5c4052f3cddf70a86ea0397e5ee0fbdacda33490532532c9a81a37",
+      "events": []
+    },
+    {
+      "id": "walk/NW/001",
+      "animation": "walk",
+      "direction": "NW",
+      "index": 1,
+      "atlas": 0,
+      "frame": {
+        "x": 477,
+        "y": 118,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 34,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "359270ea6bf26347d2daf476c07300a15119cbec68ecfd5724db73dbd775c4d1",
+      "events": []
+    },
+    {
+      "id": "walk/NW/002",
+      "animation": "walk",
+      "direction": "NW",
+      "index": 2,
+      "atlas": 0,
+      "frame": {
+        "x": 3,
+        "y": 143,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 29,
+        "y": 34,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "6800cc9019a90ad51621105c3139c0873ac88e94fb029579d9b428c1baaf5789",
+      "events": []
+    },
+    {
+      "id": "walk/NW/003",
+      "animation": "walk",
+      "direction": "NW",
+      "index": 3,
+      "atlas": 0,
+      "frame": {
+        "x": 29,
+        "y": 143,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 34,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "359270ea6bf26347d2daf476c07300a15119cbec68ecfd5724db73dbd775c4d1",
+      "events": []
+    },
+    {
+      "id": "walk/NW/004",
+      "animation": "walk",
+      "direction": "NW",
+      "index": 4,
+      "atlas": 0,
+      "frame": {
+        "x": 55,
+        "y": 143,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 33,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "51fd0994ed5c4052f3cddf70a86ea0397e5ee0fbdacda33490532532c9a81a37",
+      "events": []
+    },
+    {
+      "id": "walk/NW/005",
+      "animation": "walk",
+      "direction": "NW",
+      "index": 5,
+      "atlas": 0,
+      "frame": {
+        "x": 81,
+        "y": 143,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 34,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "359270ea6bf26347d2daf476c07300a15119cbec68ecfd5724db73dbd775c4d1",
+      "events": []
+    },
+    {
+      "id": "walk/NW/006",
+      "animation": "walk",
+      "direction": "NW",
+      "index": 6,
+      "atlas": 0,
+      "frame": {
+        "x": 107,
+        "y": 143,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 27,
+        "y": 34,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "26b89296741ca24933461146c3acc7564a6a1736c50b908630c855a608460c8d",
+      "events": []
+    },
+    {
+      "id": "walk/NW/007",
+      "animation": "walk",
+      "direction": "NW",
+      "index": 7,
+      "atlas": 0,
+      "frame": {
+        "x": 133,
+        "y": 143,
+        "w": 20,
+        "h": 19
+      },
+      "source_size": {
+        "w": 64,
+        "h": 72
+      },
+      "sprite_source_size": {
+        "x": 28,
+        "y": 34,
+        "w": 20,
+        "h": 19
+      },
+      "pivot": {
+        "x": 32,
+        "y": 71
+      },
+      "duration_ms": 100,
+      "empty": false,
+      "sha256_source": "359270ea6bf26347d2daf476c07300a15119cbec68ecfd5724db73dbd775c4d1",
+      "events": []
+    }
+  ]
+}

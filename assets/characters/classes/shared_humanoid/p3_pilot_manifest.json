@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "phase": "P3",
+  "status": "technical_pilot_pending_visual_approval",
+  "asset_id": "shared_humanoid",
+  "art_guide": "docs/art-direction/P1_APPROVAL.md",
+  "direction_order": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "canvas": {
+    "w": 64,
+    "h": 72,
+    "pivot": {
+      "x": 32,
+      "y": 71
+    }
+  },
+  "animations": {
+    "idle": {
+      "frames_per_direction": 8,
+      "fps": 10
+    },
+    "walk": {
+      "frames_per_direction": 8,
+      "fps": 10
+    }
+  },
+  "layers": [
+    "body",
+    "hair",
+    "chest",
+    "hands",
+    "feet",
+    "main_hand",
+    "off_hand"
+  ],
+  "layer_order": [
+    "body",
+    "hair",
+    "chest",
+    "hands",
+    "feet",
+    "main_hand",
+    "off_hand"
+  ],
+  "palette": "docs/art-direction/palette.p1.json",
+  "builds": {
+    "body": {
+      "frames": 128,
+      "atlases": 2,
+      "status": "PASS",
+      "manifest": "body/shared_humanoid_body.json"
+    },
+    "hair": {
+      "frames": 128,
+      "atlases": 1,
+      "status": "PASS",
+      "manifest": "hair/shared_humanoid_hair.json"
+    },
+    "chest": {
+      "frames": 128,
+      "atlases": 1,
+      "status": "PASS",
+      "manifest": "chest/shared_humanoid_chest.json"
+    },
+    "hands": {
+      "frames": 128,
+      "atlases": 1,
+      "status": "PASS",
+      "manifest": "hands/shared_humanoid_hands.json"
+    },
+    "feet": {
+      "frames": 128,
+      "atlases": 1,
+      "status": "PASS",
+      "manifest": "feet/shared_humanoid_feet.json"
+    },
+    "main_hand": {
+      "frames": 128,
+      "atlases": 1,
+      "status": "PASS",
+      "manifest": "main_hand/shared_humanoid_main_hand.json"
+    },
+    "off_hand": {
+      "frames": 128,
+      "atlases": 1,
+      "status": "PASS",
+      "manifest": "off_hand/shared_humanoid_off_hand.json"
+    }
+  },
+  "limitations": [
+    "Pilot is procedural original pixel art, not final manually polished character art.",
+    "Only idle/walk covered; attack, hurt, died and abilities belong to P3 expansion or P4.",
+    "Character and equipment pivots are shared; layer occlusion changes for rotations are not implemented.",
+    "Aesthetic and movement approval requires human review of contact sheet and GIF."
+  ]
+}
