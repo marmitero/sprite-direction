@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "repository": "marmitero/sprite-direction",
+  "branch": "main",
+  "audit_date": "2026-11-09",
+  "phase": "P0",
+  "phase_state": "documentation_published_pending_approval",
+  "next_phase": "P1",
+  "next_phase_authorized": false,
+  "assets_generated": 0,
+  "specification_count": 22,
+  "categories": {
+    "classes": {
+      "count": 5,
+      "manifest": "docs/planning/manifests/classes.audit.json",
+      "ids": [
+        "espadachim",
+        "arqueiro",
+        "mago",
+        "necromancer",
+        "pugilista"
+      ],
+      "claimed_total_frames": 26816,
+      "calculated_table_frames": 24304,
+      "unresolved_delta": 2512
+    },
+    "enemies": {
+      "count": 9,
+      "manifest": "docs/planning/manifests/enemies.canonical-tables.json",
+      "calculated_frames_including_optionals": 11216
+    },
+    "npcs": {
+      "count": 6,
+      "manifest": "docs/planning/manifests/npcs-world.audit.json",
+      "cycle_frames_per_npc": 40,
+      "total_frames": 240
+    },
+    "world": {
+      "count": 2,
+      "manifest": "docs/planning/manifests/npcs-world.audit.json",
+      "tile_reference": [
+        64,
+        32
+      ],
+      "city_grid": [
+        96,
+        96
+      ],
+      "hunting_grid": [
+        160,
+        160
+      ]
+    }
+  },
+  "blocking_issues": [
+    "P0-001"
+  ],
+  "documents": [
+    "docs/planning/P0_AUDITORIA.md",
+    "docs/planning/PLANO_MESTRE.md",
+    "docs/planning/CONTRATO_ENTREGA.md"
+  ],
+  "asset_status": "not_created",
+  "approval_policy": "P1 only after explicit user approval"
+}
