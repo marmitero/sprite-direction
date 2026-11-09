@@ -4,6 +4,26 @@
 
 Repositório de referência para planejar e produzir os **assets de um MMORPG 2D isométrico** de fantasia medieval sombria, com **pixel art chibi**, personagens em oito direções, equipamentos visualmente modulares, NPCs de ciclo contínuo, monstros, VFX e cenários compostos por tilesets. A inspiração de combate é *Diablo II*; a área externa usa como referência estrutural a saída direta da cidade para a caça, como em *Mu Online/Lorencia*, mantendo identidade artística própria.
 
+## Produção — P0 (auditoria documental, 09/11/2026)
+
+**Situação:** P0 documentada; P1 NÃO iniciada e depende de autorização expressa. Nenhum asset gráfico foi gerado nesta fase.
+
+- [Planejamento mestre P0–P11](docs/planning/PLANO_MESTRE.md)
+- [Auditoria P0, achados e divergências](docs/planning/P0_AUDITORIA.md)
+- [Contrato técnico de entrega](docs/planning/CONTRATO_ENTREGA.md)
+- [Manifesto principal](production_manifest.json)
+- [Classes: frames e inconsistências](docs/planning/manifests/classes.audit.json)
+- [Inimigos: tabelas completas](docs/planning/manifests/enemies.canonical-tables.json)
+- [Inimigos: extração complementar](docs/planning/manifests/enemies.audit.json)
+- [NPCs e ambientes](docs/planning/manifests/npcs-world.audit.json)
+- [AI_STATE: estado para retomada](AI_STATE.md)
+
+**Achado P0-001:** as tabelas das cinco classes somam **24.304 frames corporais**, enquanto seus totais globais anunciam **25.616** (diferença de **1.312**). São divergências documentais não resolvidas, não frames já criados. O manifesto guarda a soma por classe e linha; não produzir frames compensatórios sem reconciliação.
+
+O inventário original de 22 especificações permanece preservado em `arte e animações/docs/`. Os arquivos de `docs/planning/` e `production_manifest.json` são documentação e metadados, não assets binários.
+
+---
+
 ## Inventário verificado
 
 | Categoria | Documentos Markdown | Diretório real |
