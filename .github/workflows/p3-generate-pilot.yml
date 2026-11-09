@@ -1,51 +1,16 @@
-name: P3 Generate and Validate Sprite Pilot
+name: Legacy P3 Geometry Tests (Archived, Non-Production)
 on:
-  push:
-    paths:
-      - "tools/generate_p3_pilot.py"
-      - "tests/test_p3_pilot.py"
-      - ".github/workflows/p3-generate-pilot.yml"
   workflow_dispatch:
 permissions:
-  contents: write
-concurrency:
-  group: p3-sprite-pilot
-  cancel-in-progress: false
+  contents: read
 jobs:
-  build:
+  verify-legacy:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Install Pillow
-        run: python -m pip install -r requirements-p2.txt
-      - name: Run P2 and P3 tests
-        run: |
-          python -m compileall -q tools tests
-          python -m unittest discover -s tests -v
-      - name: Generate actual P3 pilot PNG/atlas/JSON/GIF
-        run: python -m tools.generate_p3_pilot --output-root build/p3
-      - name: Copy distributable assets into repository
-        run: |
-          mkdir -p assets/characters/classes
-          rm -rf assets/characters/classes/shared_humanoid
-          cp -a build/p3/assets/characters/classes/shared_humanoid assets/characters/classes/
-      - name: Upload visual and binary outputs for inspection
-        uses: actions/upload-artifact@v4
-        with:
-          name: p3-shared-humanoid-pilot
-          path: assets/characters/classes/shared_humanoid/
-          retention-days: 30
-      - name: Commit generated sprite assets to main
-        if: github.ref == 'refs/heads/main'
-        run: |
-          git config user.name "sprite-direction-ci[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/characters/classes/shared_humanoid
-          if ! git diff --cached --quiet; then
-            git commit -m "assets(P3): generated 8-direction humanoid pilot and modular layers"
-            git push origin HEAD:main
-          fi
+      - run: python -m pip install -r requirements-p2.txt
+      - run: python -m unittest discover -s tests -v
+      - run: echo "Legacy geometric art is rejected and must not be published as production assets."
