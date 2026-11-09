@@ -4,6 +4,20 @@
 
 Repositório de referência para planejar e produzir os **assets de um MMORPG 2D isométrico** de fantasia medieval sombria, com **pixel art chibi**, personagens em oito direções, equipamentos visualmente modulares, NPCs de ciclo contínuo, monstros, VFX e cenários compostos por tilesets. A inspiração de combate é *Diablo II*; a área externa usa como referência estrutural a saída direta da cidade para a caça, como em *Mu Online/Lorencia*, mantendo identidade artística própria.
 
+## P1 — Fundação artística (em andamento; 09/11/2026)
+
+O usuário autorizou a P1 e também autorizou corrigir/recontar frames quando isso aumentar a fluidez ou a compatibilidade técnica. **O guia visual ainda não foi aprovado/congelado; a P2 permanece bloqueada.** Os conceitos gráficos apresentados na conversa não são spritesheets de runtime.
+
+- [Guia artístico P1 (rascunho)](docs/art-direction/STYLE_GUIDE_P1.md)
+- [Paleta proposta (JSON)](docs/art-direction/palette.p1.json)
+- [Diagrama técnico: direções, cores e tile (SVG)](docs/art-direction/P1_TECHNICAL_BOARD.svg)
+- [Brief de amostras para validação](docs/art-direction/PILOT_REFERENCES.md)
+- [Política de reconciliação de frames autorizada](docs/art-direction/FRAME_RECONCILIATION.md)
+
+Estado canônico: [AI_STATE](AI_STATE.md) e [production_manifest.json](production_manifest.json). P0 registrou 1.312 frames de diferença nos totais textuais das classes; não se deve produzir frames somente para compensar diferenças aritméticas.
+
+---
+
 ## Produção — P0 (auditoria documental, 09/11/2026)
 
 **Situação:** P0 documentada; P1 NÃO iniciada e depende de autorização expressa. Nenhum asset gráfico foi gerado nesta fase.
