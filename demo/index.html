@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Sprite Direction | P2 Animation Inspector</title>
+<style>
+:root{color-scheme:dark;font:15px system-ui;color:#e8e1d5;background:#181824}
+body{max-width:1050px;margin:auto;padding:26px}h1{font-size:24px}main{display:grid;grid-template-columns:minmax(260px,1fr) 2fr;gap:18px}
+section{background:#252534;padding:17px;border:1px solid #44425b;border-radius:12px}
+label{display:block;font-size:13px;margin:15px 0 6px}select,input,button{font:inherit;padding:8px;color:#eee;background:#343449;border:1px solid #66617a;border-radius:6px}
+input{width:96%;box-sizing:border-box}select{width:100%}button{cursor:pointer;margin-top:12px}canvas{width:100%;image-rendering:pixelated;background:#252536;border:1px solid #4e4861}
+pre{white-space:pre-wrap;word-break:break-word;font-size:12px;color:#c3bcca}
+small{color:#a9a4b3}@media(max-width:680px){main{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<h1>Sprite Direction — P2 Inspector</h1>
+<p>Validação visual de atlas e sequências. Usa JSON/PNG exportados pelo pipeline; não contém sprites de produção.</p>
+<main>
+<section>
+<label for="manifest">Caminho HTTP do manifesto JSON</label>
+<input id="manifest" value="/output/goblin_test.json">
+<button id="load">Carregar</button>
+<label for="animation">Animação</label><select id="animation"></select>
+<label for="direction">Direção</label><select id="direction"></select>
+<label for="zoom">Escala</label><select id="zoom"><option>1</option><option selected>3</option><option>5</option></select>
+<label><input type="checkbox" id="playing" checked> Reproduzir</label>
+<button id="step">Próximo frame</button>
+<pre id="info">Carregue um JSON para começar.</pre>
+</section>
+<section><canvas id="viewer" width="600" height="500"></canvas><small>Marcador dourado = pivô no chão; linha horizontal = plano de apoio. Filtro nearest-neighbor.</small></section>
+</main>
+<script>
+"use strict";
+const $=id=>document.getElementById(id);
+const ctx=$("viewer").getContext("2d");
+ctx.imageSmoothingEnabled=false;
+let meta=null, atlasImages=[], selected=[], frameIndex=0, deadline=0;
+function clearOptions(el,values){el.replaceChildren(...values.map(value=>{let o=document.createElement("option");o.value=value;o.textContent=value;return o;}));}
+function selectFrames(){
+ if(!meta)return;
+ selected=meta.frames.filter(f=>f.animation===$("animation").value&&f.direction===$("direction").value)
+   .sort((a,b)=>a.index-b.index);
+ frameIndex=0;deadline=performance.now();
+}
+function refreshDirections(){
+ let dirs=[...new Set(meta.frames.filter(f=>f.animation===$("animation").value).map(f=>f.direction))];
+ clearOptions($("direction"),dirs);
+ selectFrames();
+}
+$("animation").onchange=refreshDirections;
+$("direction").onchange=selectFrames;
+$("step").onclick=()=>{if(selected.length){frameIndex=(frameIndex+1)%selected.length;deadline=performance.now()+1000;}};
+$("load").onclick=async()=>{
+ try{
+  let url=$("manifest").value.trim();
+  if(!url||url.includes(".."))throw new Error("Use um caminho sem '..'.");
+  let response=await fetch(url);
+  if(!response.ok)throw new Error("JSON HTTP "+response.status);
+  const data=await response.json();
+  if(data.schema_version!=="1.0"||!Array.isArray(data.frames)||!Array.isArray(data.atlases))
+    throw new Error("Manifesto incompatível");
+  const base=new URL(url,window.location.href);
+  const images=await Promise.all(data.atlases.map(async a=>{
+    if(!/^[a-zA-Z0-9_.-]+\.png$/.test(a.file))throw new Error("Nome de atlas inválido");
+    const img=new Image();
+    img.src=new URL(a.file,base).href;
+    await img.decode();
+    return img;
+  }));
+  meta=data;atlasImages=images;
+  clearOptions($("animation"),[...new Set(data.frames.map(f=>f.animation))]);
+  refreshDirections();
+ }catch(err){$("info").textContent="Erro: "+err.message;meta=null;selected=[];}
+};
+function draw(now){
+ requestAnimationFrame(draw);
+ const canvas=$("viewer");
+ ctx.fillStyle="#292638";ctx.fillRect(0,0,canvas.width,canvas.height);
+ const cx=canvas.width/2,cy=canvas.height*0.72,zoom=Number($("zoom").value);
+ ctx.strokeStyle="#514d65";ctx.beginPath();ctx.moveTo(0,cy+.5);ctx.lineTo(canvas.width,cy+.5);ctx.stroke();
+ if(!selected.length)return;
+ let f=selected[frameIndex];
+ if($("playing").checked&&now>=deadline){
+    frameIndex=frameIndex+1>=selected.length?(meta.loop?0:selected.length-1):frameIndex+1;
+    f=selected[frameIndex];
+    deadline=now+Math.max(16,f.duration_ms);
+ }
+ const src=f.frame,off=f.sprite_source_size,piv=f.pivot;
+ const dx=Math.round(cx+(off.x-piv.x)*zoom),dy=Math.round(cy+(off.y-piv.y)*zoom);
+ ctx.drawImage(atlasImages[f.atlas],src.x,src.y,src.w,src.h,dx,dy,src.w*zoom,src.h*zoom);
+ ctx.fillStyle="#ffd37a";ctx.fillRect(cx-2,cy-2,5,5);
+ $("info").textContent=JSON.stringify({asset:meta.asset_id,animation:f.animation,direction:f.direction,
+   frame:f.index+1,total:selected.length,duration_ms:f.duration_ms,pivot:f.pivot,
+   source_size:f.source_size,atlas:f.atlas},null,2);
+}
+requestAnimationFrame(draw);
+</script>
+</body>
+</html>
