@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "phase": "P0",
+  "source_branch": "main",
+  "review_date": "2026-11-09",
+  "items": [
+    {
+      "category": "Npcs",
+      "id": "direção de animações Mercador de equipamentos",
+      "source": "arte e animações/docs/Npcs/direção de animações Mercador de equipamentos.md",
+      "bytes": 9282,
+      "cycle_frames": 40,
+      "cycle_segments": "8+12+10+10",
+      "planned_phases": [],
+      "map_tile_dimensions": [],
+      "headers": [
+        "### NPC MERCADOR DE EQUIPAMENTOS — MINI-PROMPT DE ANIMAÇÃO",
+        "### REGRAS OBRIGATÓRIAS",
+        "### ESPECIFICAÇÃO TÉCNICA"
+      ]
+    },
+    {
+      "category": "Npcs",
+      "id": "direção de animações Mercador de poções",
+      "source": "arte e animações/docs/Npcs/direção de animações Mercador de poções.md",
+      "bytes": 8136,
+      "cycle_frames": 40,
+      "cycle_segments": "8+12+10+10",
+      "planned_phases": [],
+      "map_tile_dimensions": [],
+      "headers": [
+        "### NPC MERCADOR DE POÇÕES — MINI-PROMPT DE ANIMAÇÃO",
+        "### REGRAS OBRIGATÓRIAS",
+        "### ESPECIFICAÇÃO TÉCNICA"
+      ]
+    },
+    {
+      "category": "Npcs",
+      "id": "direção de animações Treinador de Mascote",
+      "source": "arte e animações/docs/Npcs/direção de animações Treinador de Mascote.md",
+      "bytes": 6546,
+      "cycle_frames": 40,
+      "cycle_segments": "8+12+10+10",
+      "planned_phases": [],
+      "map_tile_dimensions": [],
+      "headers": [
+        "### NPC TREINADOR DE MASCOTES — MINI-PROMPT DE ANIMAÇÃO",
+        "### REGRAS OBRIGATÓRIAS"
+      ]
+    },
+    {
+      "category": "Npcs",
+      "id": "direção de animações armazem",
+      "source": "arte e animações/docs/Npcs/direção de animações armazem.md",
+      "bytes": 5513,
+      "cycle_frames": 40,
+      "cycle_segments": "8+12+10+10",
+      "planned_phases": [],
+      "map_tile_dimensions": [],
+      "headers": [
+        "### NPC ARMAZÉM / GUARDIÃO DO BAÚ — MINI-PROMPT DE ANIMAÇÃO",
+        "### REGRAS OBRIGATÓRIAS"
+      ]
+    },
+    {
+      "category": "Npcs",
+      "id": "direção de animações curandeira",
+      "source": "arte e animações/docs/Npcs/direção de animações curandeira.md",
+      "bytes": 4537,
+      "cycle_frames": 40,
+      "cycle_segments": "8+12+10+10",
+      "planned_phases": [],
+      "map_tile_dimensions": [],
+      "headers": [
+        "### NPC CURANDEIRA — MINI-PROMPT DE ANIMAÇÃO",
+        "### REGRAS OBRIGATÓRIAS"
+      ]
+    },
+    {
+      "category": "Npcs",
+      "id": "direção de animações ferreiro",
+      "source": "arte e animações/docs/Npcs/direção de animações ferreiro.md",
+      "bytes": 3149,
+      "cycle_frames": 40,
+      "cycle_segments": "8+12+10+10",
+      "planned_phases": [],
+      "map_tile_dimensions": [],
+      "headers": [
+        "### NPC FERREIRO — MINI-PROMPT DE ANIMAÇÃO",
+        "### REGRAS OBRIGATÓRIAS"
+      ]
+    },
+    {
+      "category": "Tilesets",
+      "id": "Spritesheet e Tilesets Primeira area de caça",
+      "source": "arte e animações/docs/Tilesets/Spritesheet e Tilesets Primeira area de caça.md",
+      "bytes": 22247,
+      "cycle_frames": null,
+      "cycle_segments": null,
+      "planned_phases": [
+        {
+          "id": "A1",
+          "label": "Base do terreno"
+        },
+        {
+          "id": "A2",
+          "label": "Caminhos e relevo"
+        },
+        {
+          "id": "A3",
+          "label": "Vegetação"
+        },
+        {
+          "id": "A4",
+          "label": "Regiões especiais"
+        },
+        {
+          "id": "A5",
+          "label": "Props e landmarks"
+        },
+        {
+          "id": "A6",
+          "label": "Animações ambientais"
+        },
+        {
+          "id": "A7",
+          "label": "Montagem do mapa"
+        },
+        {
+          "id": "A8",
+          "label": "Spawns e progressão"
+        },
+        {
+          "id": "A9",
+          "label": "Colisão e navegação"
+        },
+        {
+          "id": "A10",
+          "label": "Polimento final"
+        }
+      ],
+      "map_tile_dimensions": [
+        160,
+        160
+      ],
+      "headers": []
+    },
+    {
+      "category": "Tilesets",
+      "id": "Spritesheet e Tilesets primeira cidade",
+      "source": "arte e animações/docs/Tilesets/Spritesheet e Tilesets primeira cidade.md",
+      "bytes": 59197,
+      "cycle_frames": null,
+      "cycle_segments": null,
+      "planned_phases": [],
+      "map_tile_dimensions": [
+        96,
+        96
+      ],
+      "headers": [
+        "# PRIMEIRA CIDADE — PACOTE COMPLETO DE SPRITESHEETS, TILESETS E CONSTRUÇÃO ISOMÉTRICA",
+        "## MMORPG 2D — PIXEL ART CHIBI — FANTASIA MEDIEVAL SOMBRIA",
+        "# 1. MISSÃO PRINCIPAL",
+        "# 2. IDENTIDADE DA CIDADE",
+        "## 2.1 Conceito",
+        "## 2.2 Nome",
+        "## 2.3 Personalidade visual",
+        "## 2.4 Paleta principal",
+        "# 3. DIREÇÃO DE ARTE CONGELADA",
+        "## 3.1 Regras visuais",
+        "## 3.2 Referências de apresentação",
+        "## 3.3 Compatibilidade com personagens",
+        "# 4. ESCALA E PADRÃO TÉCNICO ISOMÉTRICO",
+        "## 4.1 Grade do mapa",
+        "## 4.2 Dimensões iniciais do mapa",
+        "## 4.3 Objetos maiores que um tile",
+        "## 4.4 Perspectiva",
+        "# 5. ORGANIZAÇÃO GERAL DA CIDADE"
+      ]
+    }
+  ]
+}
